@@ -1,0 +1,25 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <style>
+      table, th, td { border: 1px solid black; border-collapse: collapse; }
+    </style>
+    <title>Martin's Python Program Runner</title>
+    <meta http-equiv="refresh" content="300">
+  </head>
+  <body>
+    {% include 'logo.html' %}
+    <p>
+    {% block content %}
+    replace me
+    {% endblock %}
+    
+    <p>
+    
+    <a href="/view/">View</a>
+    <a href="/exec/">Exec</a>
+
+  </body>
+</html>
+
