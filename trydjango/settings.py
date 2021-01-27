@@ -54,6 +54,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'trydjango.urls'
 
+LOGIN_REDIRECT_URL = '/stock/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

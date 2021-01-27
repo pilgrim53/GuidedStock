@@ -1,0 +1,2816 @@
+Watching for file changes with StatReloader
+[12/Jan/2021 13:55:26] "GET /stock/ HTTP/1.1" 200 9538
+[12/Jan/2021 14:01:21] "GET /stock/ HTTP/1.1" 200 9538
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2021 - 13:54:29
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[12/Jan/2021 14:03:01] "GET /stock/ HTTP/1.1" 200 9534
+[12/Jan/2021 14:08:55] "GET /stock/ HTTP/1.1" 200 9534
+[12/Jan/2021 14:14:52] "GET /stock/ HTTP/1.1" 200 9534
+[12/Jan/2021 14:20:47] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 14:26:42] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 14:32:36] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 14:38:33] "GET /stock/ HTTP/1.1" 200 9529
+[12/Jan/2021 14:44:31] "GET /stock/ HTTP/1.1" 200 9529
+[12/Jan/2021 14:50:28] "GET /stock/ HTTP/1.1" 200 9528
+[12/Jan/2021 14:56:09] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:02:03] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:08:01] "GET /stock/ HTTP/1.1" 200 9528
+[12/Jan/2021 15:14:00] "GET /stock/ HTTP/1.1" 200 9528
+[12/Jan/2021 15:19:55] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:23:29] "GET /admin/ HTTP/1.1" 302 0
+[12/Jan/2021 15:23:30] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1973
+[12/Jan/2021 15:23:35] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[12/Jan/2021 15:23:35] "GET /admin/ HTTP/1.1" 200 6668
+[12/Jan/2021 15:23:38] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9210
+[12/Jan/2021 15:23:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 15:23:41] "GET /admin/pmgstock/stock/2/change/ HTTP/1.1" 200 9339
+[12/Jan/2021 15:23:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 15:24:34] "POST /admin/pmgstock/stock/2/change/ HTTP/1.1" 302 0
+[12/Jan/2021 15:24:34] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9402
+[12/Jan/2021 15:24:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 15:24:55] "GET /stock/ HTTP/1.1" 200 691
+[12/Jan/2021 15:26:06] "GET /login/ HTTP/1.1" 200 923
+[12/Jan/2021 15:26:06] "GET /static/img/pmg.jpg HTTP/1.1" 304 0
+[12/Jan/2021 15:26:12] "POST /login/ HTTP/1.1" 302 0
+[12/Jan/2021 15:27:06] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:33:03] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:39:01] "GET /stock/ HTTP/1.1" 200 9526
+[12/Jan/2021 15:44:52] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:50:49] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 15:56:45] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 16:02:38] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 16:08:34] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 16:14:28] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 16:20:24] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 16:26:16] "GET /stock/ HTTP/1.1" 200 9527
+[12/Jan/2021 16:32:13] "GET /stock/ HTTP/1.1" 200 9528
+[12/Jan/2021 16:38:07] "GET /stock/ HTTP/1.1" 200 9528
+[12/Jan/2021 16:43:58] "GET /stock/ HTTP/1.1" 200 9529
+[12/Jan/2021 16:49:52] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 16:51:02] "GET /admin/pmgstock/stock/11/change/ HTTP/1.1" 302 0
+[12/Jan/2021 16:51:02] "GET /admin/login/?next=/admin/pmgstock/stock/11/change/ HTTP/1.1" 200 2023
+[12/Jan/2021 16:51:19] "POST /admin/login/?next=/admin/pmgstock/stock/11/change/ HTTP/1.1" 302 0
+[12/Jan/2021 16:51:20] "GET /admin/pmgstock/stock/11/change/ HTTP/1.1" 200 9338
+[12/Jan/2021 16:51:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:51:28] "POST /admin/pmgstock/stock/11/change/ HTTP/1.1" 302 0
+[12/Jan/2021 16:51:29] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9404
+[12/Jan/2021 16:51:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:51:52] "GET /admin/ HTTP/1.1" 200 6669
+[12/Jan/2021 16:51:54] "GET /admin/auth/user/ HTTP/1.1" 200 7429
+[12/Jan/2021 16:51:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:51:56] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 14214
+[12/Jan/2021 16:51:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:53:13] "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[12/Jan/2021 16:53:14] "GET /admin/auth/user/ HTTP/1.1" 200 7606
+[12/Jan/2021 16:53:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:53:17] "GET /admin/logout/ HTTP/1.1" 200 1207
+[12/Jan/2021 16:53:19] "GET /admin/ HTTP/1.1" 302 0
+[12/Jan/2021 16:53:19] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[12/Jan/2021 16:53:24] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1982
+[12/Jan/2021 16:53:33] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1982
+[12/Jan/2021 16:53:43] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[12/Jan/2021 16:53:44] "GET /admin/ HTTP/1.1" 200 6652
+[12/Jan/2021 16:53:46] "GET /admin/auth/user/ HTTP/1.1" 200 7429
+[12/Jan/2021 16:53:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:53:49] "GET /admin/auth/user/2/change/ HTTP/1.1" 200 14277
+[12/Jan/2021 16:53:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:54:00] "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+[12/Jan/2021 16:54:00] "GET /admin/auth/user/ HTTP/1.1" 200 7606
+[12/Jan/2021 16:54:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:54:03] "GET /admin/logout/ HTTP/1.1" 200 1207
+[12/Jan/2021 16:54:05] "GET /admin/ HTTP/1.1" 302 0
+[12/Jan/2021 16:54:05] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[12/Jan/2021 16:54:09] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[12/Jan/2021 16:54:09] "GET /admin/ HTTP/1.1" 200 3307
+[12/Jan/2021 16:54:13] "GET /admin/auth/user/ HTTP/1.1" 200 7433
+[12/Jan/2021 16:54:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:54:21] "GET /admin/auth/user/3/change/ HTTP/1.1" 200 13935
+[12/Jan/2021 16:54:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:54:24] "GET /admin/ HTTP/1.1" 200 3307
+[12/Jan/2021 16:54:26] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9214
+[12/Jan/2021 16:54:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:55:22] "GET /admin/pmgstock/stock/11/change/ HTTP/1.1" 200 9341
+[12/Jan/2021 16:55:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 16:55:28] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 16:55:31] "POST /admin/pmgstock/stock/11/change/ HTTP/1.1" 302 0
+[12/Jan/2021 16:55:31] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9408
+[12/Jan/2021 16:55:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 17:01:21] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 17:07:16] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 17:13:15] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 17:19:08] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 17:25:04] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 17:30:59] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 17:37:04] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 17:43:01] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 17:48:54] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 17:54:48] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 18:00:43] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 18:06:39] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 18:12:36] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 18:18:31] "GET /stock/ HTTP/1.1" 200 9531
+[12/Jan/2021 18:24:28] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 18:30:22] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 18:36:15] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 18:42:16] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 18:48:11] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 18:54:03] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:00:01] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:05:57] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:11:54] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:17:56] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:23:52] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:29:47] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:34:41] "GET /admin/pmgstock/stock/22/change/ HTTP/1.1" 200 9286
+[12/Jan/2021 19:34:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 19:34:48] "POST /admin/pmgstock/stock/22/change/ HTTP/1.1" 302 0
+[12/Jan/2021 19:34:49] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9408
+[12/Jan/2021 19:34:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[12/Jan/2021 19:35:44] "GET /stock/ HTTP/1.1" 200 9530
+[12/Jan/2021 19:35:53] "GET /stock/ HTTP/1.1" 200 9534
+[12/Jan/2021 19:41:47] "GET /stock/ HTTP/1.1" 200 9534
+[12/Jan/2021 19:47:41] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 19:53:36] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 19:59:32] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:05:27] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:11:21] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:17:17] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:23:10] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:29:07] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:35:02] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:40:57] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:46:53] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:52:48] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 20:58:44] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:04:38] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:10:37] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:16:30] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:22:27] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:28:24] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:34:22] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:40:20] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:46:16] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:52:14] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 21:58:09] "GET /stock/ HTTP/1.1" 200 9535
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[12/Jan/2021 22:03:43] "GET /stock/ HTTP/1.1" 500 104721
+[12/Jan/2021 22:04:40] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 22:10:35] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 22:16:34] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 22:22:32] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 22:28:27] "GET /stock/ HTTP/1.1" 200 9535
+[12/Jan/2021 22:34:27] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 22:40:22] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 22:46:17] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 22:52:16] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 22:58:12] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 23:04:08] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 23:10:04] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 23:16:01] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 23:21:59] "GET /stock/ HTTP/1.1" 200 9533
+[12/Jan/2021 23:27:53] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 00:39:12] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 00:45:07] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 00:51:06] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 00:57:01] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:03:00] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:08:56] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:14:51] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:20:47] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:26:43] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:32:37] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:38:29] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:44:24] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:50:18] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 01:56:14] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:02:08] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:08:03] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:13:56] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:19:51] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:25:45] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:31:38] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:37:32] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:43:29] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:49:21] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 02:55:15] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 03:01:08] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 03:07:05] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 03:23:59] "GET /admin HTTP/1.1" 301 0
+[13/Jan/2021 03:23:59] "GET /admin/ HTTP/1.1" 302 0
+[13/Jan/2021 03:24:00] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1973
+[13/Jan/2021 03:24:00] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[13/Jan/2021 03:24:00] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[13/Jan/2021 03:24:00] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[13/Jan/2021 03:24:00] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[13/Jan/2021 03:24:00] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+Not Found: /favicon.ico
+[13/Jan/2021 03:24:00] "GET /favicon.ico HTTP/1.1" 404 2333
+[13/Jan/2021 03:24:00] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[13/Jan/2021 03:24:00] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[13/Jan/2021 03:25:40] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[13/Jan/2021 03:25:41] "GET /admin/ HTTP/1.1" 200 3938
+[13/Jan/2021 03:25:41] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[13/Jan/2021 03:25:41] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[13/Jan/2021 03:25:41] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[13/Jan/2021 03:25:54] "GET /admin/ HTTP/1.1" 200 3938
+[13/Jan/2021 03:26:00] "GET /stock HTTP/1.1" 301 0
+[13/Jan/2021 03:26:59] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 03:27:03] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 03:33:38] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:09:12] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:15:15] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:21:12] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:27:12] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 04:33:11] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:39:10] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:45:04] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 04:50:58] "GET /stock/ HTTP/1.1" 200 9533
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[13/Jan/2021 04:56:27] "GET /stock/ HTTP/1.1" 500 105147
+[13/Jan/2021 13:53:39] "GET /stock/ HTTP/1.1" 200 9569
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 12, 2021 - 14:01:48
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[13/Jan/2021 13:58:21] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9345
+[13/Jan/2021 13:58:21] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[13/Jan/2021 13:58:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[13/Jan/2021 13:59:27] "GET /stock/ HTTP/1.1" 200 9569
+[13/Jan/2021 13:59:46] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9384
+[13/Jan/2021 13:59:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[13/Jan/2021 14:00:01] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9214
+[13/Jan/2021 14:00:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[13/Jan/2021 14:00:04] "GET /admin/pmgstock/stock/2/change/ HTTP/1.1" 200 9382
+[13/Jan/2021 14:00:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[13/Jan/2021 14:05:26] "GET /stock/ HTTP/1.1" 200 9569
+[13/Jan/2021 14:11:25] "GET /stock/ HTTP/1.1" 200 9569
+[13/Jan/2021 14:17:17] "GET /stock/ HTTP/1.1" 200 9569
+[13/Jan/2021 14:23:13] "GET /stock/ HTTP/1.1" 200 9569
+[13/Jan/2021 14:29:13] "GET /stock/ HTTP/1.1" 200 9565
+[13/Jan/2021 14:35:09] "GET /stock/ HTTP/1.1" 200 9565
+[13/Jan/2021 14:41:06] "GET /stock/ HTTP/1.1" 200 9560
+[13/Jan/2021 14:47:07] "GET /stock/ HTTP/1.1" 200 9555
+[13/Jan/2021 14:53:09] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 14:59:07] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 15:05:02] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 15:10:57] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 15:16:51] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 15:22:49] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 15:28:48] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 15:34:47] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 15:40:44] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 15:46:42] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 15:52:38] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 15:58:35] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 16:04:31] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:10:27] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:16:27] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:22:26] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:28:20] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:34:17] "GET /stock/ HTTP/1.1" 200 9533
+[13/Jan/2021 16:40:17] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:46:11] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:52:10] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 16:58:03] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 17:03:53] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 17:09:38] "GET /stock/ HTTP/1.1" 200 9534
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[13/Jan/2021 17:14:55] "GET /stock/ HTTP/1.1" 500 104830
+[13/Jan/2021 18:14:49] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:20:32] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:26:21] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:32:12] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:38:00] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:43:46] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:49:32] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 18:55:22] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:01:06] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:06:58] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:12:48] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:18:35] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:24:20] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:30:02] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:35:49] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:41:34] "GET /stock/ HTTP/1.1" 200 9535
+[13/Jan/2021 19:47:23] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 19:53:11] "GET /stock/ HTTP/1.1" 200 9535
+[13/Jan/2021 19:59:00] "GET /stock/ HTTP/1.1" 200 9535
+[13/Jan/2021 20:04:48] "GET /stock/ HTTP/1.1" 200 9535
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[13/Jan/2021 20:09:53] "GET /stock/ HTTP/1.1" 500 104818
+[13/Jan/2021 21:19:00] "POST /admin/pmgstock/stock/2/change/ HTTP/1.1" 302 0
+[13/Jan/2021 21:19:00] "GET /admin/pmgstock/stock/add/ HTTP/1.1" 200 9237
+[13/Jan/2021 21:19:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[13/Jan/2021 21:19:30] "GET /stock/ HTTP/1.1" 200 9534
+[13/Jan/2021 21:19:31] "POST /admin/pmgstock/stock/add/ HTTP/1.1" 302 0
+[13/Jan/2021 21:19:32] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[13/Jan/2021 21:19:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[13/Jan/2021 21:20:22] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 21:26:10] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 21:31:55] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 21:37:39] "GET /stock/ HTTP/1.1" 200 10054
+[13/Jan/2021 21:43:30] "GET /stock/ HTTP/1.1" 200 10054
+[13/Jan/2021 21:49:24] "GET /stock/ HTTP/1.1" 200 10054
+[13/Jan/2021 21:55:16] "GET /stock/ HTTP/1.1" 200 10054
+[13/Jan/2021 22:01:05] "GET /stock/ HTTP/1.1" 200 10054
+[13/Jan/2021 22:06:58] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:12:43] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:18:30] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:24:19] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:30:05] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:35:53] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:41:46] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:47:30] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:53:19] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 22:59:04] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 23:04:52] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 23:10:39] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 23:16:26] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 23:22:17] "GET /stock/ HTTP/1.1" 200 10053
+[13/Jan/2021 23:28:02] "GET /stock/ HTTP/1.1" 200 10055
+[13/Jan/2021 23:33:47] "GET /stock/ HTTP/1.1" 200 10055
+[13/Jan/2021 23:39:37] "GET /stock/ HTTP/1.1" 200 10055
+[13/Jan/2021 23:45:22] "GET /stock/ HTTP/1.1" 200 10055
+[13/Jan/2021 23:51:05] "GET /stock/ HTTP/1.1" 200 10055
+[13/Jan/2021 23:57:04] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:02:48] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:08:37] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:14:19] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:20:11] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:25:56] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:31:44] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:37:34] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 00:43:19] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 00:49:07] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 00:54:53] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 01:00:48] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 01:06:44] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 01:12:42] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 01:18:39] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 01:24:40] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 01:32:48] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 01:43:20] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 01:49:16] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 01:55:16] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:01:15] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:07:21] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:13:20] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:19:17] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:25:14] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:31:11] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 02:37:09] "GET /stock/ HTTP/1.1" 200 10056
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[14/Jan/2021 02:42:48] "GET /stock/ HTTP/1.1" 500 105007
+[14/Jan/2021 13:03:09] "GET /stock/ HTTP/1.1" 200 10064
+[14/Jan/2021 13:09:08] "GET /stock/ HTTP/1.1" 200 10064
+[14/Jan/2021 13:15:03] "GET /stock/ HTTP/1.1" 200 10064
+[14/Jan/2021 13:18:39] "GET /admin/pmgstock/stock/22/change/ HTTP/1.1" 200 9353
+[14/Jan/2021 13:18:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:18:49] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[14/Jan/2021 13:18:52] "GET /admin/pmgstock/stock/15/change/ HTTP/1.1" 200 9380
+[14/Jan/2021 13:18:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:18:58] "POST /admin/pmgstock/stock/15/change/ HTTP/1.1" 302 0
+[14/Jan/2021 13:18:58] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[14/Jan/2021 13:18:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:19:28] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9379
+[14/Jan/2021 13:19:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:19:36] "POST /admin/pmgstock/stock/7/change/ HTTP/1.1" 302 0
+[14/Jan/2021 13:19:36] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[14/Jan/2021 13:19:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:19:57] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9384
+[14/Jan/2021 13:19:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:20:07] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[14/Jan/2021 13:20:07] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[14/Jan/2021 13:20:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:21:03] "GET /stock/ HTTP/1.1" 200 10061
+[14/Jan/2021 13:21:11] "GET /stock/ HTTP/1.1" 200 10060
+[14/Jan/2021 13:27:09] "GET /stock/ HTTP/1.1" 200 10061
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[14/Jan/2021 13:37:36] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[14/Jan/2021 13:37:36] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[14/Jan/2021 13:37:36] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[14/Jan/2021 13:37:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[14/Jan/2021 13:37:36] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[14/Jan/2021 13:37:36] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[14/Jan/2021 13:37:36] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[14/Jan/2021 13:37:36] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[14/Jan/2021 13:37:36] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[14/Jan/2021 13:37:36] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[14/Jan/2021 13:37:36] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[14/Jan/2021 13:37:36] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[14/Jan/2021 13:37:36] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[14/Jan/2021 13:37:36] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[14/Jan/2021 13:37:36] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[14/Jan/2021 13:37:36] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[14/Jan/2021 13:37:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[14/Jan/2021 13:37:36] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+Not Found: /favicon.ico
+[14/Jan/2021 13:37:36] "GET /favicon.ico HTTP/1.1" 404 2333
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[14/Jan/2021 13:38:09] "GET /stock/ HTTP/1.1" 500 105045
+[14/Jan/2021 13:43:45] "GET /stock/ HTTP/1.1" 200 10061
+[14/Jan/2021 13:49:43] "GET /stock/ HTTP/1.1" 200 10061
+[14/Jan/2021 13:55:43] "GET /stock/ HTTP/1.1" 200 10061
+[14/Jan/2021 14:01:43] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:07:41] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:13:40] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:19:43] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:25:40] "GET /stock/ HTTP/1.1" 200 10057
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[14/Jan/2021 14:31:12] "GET /stock/ HTTP/1.1" 500 105236
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[14/Jan/2021 14:32:25] "GET /stock/ HTTP/1.1" 500 105178
+[14/Jan/2021 14:34:57] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:36:08] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:42:06] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:44:07] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 14:47:43] "GET /stock/ HTTP/1.1" 200 10055
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 13, 2021 - 13:58:09
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.169', 32350)
+----------------------------------------
+Watching for file changes with StatReloader
+[14/Jan/2021 14:52:42] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 14:58:43] "GET /stock/ HTTP/1.1" 200 10055
+[14/Jan/2021 15:04:42] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 15:10:41] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 15:16:37] "GET /stock/ HTTP/1.1" 200 10057
+[14/Jan/2021 15:22:38] "GET /stock/ HTTP/1.1" 200 10056
+[14/Jan/2021 15:26:20] "GET /stock/ HTTP/1.1" 200 10088
+[14/Jan/2021 15:32:19] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 15:38:19] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 15:44:17] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 15:50:16] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 15:56:21] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 16:02:21] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 16:08:24] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 16:14:22] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 16:20:25] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 16:26:27] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 16:32:26] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 16:38:26] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 16:44:28] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 16:50:30] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 16:56:28] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 17:02:28] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 17:08:32] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 17:14:32] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 17:20:37] "GET /stock/ HTTP/1.1" 200 10089
+[14/Jan/2021 17:26:38] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 17:32:43] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 17:38:44] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 17:44:46] "GET /stock/ HTTP/1.1" 200 10089
+[14/Jan/2021 17:50:49] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 17:57:01] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:03:00] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 18:09:00] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:15:01] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 18:21:03] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:27:02] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:33:02] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 18:38:59] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:45:02] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:51:04] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 18:57:04] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 19:03:05] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 19:09:05] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 19:15:02] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 19:21:00] "GET /stock/ HTTP/1.1" 200 10090
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[14/Jan/2021 19:26:39] "GET /stock/ HTTP/1.1" 500 105275
+[14/Jan/2021 20:45:02] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 20:51:09] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 20:57:10] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 21:03:10] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 21:09:11] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 21:15:10] "GET /stock/ HTTP/1.1" 200 10090
+[14/Jan/2021 21:21:09] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 21:27:11] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 21:33:12] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 21:39:11] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 21:45:06] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 21:51:07] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 21:57:12] "GET /stock/ HTTP/1.1" 200 10091
+[14/Jan/2021 22:03:13] "GET /stock/ HTTP/1.1" 200 10091
+Not Found: /favicon.ico
+[18/Jan/2021 02:35:54] "GET /favicon.ico HTTP/1.1" 404 2333
+[18/Jan/2021 02:37:26] "GET /stock/ HTTP/1.1" 200 10089
+[18/Jan/2021 02:43:30] "GET /stock/ HTTP/1.1" 200 10089
+Not Found: /favicon.ico
+[18/Jan/2021 08:55:56] "GET /favicon.ico HTTP/1.1" 404 2333
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[18/Jan/2021 09:01:35] "GET /stock/ HTTP/1.1" 500 105126
+[18/Jan/2021 14:35:15] "GET / HTTP/1.1" 200 10089
+[18/Jan/2021 14:41:15] "GET / HTTP/1.1" 200 10089
+[18/Jan/2021 14:43:08] "GET /admin HTTP/1.1" 301 0
+[18/Jan/2021 14:43:08] "GET /admin/ HTTP/1.1" 200 5426
+[18/Jan/2021 14:43:08] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[18/Jan/2021 14:43:08] "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[18/Jan/2021 14:43:08] "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[18/Jan/2021 14:43:08] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[18/Jan/2021 14:43:08] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[18/Jan/2021 14:43:08] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[18/Jan/2021 14:43:08] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[18/Jan/2021 14:43:08] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[18/Jan/2021 14:43:08] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[18/Jan/2021 14:43:33] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[18/Jan/2021 14:43:33] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[18/Jan/2021 14:43:33] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[18/Jan/2021 14:43:34] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[18/Jan/2021 14:43:34] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[18/Jan/2021 14:43:34] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[18/Jan/2021 14:43:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:43:34] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[18/Jan/2021 14:43:34] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[18/Jan/2021 14:43:34] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[18/Jan/2021 14:43:34] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[18/Jan/2021 14:43:34] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[18/Jan/2021 14:43:37] "GET /admin/pmgstock/stock/1/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:43:37] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[18/Jan/2021 14:43:37] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[18/Jan/2021 14:43:37] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[18/Jan/2021 14:43:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:43:37] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[18/Jan/2021 14:44:06] "POST /admin/pmgstock/stock/1/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:44:07] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:44:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:44:07] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[18/Jan/2021 14:44:12] "GET /admin/pmgstock/stock/2/change/ HTTP/1.1" 200 9382
+[18/Jan/2021 14:44:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:44:22] "GET / HTTP/1.1" 200 10089
+[18/Jan/2021 14:44:53] "POST /admin/pmgstock/stock/2/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:44:53] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:44:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:44:57] "GET /admin/pmgstock/stock/3/change/ HTTP/1.1" 200 9384
+[18/Jan/2021 14:44:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:45:13] "POST /admin/pmgstock/stock/3/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:45:14] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:45:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:45:19] "GET /admin/pmgstock/stock/4/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:45:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:45:40] "POST /admin/pmgstock/stock/4/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:45:41] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:45:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:45:45] "GET /admin/pmgstock/stock/5/change/ HTTP/1.1" 200 9341
+[18/Jan/2021 14:45:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:46:18] "POST /admin/pmgstock/stock/5/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:46:19] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:46:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:46:23] "GET /admin/pmgstock/stock/6/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:46:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:47:37] "POST /admin/pmgstock/stock/6/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:47:37] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:47:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:47:40] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:47:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:47:56] "POST /admin/pmgstock/stock/7/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:47:56] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:47:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:47:59] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:47:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:04] "POST /admin/pmgstock/stock/7/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:48:05] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:48:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:08] "GET /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9374
+[18/Jan/2021 14:48:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:27] "POST /admin/pmgstock/stock/8/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:48:27] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:48:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:32] "GET /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9374
+[18/Jan/2021 14:48:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:37] "POST /admin/pmgstock/stock/8/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:48:38] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:48:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:40] "GET /admin/pmgstock/stock/9/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:48:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:48:50] "POST /admin/pmgstock/stock/9/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:48:51] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 14:48:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:49:01] "GET /admin/pmgstock/stock/10/change/ HTTP/1.1" 200 9377
+[18/Jan/2021 14:49:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:49:39] "POST /admin/pmgstock/stock/10/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:49:40] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:49:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:49:43] "GET /admin/pmgstock/stock/11/change/ HTTP/1.1" 200 9379
+[18/Jan/2021 14:49:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:50:24] "GET / HTTP/1.1" 200 10089
+[18/Jan/2021 14:51:39] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[18/Jan/2021 14:51:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:51:42] "GET /admin/pmgstock/stock/10/change/ HTTP/1.1" 200 9377
+[18/Jan/2021 14:51:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:51:51] "POST /admin/pmgstock/stock/10/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:51:52] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:51:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:51:55] "GET /admin/pmgstock/stock/11/change/ HTTP/1.1" 200 9379
+[18/Jan/2021 14:51:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:52:05] "POST /admin/pmgstock/stock/11/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:52:06] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:52:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:52:09] "GET /admin/pmgstock/stock/12/change/ HTTP/1.1" 200 9345
+[18/Jan/2021 14:52:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:56:21] "GET / HTTP/1.1" 200 10090
+[18/Jan/2021 14:58:24] "POST /admin/pmgstock/stock/12/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:58:25] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:58:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:28] "GET /admin/pmgstock/stock/13/change/ HTTP/1.1" 200 9377
+[18/Jan/2021 14:58:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:32] "POST /admin/pmgstock/stock/13/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:58:33] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:58:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:35] "GET /admin/pmgstock/stock/14/change/ HTTP/1.1" 200 9376
+[18/Jan/2021 14:58:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:39] "POST /admin/pmgstock/stock/14/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:58:39] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:58:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:42] "GET /admin/pmgstock/stock/15/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 14:58:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:46] "POST /admin/pmgstock/stock/15/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:58:47] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:58:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:50] "GET /admin/pmgstock/stock/16/change/ HTTP/1.1" 200 9333
+[18/Jan/2021 14:58:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:58:59] "POST /admin/pmgstock/stock/16/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:59:00] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:59:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:03] "GET /admin/pmgstock/stock/17/change/ HTTP/1.1" 200 9330
+[18/Jan/2021 14:59:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:11] "POST /admin/pmgstock/stock/17/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:59:11] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:59:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:16] "GET /admin/pmgstock/stock/16/change/ HTTP/1.1" 200 9333
+[18/Jan/2021 14:59:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:19] "POST /admin/pmgstock/stock/16/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:59:20] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:59:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:23] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9383
+[18/Jan/2021 14:59:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:53] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[18/Jan/2021 14:59:53] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 14:59:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 14:59:57] "GET /admin/pmgstock/stock/19/change/ HTTP/1.1" 200 9378
+[18/Jan/2021 14:59:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:02] "POST /admin/pmgstock/stock/19/change/ HTTP/1.1" 302 0
+[18/Jan/2021 15:00:02] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 15:00:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:07] "GET /admin/pmgstock/stock/20/change/ HTTP/1.1" 200 9375
+[18/Jan/2021 15:00:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:11] "POST /admin/pmgstock/stock/20/change/ HTTP/1.1" 302 0
+[18/Jan/2021 15:00:12] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 15:00:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:15] "GET /admin/pmgstock/stock/21/change/ HTTP/1.1" 200 9339
+[18/Jan/2021 15:00:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:24] "POST /admin/pmgstock/stock/21/change/ HTTP/1.1" 302 0
+[18/Jan/2021 15:00:24] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 15:00:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:27] "GET /admin/pmgstock/stock/22/change/ HTTP/1.1" 200 9353
+[18/Jan/2021 15:00:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:35] "POST /admin/pmgstock/stock/22/change/ HTTP/1.1" 302 0
+[18/Jan/2021 15:00:36] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 15:00:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:39] "GET /admin/pmgstock/stock/23/change/ HTTP/1.1" 200 9353
+[18/Jan/2021 15:00:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:00:47] "POST /admin/pmgstock/stock/23/change/ HTTP/1.1" 302 0
+[18/Jan/2021 15:00:48] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[18/Jan/2021 15:00:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:01:07] "GET /admin/pmgstock/stock/5/change/ HTTP/1.1" 200 9341
+[18/Jan/2021 15:01:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:01:15] "POST /admin/pmgstock/stock/5/change/ HTTP/1.1" 302 0
+[18/Jan/2021 15:01:16] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[18/Jan/2021 15:01:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[18/Jan/2021 15:02:11] "GET / HTTP/1.1" 200 12190
+[18/Jan/2021 15:02:38] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:08:55] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:15:15] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:21:28] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:27:47] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:34:01] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:40:13] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:46:28] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:52:46] "GET / HTTP/1.1" 200 12727
+[18/Jan/2021 15:58:59] "GET / HTTP/1.1" 200 12727
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[18/Jan/2021 16:05:03] "GET / HTTP/1.1" 500 105378
+[19/Jan/2021 13:53:18] "GET / HTTP/1.1" 200 12735
+[19/Jan/2021 13:59:30] "GET / HTTP/1.1" 200 12735
+[19/Jan/2021 14:02:41] "GET /admin HTTP/1.1" 301 0
+[19/Jan/2021 14:02:41] "GET /admin/ HTTP/1.1" 200 6328
+[19/Jan/2021 14:02:41] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[19/Jan/2021 14:02:41] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[19/Jan/2021 14:02:42] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[19/Jan/2021 14:02:42] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[19/Jan/2021 14:02:42] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[19/Jan/2021 14:02:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[19/Jan/2021 14:02:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[19/Jan/2021 14:02:44] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[19/Jan/2021 14:02:44] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[19/Jan/2021 14:02:44] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[19/Jan/2021 14:02:44] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[19/Jan/2021 14:02:44] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[19/Jan/2021 14:02:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:02:44] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[19/Jan/2021 14:02:44] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[19/Jan/2021 14:02:44] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[19/Jan/2021 14:02:44] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[19/Jan/2021 14:02:48] "GET /admin/pmgstock/stock/19/change/ HTTP/1.1" 200 9382
+[19/Jan/2021 14:02:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:03:20] "POST /admin/pmgstock/stock/19/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:03:20] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 14:03:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:03:24] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9379
+[19/Jan/2021 14:03:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:03:41] "POST /admin/pmgstock/stock/7/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:03:41] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[19/Jan/2021 14:03:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 14:04:31] "GET / HTTP/1.1" 500 105170
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 14:05:28] "GET / HTTP/1.1" 500 105177
+[19/Jan/2021 14:11:41] "GET / HTTP/1.1" 200 12735
+[19/Jan/2021 14:13:45] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9383
+[19/Jan/2021 14:13:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:13:53] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:13:54] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 14:13:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:14:05] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9382
+[19/Jan/2021 14:14:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:14:15] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:14:15] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 14:14:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 14, 2021 - 14:50:57
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[19/Jan/2021 14:18:10] "GET / HTTP/1.1" 200 12734
+[19/Jan/2021 14:18:12] "GET / HTTP/1.1" 200 12734
+[19/Jan/2021 14:21:09] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9379
+[19/Jan/2021 14:21:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:21:16] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[19/Jan/2021 14:21:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:21:18] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9382
+[19/Jan/2021 14:21:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:21:30] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:21:31] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 14:21:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 39, in stock_list_view
+    if ((price is None) and (stock.current is none)):
+NameError: name 'none' is not defined
+[19/Jan/2021 14:22:40] "GET / HTTP/1.1" 500 74280
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2021 - 14:16:48
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 47, in stock_list_view
+    stock.current = Decimal(bid)
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+[19/Jan/2021 14:23:43] "GET / HTTP/1.1" 500 73882
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2021 - 14:23:38
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 49, in stock_list_view
+    stock.current=Decimal(price)
+TypeError: conversion from NoneType to Decimal is not supported
+[19/Jan/2021 14:28:32] "GET / HTTP/1.1" 500 74322
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2021 - 14:27:35
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[19/Jan/2021 14:33:56] "GET / HTTP/1.1" 200 12730
+[19/Jan/2021 14:34:15] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9378
+[19/Jan/2021 14:34:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:34:27] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:34:28] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 14:34:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:35:55] "GET / HTTP/1.1" 200 12739
+[19/Jan/2021 14:42:09] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 14:46:00] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9381
+[19/Jan/2021 14:46:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:46:09] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:46:10] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 14:46:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:48:23] "GET / HTTP/1.1" 200 12721
+[19/Jan/2021 14:54:44] "GET / HTTP/1.1" 200 12721
+[19/Jan/2021 14:54:45] "GET /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9374
+[19/Jan/2021 14:54:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:55:10] "POST /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9549
+[19/Jan/2021 14:55:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:55:23] "POST /admin/pmgstock/stock/8/change/ HTTP/1.1" 302 0
+[19/Jan/2021 14:55:23] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9639
+[19/Jan/2021 14:55:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 14:56:42] "GET / HTTP/1.1" 200 12734
+[19/Jan/2021 15:02:54] "GET / HTTP/1.1" 200 12734
+[19/Jan/2021 15:09:07] "GET / HTTP/1.1" 200 12733
+[19/Jan/2021 15:15:24] "GET / HTTP/1.1" 200 12735
+[19/Jan/2021 15:21:41] "GET / HTTP/1.1" 200 12718
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 15:26:43] "GET / HTTP/1.1" 500 98860
+[19/Jan/2021 16:14:46] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 16:21:04] "GET / HTTP/1.1" 200 12736
+[19/Jan/2021 16:27:29] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 16:33:45] "GET / HTTP/1.1" 200 12737
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 16:40:04] "GET / HTTP/1.1" 500 105439
+[19/Jan/2021 16:47:55] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 16:54:18] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 17:00:34] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 17:06:50] "GET / HTTP/1.1" 200 12737
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 17:12:33] "GET / HTTP/1.1" 500 104940
+[19/Jan/2021 17:49:11] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 17:55:24] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 18:01:53] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 18:08:05] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 18:14:21] "GET / HTTP/1.1" 200 12737
+[19/Jan/2021 18:20:44] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 18:27:03] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 18:33:18] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 18:39:33] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 18:45:51] "GET / HTTP/1.1" 200 12739
+[19/Jan/2021 18:52:08] "GET / HTTP/1.1" 200 12739
+[19/Jan/2021 18:58:27] "GET / HTTP/1.1" 200 12739
+[19/Jan/2021 19:05:04] "GET / HTTP/1.1" 200 12739
+[19/Jan/2021 19:11:27] "GET / HTTP/1.1" 200 12739
+[19/Jan/2021 19:17:44] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 19:24:01] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 19:30:14] "GET / HTTP/1.1" 200 12738
+[19/Jan/2021 19:32:34] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9380
+[19/Jan/2021 19:32:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 19:32:42] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[19/Jan/2021 19:32:43] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9641
+[19/Jan/2021 19:32:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[19/Jan/2021 19:34:12] "GET / HTTP/1.1" 200 12738
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 19:40:03] "GET / HTTP/1.1" 500 104937
+[19/Jan/2021 19:41:28] "GET / HTTP/1.1" 200 12755
+[19/Jan/2021 19:47:47] "GET / HTTP/1.1" 200 12755
+[19/Jan/2021 19:54:04] "GET / HTTP/1.1" 200 12754
+[19/Jan/2021 20:00:22] "GET / HTTP/1.1" 200 12755
+[19/Jan/2021 20:08:51] "GET / HTTP/1.1" 200 12755
+[19/Jan/2021 20:15:09] "GET / HTTP/1.1" 200 12755
+[19/Jan/2021 20:21:25] "GET / HTTP/1.1" 200 12755
+[19/Jan/2021 20:27:39] "GET / HTTP/1.1" 200 12756
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 20:32:42] "GET / HTTP/1.1" 500 98860
+[19/Jan/2021 21:32:06] "GET / HTTP/1.1" 200 12757
+[19/Jan/2021 21:38:24] "GET / HTTP/1.1" 200 12757
+[19/Jan/2021 21:44:46] "GET / HTTP/1.1" 200 12757
+[19/Jan/2021 21:51:04] "GET / HTTP/1.1" 200 12757
+[19/Jan/2021 21:57:20] "GET / HTTP/1.1" 200 12757
+[19/Jan/2021 22:03:37] "GET / HTTP/1.1" 200 12757
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[19/Jan/2021 22:09:35] "GET / HTTP/1.1" 500 104988
+[20/Jan/2021 14:08:19] "GET / HTTP/1.1" 200 12761
+[20/Jan/2021 14:14:35] "GET / HTTP/1.1" 200 12761
+[20/Jan/2021 14:20:48] "GET / HTTP/1.1" 200 12761
+[20/Jan/2021 14:27:07] "GET / HTTP/1.1" 200 12762
+[20/Jan/2021 14:33:28] "GET / HTTP/1.1" 200 12762
+[20/Jan/2021 14:39:45] "GET / HTTP/1.1" 200 12762
+[20/Jan/2021 14:46:05] "GET / HTTP/1.1" 200 12755
+[20/Jan/2021 14:52:27] "GET / HTTP/1.1" 200 12756
+[20/Jan/2021 14:58:38] "GET / HTTP/1.1" 200 12756
+[20/Jan/2021 15:04:59] "GET / HTTP/1.1" 200 12756
+[20/Jan/2021 15:11:17] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 15:17:35] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 15:23:54] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 15:30:08] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 15:36:25] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 15:42:41] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 15:48:52] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 15:55:13] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 16:01:33] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 16:07:54] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 16:14:17] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 16:20:35] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 16:26:49] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 16:33:03] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 16:39:18] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 16:45:33] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 16:51:55] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 16:58:10] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 17:04:34] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 17:10:56] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 17:17:17] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 17:23:32] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 17:30:05] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 17:36:20] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 17:42:55] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 17:49:19] "GET / HTTP/1.1" 200 12758
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[20/Jan/2021 17:54:34] "GET / HTTP/1.1" 500 104711
+[20/Jan/2021 18:44:30] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 18:50:45] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 18:57:07] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:03:39] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 19:09:57] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:16:17] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:22:30] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:28:49] "GET / HTTP/1.1" 200 12758
+[20/Jan/2021 19:35:10] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:41:30] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:47:47] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 19:54:04] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 20:00:21] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 20:06:42] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 20:13:00] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 20:19:18] "GET / HTTP/1.1" 200 12757
+[20/Jan/2021 20:25:48] "GET / HTTP/1.1" 200 12757
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[20/Jan/2021 20:32:09] "GET / HTTP/1.1" 500 105439
+[20/Jan/2021 21:30:14] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 21:36:32] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 21:42:56] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 21:49:21] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 21:55:41] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 22:01:58] "GET / HTTP/1.1" 200 12759
+[20/Jan/2021 22:08:12] "GET / HTTP/1.1" 200 12759
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[20/Jan/2021 22:14:15] "GET / HTTP/1.1" 500 105495
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 340, in _get_fundamentals
+    self._info['regularMarketPrice'] = self._info['regularMarketOpen']
+KeyError: 'regularMarketOpen'
+[21/Jan/2021 03:09:58] "GET / HTTP/1.1" 500 93568
+[21/Jan/2021 03:11:07] "GET /admin/pmgstock/ HTTP/1.1" 200 2457
+[21/Jan/2021 03:11:07] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[21/Jan/2021 03:11:07] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[21/Jan/2021 03:11:07] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[21/Jan/2021 03:11:09] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9447
+[21/Jan/2021 03:11:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[21/Jan/2021 03:11:12] "GET /admin/pmgstock/ HTTP/1.1" 200 2457
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 31, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[21/Jan/2021 03:11:30] "GET / HTTP/1.1" 500 104625
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 19, 2021 - 14:32:16
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/threading.py", line 914, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.5/threading.py", line 862, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/utils/autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/management/base.py", line 390, in check
+    include_deployment_checks=include_deployment_checks,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/management/base.py", line 377, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/checks/registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/urls/resolvers.py", line 399, in check
+    for pattern in self.url_patterns:
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/urls/resolvers.py", line 584, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/utils/functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/urls/resolvers.py", line 577, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/pi/.venv/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 673, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/pi/.venv/src/trydjango/trydjango/urls.py", line 22, in <module>
+    from pmgstock import views
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 7, in <module>
+    import html5lib
+ImportError: No module named 'html5lib'
+
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+[21/Jan/2021 03:18:46] "GET /admin/ HTTP/1.1" 200 6324
+[21/Jan/2021 03:18:47] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[21/Jan/2021 03:18:47] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[21/Jan/2021 03:18:47] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[21/Jan/2021 03:18:47] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[21/Jan/2021 03:20:04] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 03:26:17] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 03:32:33] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 03:38:51] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 03:45:08] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 03:51:32] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 03:57:50] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 04:04:07] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 04:10:20] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 04:16:39] "GET / HTTP/1.1" 200 12760
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[21/Jan/2021 04:22:01] "GET / HTTP/1.1" 500 104758
+[21/Jan/2021 04:55:18] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 05:01:36] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 05:07:50] "GET / HTTP/1.1" 200 12760
+[21/Jan/2021 05:14:08] "GET / HTTP/1.1" 200 12760
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 340, in _get_fundamentals
+    self._info['regularMarketPrice'] = self._info['regularMarketOpen']
+KeyError: 'regularMarketOpen'
+[21/Jan/2021 05:20:14] "GET / HTTP/1.1" 500 93929
+[21/Jan/2021 15:21:33] "GET / HTTP/1.1" 200 12758
+[21/Jan/2021 15:24:12] "GET /admin HTTP/1.1" 301 0
+[21/Jan/2021 15:24:13] "GET /admin/ HTTP/1.1" 200 6324
+[21/Jan/2021 15:24:13] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[21/Jan/2021 15:24:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[21/Jan/2021 15:24:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[21/Jan/2021 15:24:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[21/Jan/2021 15:24:16] "GET /admin/pmgstock/stock/add/ HTTP/1.1" 200 9012
+[21/Jan/2021 15:24:16] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[21/Jan/2021 15:24:16] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[21/Jan/2021 15:24:16] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[21/Jan/2021 15:24:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[21/Jan/2021 15:24:16] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[21/Jan/2021 15:24:16] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[21/Jan/2021 15:24:16] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[21/Jan/2021 15:24:16] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[21/Jan/2021 15:24:16] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[21/Jan/2021 15:24:46] "POST /admin/pmgstock/stock/add/ HTTP/1.1" 302 0
+[21/Jan/2021 15:24:47] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9872
+[21/Jan/2021 15:24:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[21/Jan/2021 15:27:51] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 15:34:12] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 15:40:36] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 15:46:55] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 15:53:17] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 15:59:36] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 16:05:59] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 16:12:17] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 16:18:36] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 16:24:54] "GET / HTTP/1.1" 200 13275
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[21/Jan/2021 16:31:05] "GET / HTTP/1.1" 500 105494
+[21/Jan/2021 17:39:47] "GET / HTTP/1.1" 200 13275
+[21/Jan/2021 17:46:07] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 17:52:29] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 17:58:50] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 18:05:09] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 18:11:26] "GET / HTTP/1.1" 200 13260
+[21/Jan/2021 18:17:43] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 18:24:06] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 18:30:26] "GET / HTTP/1.1" 200 13260
+[21/Jan/2021 18:36:44] "GET / HTTP/1.1" 200 13258
+[21/Jan/2021 18:43:05] "GET / HTTP/1.1" 200 13260
+[21/Jan/2021 18:49:22] "GET / HTTP/1.1" 200 13259
+[21/Jan/2021 18:55:39] "GET / HTTP/1.1" 200 13259
+[21/Jan/2021 19:02:03] "GET / HTTP/1.1" 200 13260
+[21/Jan/2021 19:08:26] "GET / HTTP/1.1" 200 13260
+[21/Jan/2021 19:14:48] "GET / HTTP/1.1" 200 13275
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[21/Jan/2021 19:20:08] "GET / HTTP/1.1" 500 104601
+[21/Jan/2021 20:42:01] "GET / HTTP/1.1" 200 13276
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[21/Jan/2021 20:47:57] "GET / HTTP/1.1" 500 105191
+[21/Jan/2021 20:51:41] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 20:58:08] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 21:04:32] "GET / HTTP/1.1" 200 13276
+[21/Jan/2021 21:10:52] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 21:17:08] "GET / HTTP/1.1" 200 13277
+[21/Jan/2021 21:23:34] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 21:29:52] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 21:36:14] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 21:42:37] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 21:48:54] "GET / HTTP/1.1" 200 13278
+[21/Jan/2021 21:55:18] "GET / HTTP/1.1" 200 13278
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[21/Jan/2021 22:01:22] "GET / HTTP/1.1" 500 105410
+[22/Jan/2021 14:11:05] "GET / HTTP/1.1" 200 13287
+[22/Jan/2021 14:17:22] "GET / HTTP/1.1" 200 13287
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[22/Jan/2021 14:22:35] "GET / HTTP/1.1" 500 104621
+[22/Jan/2021 14:25:06] "GET / HTTP/1.1" 200 13282
+[22/Jan/2021 14:31:34] "GET / HTTP/1.1" 200 13282
+[22/Jan/2021 14:34:03] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 14:40:26] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 14:46:49] "GET / HTTP/1.1" 200 13258
+[22/Jan/2021 14:49:46] "GET /admin HTTP/1.1" 301 0
+[22/Jan/2021 14:49:47] "GET /admin/ HTTP/1.1" 200 6323
+[22/Jan/2021 14:49:47] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[22/Jan/2021 14:49:47] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[22/Jan/2021 14:49:47] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[22/Jan/2021 14:49:47] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[22/Jan/2021 14:49:47] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[22/Jan/2021 14:49:47] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[22/Jan/2021 14:49:47] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[22/Jan/2021 14:50:32] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[22/Jan/2021 14:50:32] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[22/Jan/2021 14:50:32] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[22/Jan/2021 14:50:32] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[22/Jan/2021 14:50:32] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[22/Jan/2021 14:50:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2021 14:50:32] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[22/Jan/2021 14:50:32] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[22/Jan/2021 14:50:32] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[22/Jan/2021 14:50:32] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[22/Jan/2021 14:50:35] "GET /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9374
+[22/Jan/2021 14:50:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2021 14:50:58] "POST /admin/pmgstock/stock/8/change/ HTTP/1.1" 302 0
+[22/Jan/2021 14:50:59] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9872
+[22/Jan/2021 14:50:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2021 14:53:07] "GET / HTTP/1.1" 200 13276
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 340, in _get_fundamentals
+    self._info['regularMarketPrice'] = self._info['regularMarketOpen']
+KeyError: 'regularMarketOpen'
+[22/Jan/2021 14:58:40] "GET / HTTP/1.1" 500 93444
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 326, in _get_fundamentals
+    s[s.index == 'ratingYear']['Value'].values[0],
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[22/Jan/2021 14:59:52] "GET / HTTP/1.1" 500 93490
+[22/Jan/2021 15:02:26] "GET / HTTP/1.1" 200 13275
+[22/Jan/2021 15:08:45] "GET / HTTP/1.1" 200 13275
+[22/Jan/2021 15:15:11] "GET / HTTP/1.1" 200 13274
+[22/Jan/2021 15:18:47] "GET /admin/pmgstock/stock/22/change/ HTTP/1.1" 200 9353
+[22/Jan/2021 15:18:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2021 15:19:04] "POST /admin/pmgstock/stock/22/change/ HTTP/1.1" 302 0
+[22/Jan/2021 15:19:05] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[22/Jan/2021 15:19:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[22/Jan/2021 15:21:30] "GET / HTTP/1.1" 200 13275
+[22/Jan/2021 15:27:48] "GET / HTTP/1.1" 200 13276
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 340, in _get_fundamentals
+    self._info['regularMarketPrice'] = self._info['regularMarketOpen']
+KeyError: 'regularMarketOpen'
+[22/Jan/2021 15:33:45] "GET / HTTP/1.1" 500 92398
+[22/Jan/2021 15:38:30] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 15:44:44] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 15:51:04] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 15:57:26] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 16:03:48] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 16:10:15] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 16:16:40] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 16:22:54] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 16:29:29] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 16:35:49] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 16:42:07] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 16:48:25] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 16:54:42] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 17:01:03] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 17:07:21] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 17:13:44] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 17:20:01] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 17:26:25] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 17:32:44] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 17:39:05] "GET / HTTP/1.1" 200 13276
+[22/Jan/2021 17:45:23] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 17:51:40] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 17:58:02] "GET / HTTP/1.1" 200 13277
+[22/Jan/2021 18:04:23] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 18:10:44] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 18:17:02] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 18:23:21] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 18:29:35] "GET / HTTP/1.1" 200 13278
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[22/Jan/2021 18:35:02] "GET / HTTP/1.1" 500 105165
+Not Found: /favicon.ico
+[22/Jan/2021 20:16:23] "GET /favicon.ico HTTP/1.1" 404 2333
+[22/Jan/2021 20:54:03] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:00:22] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:06:42] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:12:58] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:19:16] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:25:33] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:31:51] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:38:13] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:44:34] "GET / HTTP/1.1" 200 13278
+[22/Jan/2021 21:50:53] "GET / HTTP/1.1" 200 13278
+[24/Jan/2021 14:29:01] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 16:01:56] "GET / HTTP/1.1" 200 13279
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[24/Jan/2021 16:08:04] "GET / HTTP/1.1" 500 105742
+[24/Jan/2021 16:09:25] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 16:15:43] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:01:07] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:07:22] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:13:37] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:19:54] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:26:11] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:32:26] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:38:39] "GET / HTTP/1.1" 200 13279
+[24/Jan/2021 17:44:54] "GET / HTTP/1.1" 200 13279
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[24/Jan/2021 17:50:17] "GET / HTTP/1.1" 500 104759
+[25/Jan/2021 01:05:40] "GET /admin/ HTTP/1.1" 200 6323
+[25/Jan/2021 01:05:41] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[25/Jan/2021 01:05:41] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[25/Jan/2021 01:05:41] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[25/Jan/2021 01:05:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[25/Jan/2021 01:05:41] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[25/Jan/2021 01:05:41] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[25/Jan/2021 01:05:41] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Jan/2021 01:05:41] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[25/Jan/2021 01:05:41] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+Not Found: /favicon.ico
+[25/Jan/2021 01:05:41] "GET /favicon.ico HTTP/1.1" 404 2333
+[25/Jan/2021 01:07:09] "GET /stock/ HTTP/1.1" 200 13278
+[25/Jan/2021 01:09:34] "GET /admin/ HTTP/1.1" 200 6323
+[25/Jan/2021 01:09:53] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:09:53] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[25/Jan/2021 01:09:53] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[25/Jan/2021 01:09:53] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[25/Jan/2021 01:09:53] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[25/Jan/2021 01:09:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:09:53] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[25/Jan/2021 01:09:53] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[25/Jan/2021 01:09:53] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[25/Jan/2021 01:09:53] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[25/Jan/2021 01:09:53] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[25/Jan/2021 01:09:56] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[25/Jan/2021 01:09:59] "GET /admin/pmgstock/stock/5/change/ HTTP/1.1" 200 9379
+[25/Jan/2021 01:10:00] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[25/Jan/2021 01:10:00] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[25/Jan/2021 01:10:00] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[25/Jan/2021 01:10:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:10:00] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[25/Jan/2021 01:10:18] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:10:20] "GET /admin/pmgstock/stock/6/change/ HTTP/1.1" 200 9375
+[25/Jan/2021 01:10:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:10:31] "POST /admin/pmgstock/stock/6/change/ HTTP/1.1" 302 0
+[25/Jan/2021 01:10:31] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9872
+[25/Jan/2021 01:10:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:10:31] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[25/Jan/2021 01:10:36] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9376
+[25/Jan/2021 01:10:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:11:08] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:11:11] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9376
+[25/Jan/2021 01:11:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:11:13] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:11:16] "GET /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9375
+[25/Jan/2021 01:11:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:11:20] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:11:21] "GET /admin/pmgstock/stock/9/change/ HTTP/1.1" 200 9377
+[25/Jan/2021 01:11:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:11:30] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:11:32] "GET /admin/pmgstock/stock/10/change/ HTTP/1.1" 200 9377
+[25/Jan/2021 01:11:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:12:26] "POST /admin/pmgstock/stock/10/change/ HTTP/1.1" 302 0
+[25/Jan/2021 01:12:27] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[25/Jan/2021 01:12:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:12:32] "GET /admin/pmgstock/stock/11/change/ HTTP/1.1" 200 9378
+[25/Jan/2021 01:12:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:12:40] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:12:43] "GET /admin/pmgstock/stock/12/change/ HTTP/1.1" 200 9382
+[25/Jan/2021 01:12:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:12:49] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:12:53] "GET /admin/pmgstock/stock/13/change/ HTTP/1.1" 200 9378
+[25/Jan/2021 01:12:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:13:22] "POST /admin/pmgstock/stock/13/change/ HTTP/1.1" 302 0
+[25/Jan/2021 01:13:22] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[25/Jan/2021 01:13:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:13:26] "GET /stock/ HTTP/1.1" 200 13278
+[25/Jan/2021 01:13:28] "GET /admin/pmgstock/stock/14/change/ HTTP/1.1" 200 9376
+[25/Jan/2021 01:13:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:14:26] "POST /admin/pmgstock/stock/14/change/ HTTP/1.1" 302 0
+[25/Jan/2021 01:14:27] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[25/Jan/2021 01:14:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:14:30] "GET /admin/pmgstock/stock/15/change/ HTTP/1.1" 200 9375
+[25/Jan/2021 01:14:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:14:40] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:14:48] "GET /admin/pmgstock/stock/16/change/ HTTP/1.1" 200 9378
+[25/Jan/2021 01:14:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:15:06] "POST /admin/pmgstock/stock/16/change/ HTTP/1.1" 302 0
+[25/Jan/2021 01:15:07] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[25/Jan/2021 01:15:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:15:09] "GET /admin/pmgstock/stock/17/change/ HTTP/1.1" 200 9378
+[25/Jan/2021 01:15:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:15:18] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:15:21] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9381
+[25/Jan/2021 01:15:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:15:29] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:15:31] "GET /admin/pmgstock/stock/19/change/ HTTP/1.1" 200 9378
+[25/Jan/2021 01:15:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:15:52] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:15:54] "GET /admin/pmgstock/stock/19/change/ HTTP/1.1" 200 9378
+[25/Jan/2021 01:15:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:15:57] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:15:59] "GET /admin/pmgstock/stock/20/change/ HTTP/1.1" 200 9375
+[25/Jan/2021 01:15:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:16:20] "POST /admin/pmgstock/stock/20/change/ HTTP/1.1" 302 0
+[25/Jan/2021 01:16:21] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[25/Jan/2021 01:16:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:16:26] "GET /admin/pmgstock/stock/20/change/ HTTP/1.1" 200 9376
+[25/Jan/2021 01:16:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:16:36] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:16:37] "GET /admin/pmgstock/stock/21/change/ HTTP/1.1" 200 9380
+[25/Jan/2021 01:16:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:16:40] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:16:42] "GET /admin/pmgstock/stock/22/change/ HTTP/1.1" 200 9354
+[25/Jan/2021 01:16:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:16:45] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:16:46] "GET /admin/pmgstock/stock/23/change/ HTTP/1.1" 200 9353
+[25/Jan/2021 01:16:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:17:05] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:17:07] "GET /admin/pmgstock/stock/23/change/ HTTP/1.1" 200 9353
+[25/Jan/2021 01:17:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:17:10] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 01:17:12] "GET /admin/pmgstock/stock/24/change/ HTTP/1.1" 200 9365
+[25/Jan/2021 01:17:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 01:18:59] "GET /stock/ HTTP/1.1" 200 13276
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[25/Jan/2021 01:44:34] "GET /stock/ HTTP/1.1" 200 13276
+[25/Jan/2021 01:50:49] "GET /stock/ HTTP/1.1" 200 13276
+[25/Jan/2021 04:16:17] "GET /stock/ HTTP/1.1" 200 13276
+[25/Jan/2021 14:01:42] "GET / HTTP/1.1" 200 13281
+[25/Jan/2021 14:08:00] "GET / HTTP/1.1" 200 13282
+[25/Jan/2021 14:14:23] "GET / HTTP/1.1" 200 13282
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[25/Jan/2021 14:19:41] "GET / HTTP/1.1" 500 104759
+[25/Jan/2021 16:25:32] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 16:31:53] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 16:38:09] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 16:44:29] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 16:50:49] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 16:57:09] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 17:03:28] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 17:09:42] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 17:16:02] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 17:22:26] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 17:28:45] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 17:35:06] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 17:41:25] "GET / HTTP/1.1" 200 13280
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 326, in _get_fundamentals
+    s[s.index == 'ratingYear']['Value'].values[0],
+IndexError: index 0 is out of bounds for axis 0 with size 0
+[25/Jan/2021 17:47:43] "GET / HTTP/1.1" 500 92083
+[25/Jan/2021 18:10:43] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 18:17:07] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 18:23:33] "GET / HTTP/1.1" 200 13278
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[25/Jan/2021 18:29:06] "GET / HTTP/1.1" 500 105090
+[25/Jan/2021 19:54:22] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:00:40] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:06:59] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:13:19] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:19:38] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:25:59] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:32:24] "GET / HTTP/1.1" 200 13276
+[25/Jan/2021 20:38:43] "GET / HTTP/1.1" 200 13278
+[25/Jan/2021 20:45:13] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 20:47:58] "GET /admin/ HTTP/1.1" 200 6323
+[25/Jan/2021 20:47:58] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[25/Jan/2021 20:47:58] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[25/Jan/2021 20:47:58] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[25/Jan/2021 20:47:58] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[25/Jan/2021 20:47:58] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[25/Jan/2021 20:47:58] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[25/Jan/2021 20:47:58] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[25/Jan/2021 20:48:04] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[25/Jan/2021 20:48:04] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[25/Jan/2021 20:48:04] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[25/Jan/2021 20:48:04] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[25/Jan/2021 20:48:04] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[25/Jan/2021 20:48:04] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[25/Jan/2021 20:48:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 20:48:04] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[25/Jan/2021 20:48:04] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[25/Jan/2021 20:48:04] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[25/Jan/2021 20:48:07] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9381
+[25/Jan/2021 20:48:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 20:48:17] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[25/Jan/2021 20:48:18] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[25/Jan/2021 20:48:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[25/Jan/2021 20:49:37] "GET / HTTP/1.1" 200 13281
+[25/Jan/2021 20:55:53] "GET / HTTP/1.1" 200 13281
+[25/Jan/2021 21:02:11] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 21:08:32] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 21:14:53] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 21:21:17] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 21:27:38] "GET / HTTP/1.1" 200 13280
+[25/Jan/2021 21:34:00] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 21:40:16] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 21:46:41] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 21:53:01] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 21:59:26] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 22:05:53] "GET / HTTP/1.1" 200 13279
+[25/Jan/2021 22:12:13] "GET / HTTP/1.1" 200 13279
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[25/Jan/2021 22:17:36] "GET / HTTP/1.1" 500 104759
+[26/Jan/2021 13:27:30] "GET /admin/pmgstock/stock/1/change/ HTTP/1.1" 200 9375
+[26/Jan/2021 13:27:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:27:39] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:27:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:27:42] "GET /admin/pmgstock/stock/2/change/ HTTP/1.1" 200 9382
+[26/Jan/2021 13:27:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:27:48] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:27:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:27:52] "GET /admin/pmgstock/stock/2/change/ HTTP/1.1" 200 9382
+[26/Jan/2021 13:27:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:27:59] "POST /admin/pmgstock/stock/2/change/ HTTP/1.1" 302 0
+[26/Jan/2021 13:28:00] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9872
+[26/Jan/2021 13:28:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:03] "GET /admin/pmgstock/stock/3/change/ HTTP/1.1" 200 9385
+[26/Jan/2021 13:28:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:07] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:10] "GET /admin/pmgstock/stock/4/change/ HTTP/1.1" 200 9375
+[26/Jan/2021 13:28:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:15] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:18] "GET /admin/pmgstock/stock/5/change/ HTTP/1.1" 200 9379
+[26/Jan/2021 13:28:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:21] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:25] "GET /admin/pmgstock/stock/6/change/ HTTP/1.1" 200 9375
+[26/Jan/2021 13:28:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:29] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:32] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9376
+[26/Jan/2021 13:28:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:36] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:40] "GET /admin/pmgstock/stock/7/change/ HTTP/1.1" 200 9376
+[26/Jan/2021 13:28:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:42] "GET / HTTP/1.1" 200 13296
+[26/Jan/2021 13:28:44] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:48] "GET /admin/pmgstock/stock/8/change/ HTTP/1.1" 200 9375
+[26/Jan/2021 13:28:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:51] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:28:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:28:55] "GET /admin/pmgstock/stock/9/change/ HTTP/1.1" 200 9377
+[26/Jan/2021 13:28:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:29:05] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:29:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:29:10] "GET /admin/pmgstock/stock/9/change/ HTTP/1.1" 200 9377
+[26/Jan/2021 13:29:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:29:15] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:29:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:29:18] "GET /admin/pmgstock/stock/10/change/ HTTP/1.1" 200 9382
+[26/Jan/2021 13:29:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:29:26] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 13:29:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:29:29] "GET /admin/pmgstock/stock/12/change/ HTTP/1.1" 200 9381
+[26/Jan/2021 13:29:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 13:34:59] "GET / HTTP/1.1" 200 13292
+[26/Jan/2021 13:42:42] "GET / HTTP/1.1" 200 13292
+[26/Jan/2021 13:48:54] "GET / HTTP/1.1" 200 13291
+[26/Jan/2021 13:55:11] "GET / HTTP/1.1" 200 13291
+[26/Jan/2021 14:01:29] "GET / HTTP/1.1" 200 13288
+[26/Jan/2021 14:07:50] "GET / HTTP/1.1" 200 13288
+[26/Jan/2021 14:14:03] "GET / HTTP/1.1" 200 13288
+[26/Jan/2021 14:20:21] "GET / HTTP/1.1" 200 13287
+[26/Jan/2021 14:26:37] "GET / HTTP/1.1" 200 13287
+[26/Jan/2021 14:32:57] "GET / HTTP/1.1" 200 13287
+[26/Jan/2021 14:39:15] "GET / HTTP/1.1" 200 13287
+[26/Jan/2021 14:45:33] "GET / HTTP/1.1" 200 13282
+[26/Jan/2021 14:45:58] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 14:45:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 14:46:00] "GET /admin/pmgstock/stock/23/change/ HTTP/1.1" 200 9353
+[26/Jan/2021 14:46:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 14:46:07] "POST /admin/pmgstock/stock/23/change/ HTTP/1.1" 302 0
+[26/Jan/2021 14:46:08] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[26/Jan/2021 14:46:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 14:48:09] "GET /admin/pmgstock/stock/2/change/ HTTP/1.1" 200 9382
+[26/Jan/2021 14:48:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 14:48:17] "POST /admin/pmgstock/stock/2/change/ HTTP/1.1" 302 0
+[26/Jan/2021 14:48:17] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9872
+[26/Jan/2021 14:48:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 14:51:53] "GET / HTTP/1.1" 200 13279
+[26/Jan/2021 14:58:09] "GET / HTTP/1.1" 200 13280
+[26/Jan/2021 15:04:29] "GET / HTTP/1.1" 200 13280
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[26/Jan/2021 15:09:44] "GET / HTTP/1.1" 500 104760
+[26/Jan/2021 15:13:27] "GET / HTTP/1.1" 200 13280
+[26/Jan/2021 15:14:08] "GET /admin/pmgstock/stock/18/change/ HTTP/1.1" 200 9383
+[26/Jan/2021 15:14:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 15:14:23] "POST /admin/pmgstock/stock/18/change/ HTTP/1.1" 302 0
+[26/Jan/2021 15:14:23] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[26/Jan/2021 15:14:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 15:15:45] "GET / HTTP/1.1" 200 13279
+[26/Jan/2021 15:22:03] "GET / HTTP/1.1" 200 13280
+[26/Jan/2021 15:28:23] "GET / HTTP/1.1" 200 13279
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[26/Jan/2021 15:34:15] "GET / HTTP/1.1" 500 105405
+[26/Jan/2021 15:37:03] "GET / HTTP/1.1" 200 13279
+[26/Jan/2021 15:43:19] "GET / HTTP/1.1" 200 13278
+[26/Jan/2021 15:47:38] "GET /admin/pmgstock/stock/23/change/ HTTP/1.1" 200 9367
+[26/Jan/2021 15:47:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 15:47:50] "POST /admin/pmgstock/stock/23/change/ HTTP/1.1" 302 0
+[26/Jan/2021 15:47:50] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9874
+[26/Jan/2021 15:47:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 15:49:11] "GET / HTTP/1.1" 200 13299
+[26/Jan/2021 15:55:33] "GET / HTTP/1.1" 200 13299
+[26/Jan/2021 16:01:55] "GET / HTTP/1.1" 200 13297
+[26/Jan/2021 16:08:21] "GET / HTTP/1.1" 200 13297
+[26/Jan/2021 16:14:44] "GET / HTTP/1.1" 200 13299
+[26/Jan/2021 16:21:02] "GET / HTTP/1.1" 200 13299
+[26/Jan/2021 16:27:20] "GET / HTTP/1.1" 200 13304
+[26/Jan/2021 16:33:38] "GET / HTTP/1.1" 200 13282
+[26/Jan/2021 16:39:58] "GET / HTTP/1.1" 200 13305
+[26/Jan/2021 16:46:16] "GET / HTTP/1.1" 200 13305
+[26/Jan/2021 16:52:33] "GET / HTTP/1.1" 200 13300
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 80, in stock_list_view
+    context  = { "form": my_form, "show_list": sorted(show_list, key=lambda x: x.potential) }
+UnboundLocalError: local variable 'my_form' referenced before assignment
+[26/Jan/2021 16:57:33] "GET / HTTP/1.1" 500 65779
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 80, in stock_list_view
+    context  = { "form": my_form, "show_list": sorted(show_list, key=lambda x: x.potential) }
+UnboundLocalError: local variable 'my_form' referenced before assignment
+[26/Jan/2021 17:13:15] "GET / HTTP/1.1" 500 65779
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 80, in stock_list_view
+    context  = { "form": my_form, "show_list": sorted(show_list, key=lambda x: x.potential) }
+UnboundLocalError: local variable 'my_form' referenced before assignment
+[26/Jan/2021 18:10:16] "GET / HTTP/1.1" 500 65779
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 80, in stock_list_view
+    context  = { "form": my_form, "show_list": sorted(show_list, key=lambda x: x.potential) }
+UnboundLocalError: local variable 'my_form' referenced before assignment
+[26/Jan/2021 18:10:56] "GET / HTTP/1.1" 500 65779
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 21, 2021 - 03:18:43
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.129', 47152)
+----------------------------------------
+Exception happened during processing of request from ('192.168.1.129', 47148)
+----------------------------------------
+----------------------------------------
+Watching for file changes with StatReloader
+[26/Jan/2021 18:12:32] "GET /admin/pmgstock/stock/24/change/ HTTP/1.1" 302 0
+[26/Jan/2021 18:12:33] "GET /admin/login/?next=/admin/pmgstock/stock/24/change/ HTTP/1.1" 200 1869
+[26/Jan/2021 18:12:33] "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[26/Jan/2021 18:12:42] "POST /admin/login/?next=/admin/pmgstock/stock/24/change/ HTTP/1.1" 302 0
+[26/Jan/2021 18:12:42] "GET /admin/pmgstock/stock/24/change/ HTTP/1.1" 200 9366
+[26/Jan/2021 18:12:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+/home/pi/.venv/src/trydjango/pmgstock/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+January 26, 2021 - 18:12:32
+Django version 2.2.16, using settings 'trydjango.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[26/Jan/2021 18:13:33] "GET /admin/pmgstock/stock/ HTTP/1.1" 200 9680
+[26/Jan/2021 18:13:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[26/Jan/2021 18:14:46] "GET / HTTP/1.1" 200 13307
+[26/Jan/2021 18:21:03] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 18:27:22] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 18:33:38] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 18:39:55] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 18:46:13] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 18:52:31] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 18:58:47] "GET / HTTP/1.1" 200 13299
+[26/Jan/2021 19:05:02] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 19:11:23] "GET / HTTP/1.1" 200 13300
+[26/Jan/2021 19:17:37] "GET / HTTP/1.1" 200 13300
+[26/Jan/2021 19:23:50] "GET / HTTP/1.1" 200 13300
+[26/Jan/2021 19:30:05] "GET / HTTP/1.1" 200 13300
+[26/Jan/2021 19:36:22] "GET / HTTP/1.1" 200 13294
+[26/Jan/2021 19:42:40] "GET / HTTP/1.1" 200 13295
+[26/Jan/2021 19:48:59] "GET / HTTP/1.1" 200 13300
+[26/Jan/2021 19:55:21] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 20:01:45] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 20:08:02] "GET / HTTP/1.1" 200 13300
+[26/Jan/2021 20:14:24] "GET / HTTP/1.1" 200 13303
+[26/Jan/2021 20:20:44] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 20:27:01] "GET / HTTP/1.1" 200 13303
+[26/Jan/2021 20:33:18] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 20:39:41] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 20:45:59] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 20:52:17] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 20:58:35] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 21:04:53] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 21:11:10] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 21:17:30] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 21:23:47] "GET / HTTP/1.1" 200 13301
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[26/Jan/2021 21:29:37] "GET / HTTP/1.1" 500 106059
+[26/Jan/2021 21:32:59] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 21:39:12] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 21:45:29] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 21:51:48] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 21:58:05] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:04:24] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:10:44] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:17:06] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:23:23] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:29:38] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:35:55] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:42:09] "GET / HTTP/1.1" 200 13301
+[26/Jan/2021 22:48:32] "GET / HTTP/1.1" 200 13302
+[26/Jan/2021 22:54:54] "GET / HTTP/1.1" 200 13302
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 32, in stock_list_view
+    cur_info=yf.Ticker(stock.ticker).info
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/ticker.py", line 138, in info
+    return self.get_info()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 446, in get_info
+    self._get_fundamentals(proxy)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/yfinance/base.py", line 285, in _get_fundamentals
+    holders = _pd.read_html(url)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 1105, in read_html
+    displayed_only=displayed_only,
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 888, in _parse
+    parser = _parser_dispatch(flav)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/pandas/io/html.py", line 835, in _parser_dispatch
+    raise ImportError("html5lib not found, please install it")
+ImportError: html5lib not found, please install it
+[26/Jan/2021 23:01:00] "GET / HTTP/1.1" 500 106563
+[27/Jan/2021 03:02:23] "GET /stock/ HTTP/1.1" 200 13302
+Not Found: /favicon.ico
+[27/Jan/2021 03:02:24] "GET /favicon.ico HTTP/1.1" 404 2333
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 576, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[27/Jan/2021 03:16:33] "GET /stock/ HTTP/1.1" 200 13302
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 252, in send_preamble
+    self._write(('HTTP/%s %s\r\n' % (self.http_version,self.status)).encode('iso-8859-1'))
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 594, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[27/Jan/2021 03:16:33] "GET /stock/ HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 332, in send_headers
+    self.send_preamble()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 252, in send_preamble
+    self._write(('HTTP/%s %s\r\n' % (self.http_version,self.status)).encode('iso-8859-1'))
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 594, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+Internal Server Error: /stock/
+Traceback (most recent call last):
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/pi/.venv/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/pi/.venv/src/trydjango/pmgstock/views.py", line 80, in stock_list_view
+    context  = { "form": my_form, "show_list": sorted(show_list, key=lambda x: x.potential) }
+UnboundLocalError: local variable 'show_list' referenced before assignment
+[27/Jan/2021 03:43:40] "GET /stock/ HTTP/1.1" 500 66394

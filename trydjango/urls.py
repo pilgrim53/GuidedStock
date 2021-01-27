@@ -17,13 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth import views as auth_views
 
 from pmgstock import views
 # from inventory import views as inv_views
 
 urlpatterns = [
     path('', views.stock_list_view, name='stock'),
+    path('stock/', views.stock_list_view, name='stock'),
     path('admin/', admin.site.urls),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name = 'login'),
 ]   
 
 
