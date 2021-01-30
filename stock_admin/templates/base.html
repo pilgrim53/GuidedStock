@@ -1,0 +1,26 @@
+{% load static %}
+
+<html>
+
+<head>
+    <title>{% block title %}Pmgstock{% endblock %}</title>
+</head>
+
+<body>
+    <img src="{% static 'img/pmg.jpg' %}" />
+    <ul>
+        <li><a href="{% url 'stock-list' %}">Home</a></li>
+        {% if request.user.is_authenticated %}
+        <li>
+            <p>{{ request.user }}</p>
+        </li>
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'login' %}">Login</a></li>
+        {% endif %}
+    </ul>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
