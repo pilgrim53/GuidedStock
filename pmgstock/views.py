@@ -21,7 +21,6 @@ def stock_list_view(request):
     # if username is not None:
     # A backend authenticated the credentials
 
-
      object_list=Stock.objects.all()
      show_list=[]
      
@@ -45,9 +44,11 @@ def stock_list_view(request):
               else: 
                  if isinstance(price, dict):
                     bid = str(price.get('fmt'))
-                    stock.current = Decimal(bid)
+                    if bid > 0:
+                       stock.current = Decimal(bid)
                  else:
-                    stock.current=Decimal(price)
+                    if price > 0:
+                       stock.current=Decimal(price)
            
            if stock.current == 0:
               stock.current=Decimal(0.01) 
@@ -80,5 +81,3 @@ def stock_list_view(request):
   context  = { "form": my_form, "show_list": sorted(show_list, key=lambda x: x.potential) }  
    
   return render(request, "StockView.html", context)
-
-
