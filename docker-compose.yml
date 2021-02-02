@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports: 
+      - "5432:5432"
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+      - static:/static
+      - media:/media
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  nginx:
+    build: ./nginx
+    volumes:
+      - static:/static
+      - media:/media
+    ports:
+      - "80:80"
+    depends_on:
+      - web
+
+volumes:
+  static:
+  media:
