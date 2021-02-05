@@ -5,8 +5,8 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render
-from .forms import StockForm
-from .models import Stock
+from stock_admin.forms import StockForm
+from stock_admin.models import Stock
 
 
 def stock_list_view(request):
