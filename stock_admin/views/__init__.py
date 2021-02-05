@@ -1,2 +1,2 @@
 from .signup import SignUp
-from .stcok_list import stock_list_view
+from .stock_list import StockListView   

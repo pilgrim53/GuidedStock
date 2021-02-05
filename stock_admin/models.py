@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -18,11 +19,10 @@ class Stock(models.Model):
     profit = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2)
     showinform = models.BooleanField(default=True)
-    username = models.CharField(max_length=40)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     potential = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2)
     updated_at = models.DateTimeField(auto_now=True)
-
 
     class Meta:
         db_table = 'Stock'
