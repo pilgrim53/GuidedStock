@@ -3,21 +3,22 @@
 <html>
 
 <head>
-    <title>{% block title %}Pmgstock{% endblock %}</title>
+    <title>{% block title %}Guided Stock{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </head>
 
 <body>
     <img src="{% static 'img/pmg.jpg' %}" />
     <ul>
-        <li><a href="{% url 'stock-list' %}">Home</a></li>
+        <li><a href="{% url 'home' %}">Home</a></li>
         {% if request.user.is_authenticated %}
-        <li>
-            <p>{{ request.user }}</p>
-        </li>
-        <li><a href="{% url 'logout' %}">Logout</a></li>
+        <li><a href="{% url 'portfolio' %}">Your Portfolio</a></li>
+        <li><span>{{ request.user }}</span>&nbsp;<a href="{% url 'logout' %}">Logout</a></li>
         {% else %}
-        <li><a href="{% url 'login' %}">Login</a></li>
         <li><a href="{% url 'signup' %}">Signup</a></li>
+        <li><a href="{% url 'login' %}">Login</a></li>
         {% endif %}
     </ul>
     {% block content %}

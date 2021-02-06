@@ -21,4 +21,5 @@ soupsieve==2.1
 sqlparse==0.4.1
 urllib3==1.26.3
 webencodings==0.5.1
-yfinance==0.1.55
+yahoo_fin
+requests_html

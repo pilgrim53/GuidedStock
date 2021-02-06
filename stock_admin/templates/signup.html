@@ -7,9 +7,9 @@
 <form method="post">
     {% csrf_token %}
     {{ form|crispy }}
-    <input type="checkbox" id="agree" />
+    <input type="checkbox" id="agree" required/>
     <label for="agree">
-        I agree with the <a href="{% url 'terms-and-conditions' %}">terms and conditions</a>
+        I agree with the <a href="{% url 'terms-and-conditions' %}">terms and conditions</a><span>*</span>
     </label>
     <input type="submit" value='Sign Up' />
 </form>

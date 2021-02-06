@@ -146,4 +146,6 @@ EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
 # Crispy Forms Templates
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/portfolio'
+
+LOGIN_URL = '/login'

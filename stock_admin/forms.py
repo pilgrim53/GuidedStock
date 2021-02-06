@@ -12,4 +12,4 @@ class StockForm(forms.ModelForm):
 
 
 class UserCreationForm(BaseUserCreationForm):
-    default_portfolio = forms.BooleanField()
+    default_portfolio = forms.BooleanField(required=False)

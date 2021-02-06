@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<H1>Welcome, {{ user.get_username }}. Your Stock Portfolio.</H1>
+{% else %}
+<p>Welcome, new user. Please log in.</p>
+{% endif %}
+
+{% if user.is_authenticated %}
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+<p>
+  Updated: {% now "F jS Y H:i" %}
+</p>
+<table style="width:100%">
+  <tr>
+    <th>Stock Ticker</th>
+    <th>Current Price</th>
+    <th>Purchase Price</th>
+    <th>Shares Owned</th>
+    <th>Profit</th>
+    <th>Proximity</th>
+    <th>Buy Target</th>
+    <th style="background-color: #f1f1c1;">Sell Target</th>
+    <th>Potential</th>
+    <th>Company Name</th>
+  </tr>
+
+  {% for stock in object_list %}
+
+  <tr>
+    <td style="text-align:center"> {{ stock.ticker }}
+    <td style="text-align:right"> ${{ stock.current }}
+    <td style="text-align:right"> {% if stock.purchase %}${{ stock.purchase }}{% else %}-{% endif %}
+    <td style="text-align:right"> {% firstof stock.shares '-' %}
+    <td style="text-align:right" {% if stock.profit < 0 %} bgcolor="Red" \ {% elif stock.profit > 0 %}bgcolor="Green"
+      {% endif %}> {% if stock.profit %}${{ stock.profit }}{% else  %}-{% endif %}
+    <td style="text-align:right"> {% if stock.proximity %}{{ stock.proximity}} %{% else %}-{% endif %}
+    <td style="text-align:right"> {% if stock.buy_target %}${{ stock.buy_target }}{% else %}-{% endif %}
+    <td style="text-align:right"> {% if stock.sell_target %}${{ stock.sell_target }}{% else %}-{% endif %}
+    <td style="text-align:right"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}
+    <td style="text-align:center"> {{ stock.stock_name }}
+  </tr>
+
+  {% endfor %}
+</table>
+{% endif %}
+{% endblock %}

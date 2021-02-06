@@ -8,8 +8,9 @@ services:
     ports: 
       - "5432:5432"
   web:
+    restart: always
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn pmgstock.wsgi:application -w 2 --bind 0.0.0.0:8000 --reload
     volumes:
       - .:/code
       - static:/static
