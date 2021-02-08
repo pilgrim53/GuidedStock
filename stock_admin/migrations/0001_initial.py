@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('current', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
                 ('proximity', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
                 ('profit', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
-                ('showinform', models.BooleanField(default=True)),
+                ('is_default', models.BooleanField(default=True)),
                 ('username', models.CharField(max_length=40)),
                 ('potential', models.DecimalField(blank=True, decimal_places=2, max_digits=10, null=True)),
             ],

@@ -10,11 +10,6 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RenameField(
-            model_name='stock',
-            old_name='showinform',
-            new_name='is_default',
-        ),
         migrations.AlterField(
             model_name='stock',
             name='stock_name',

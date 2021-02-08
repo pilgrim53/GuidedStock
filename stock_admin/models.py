@@ -14,6 +14,7 @@ class Stock(models.Model):
     stock_name = models.CharField(blank=False, null=False, max_length=100)
     ticker = models.CharField(blank=False, null=False, max_length=40)
     purchase = models.DecimalField(
+        default=0,
         blank=True, null=True, max_digits=10, decimal_places=2)
     sell_target = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2, default=0)
@@ -38,6 +39,9 @@ class Stock(models.Model):
     def full_clean(self, exclude=None, validate_unique=True):
         """Validate the ticker before save.
         """
+        if self.shares and not self.purchase:
+            raise ValidationError({
+                'purchase': "If you own shares of %s then you should provide the purchase price." % self.ticker})
         try:
             self.current = round(
                 Decimal(stock_info.get_live_price(self.ticker)), 2)
@@ -76,7 +80,6 @@ class Stock(models.Model):
                 self.proximity = 0
 
     def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
-        self.full_clean()
         self.save_stock_info()
         return super().save(force_insert=force_insert, force_update=force_update, using=using, update_fields=update_fields)
 
