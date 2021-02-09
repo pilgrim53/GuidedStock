@@ -1,4 +1,13 @@
 services:
+  redis:
+    image: 'docker.io/bitnami/redis:6.0-debian-10'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - '6379:6379'
+    volumes:
+      - 'redis_data:/bitnami/redis/data'
   db:
     image: postgres
     environment:
@@ -30,7 +39,10 @@ services:
       - "80:80"
     depends_on:
       - web
-
+      - redis
 volumes:
   static:
   media:
+  redis_data:
+    driver: local
+  
