@@ -1,16 +1,31 @@
 {% extends 'base.html' %}
 
-{% load crispy_forms_tags %}
+{% load crispy_forms_tags i18n %}
 
 {% block content %}
-<h2>Sign up</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <input type="checkbox" id="agree" required/>
-    <label for="agree">
-        I agree with the <a href="{% url 'terms-and-conditions' %}">terms and conditions</a><span>*</span>
-    </label>
-    <input type="submit" value='Sign Up' />
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="h3 mb-3 font-weight-normal">Sign up</h1>
+
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <input type="checkbox" id="agree" required />
+                        <label for="agree">
+                            I agree with the <a href="{% url 'terms-and-conditions' %}">terms and
+                                conditions</a><span>*</span>
+                        </label>
+                        <input type="submit" class="btn btn-lg btn-primary btn-block" value='Sign Up' />
+                        <div class="m-2">
+                            <a href="{% url 'login' %}" class="text-muted">Already User? SignIn</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

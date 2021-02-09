@@ -7,5 +7,8 @@ class StockListView(ListView):
     template_name = 'portfolio.html'
 
     def get_queryset(self):
-        queryset = Stock.objects.filter(user=self.request.user)
-        return sorted(queryset, key=lambda x: x.potential)
+        queryset = Stock.objects.filter(
+            user=self.request.user).order_by('-potential', 'stock_name')
+        for stock in queryset:
+            stock.update_stock()
+        return queryset

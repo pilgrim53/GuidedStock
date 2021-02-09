@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.db.models.signals import post_save
+from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
 from yahoo_fin import stock_info
 
@@ -36,6 +36,24 @@ class Stock(models.Model):
     class Meta:
         db_table = 'Stock'
 
+    def update_stock(self):
+        self.potential = round(
+            self.sell_target/self.current, 2) if self.sell_target else 0
+        # Calculate Profit and Proximity differently if we own shares
+        if self.shares > 0 and self.purchase:
+            self.profit = round(
+                (self.current - self.purchase) * self.shares)
+            goal = self.sell_target - self.purchase
+            self.proximity = round((self.current - self.purchase)/goal, 2)*100
+
+        else:
+            goal = self.sell_target - self.buy_target
+            if goal != 0:
+                self.proximity = (
+                    round((self.current - self.buy_target) / goal), 2) * 100
+            else:
+                self.proximity = 0
+
     def full_clean(self, exclude=None, validate_unique=True):
         """Validate the ticker before save.
         """
@@ -57,38 +75,16 @@ class Stock(models.Model):
         bsh = BeautifulSoup(html.read(), 'html.parser')
         return bsh.h1.string.replace('(%s)' % self.ticker, '')
 
-    def save_stock_info(self):
-        """Fetch the stock info from  yfinance and Update the stock info.
-        """
-        self.potential = round(self.sell_target/self.current, 2)
-
-        # Calculate Profit and Proximity differently if we own shares
-        if self.shares > 0 and self.purchase:
-            self.profit = round(
-                (self.current - self.purchase) * self.shares)
-            self.proximity = round(
-                (1-((self.sell_target-self.current)/(self.sell_target-self.purchase)))*100)
-
-            # self.potential = round(((self.shares*(self.sell_target-self.current ))/(self.shares*self.current)),2)
-        else:
-            goal = self.sell_target - self.buy_target
-            if goal != 0:
-                factor = (self.current - self.buy_target) / goal
-                self.proximity = round(
-                    ((1 + abs(self.current-self.sell_target)/goal) * factor)*100)
-            else:
-                self.proximity = 0
-
-    def save(self, force_insert=False, force_update=False, using=None, update_fields=None):
-        self.save_stock_info()
-        return super().save(force_insert=force_insert, force_update=force_update, using=using, update_fields=update_fields)
-
 
 class StockManager():
-
     def create_default_portfolio(self, user):
         stocks = Stock.objects.filter(
             is_default=True, user__in=User.objects.filter(is_superuser=True))
         for stock in stocks:
             Stock(is_default=False, stock_name=stock.stock_name,
                   current=stock.current, user=user, ticker=stock.ticker).save()
+
+
+@receiver(pre_save, sender=Stock, dispatch_uid="update_stock")
+def update_stock(sender, instance, **kwargs):
+    instance.update_stock()
