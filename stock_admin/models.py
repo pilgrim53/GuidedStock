@@ -27,7 +27,7 @@ class Stock(models.Model):
         blank=True, null=True, max_digits=10, decimal_places=2)
     profit = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2)
-    is_default = models.BooleanField(default=True)
+    is_default = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     potential = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2)
