@@ -7,7 +7,7 @@ from .models import Stock
 
 
 @shared_task
-def summary():
+def update_stock_prices():
     for ticker in Stock.objects.order_by().values_list('ticker', flat=True).distinct():
         Stock.objects.filter(ticker=ticker).update(
             current=round(Decimal(stock_info.get_live_price(ticker)), 2))
