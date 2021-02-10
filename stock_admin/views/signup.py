@@ -14,9 +14,9 @@ class SignUp(generic.CreateView):
         """After successful registration, login in the system.
         """
         response = super().form_valid(form)
-        username = form.cleaned_data.get('username')
+        email = form.cleaned_data.get('email')
         raw_password = form.cleaned_data.get('password1')
-        user = authenticate(username=username, password=raw_password)
+        user = authenticate(email=email, password=raw_password)
         login(self.request, user)
         if form.cleaned_data.get('default_portfolio'):
             StockManager().create_default_portfolio(user)

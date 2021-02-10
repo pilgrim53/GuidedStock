@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'django_celery_beat',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -165,3 +166,5 @@ MESSAGE_TAGS = {
 
 BROKER_URL = 'redis://redis:6379'
 CELERY_RESULT_BACKEND = 'redis://redis:6379'
+
+AUTH_USER_MODEL = 'users.User'

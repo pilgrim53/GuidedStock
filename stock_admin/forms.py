@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm as BaseUserCreationForm
 
-from .models import Stock
+from .models import Stock, get_user_model
 
 
 class StockForm(forms.ModelForm):
@@ -13,3 +13,7 @@ class StockForm(forms.ModelForm):
 
 class UserCreationForm(BaseUserCreationForm):
     default_portfolio = forms.BooleanField(required=False)
+
+    class Meta:
+        model = get_user_model()
+        fields = ('email', 'password1')

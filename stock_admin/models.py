@@ -2,7 +2,7 @@ from decimal import Decimal
 from urllib.request import urlopen
 
 from bs4 import BeautifulSoup
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models.signals import post_save, pre_save
@@ -28,7 +28,7 @@ class Stock(models.Model):
     profit = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2)
     is_default = models.BooleanField(default=False)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     potential = models.DecimalField(
         blank=True, null=True, max_digits=10, decimal_places=2)
     updated_at = models.DateTimeField(auto_now=True)
@@ -79,7 +79,7 @@ class Stock(models.Model):
 class StockManager():
     def create_default_portfolio(self, user):
         stocks = Stock.objects.filter(
-            is_default=True, user__in=User.objects.filter(is_superuser=True))
+            is_default=True, user__in=get_user_model().objects.filter(is_superuser=True))
         for stock in stocks:
             Stock(is_default=False, stock_name=stock.stock_name,
                   current=stock.current, user=user, ticker=stock.ticker).save()
