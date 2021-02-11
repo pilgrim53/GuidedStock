@@ -24,7 +24,7 @@ DEBUG=True
 SECRET_KEY='_*ox4(kcm$dxvat)8z^als0r=b+ykpf&m1lhj4kfwpoxpt)5xz'
 ALLOWED_HOSTS=127.0.0.1,PMG-ZENBOOK2
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST=admin@example.com
+EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_HOST_USER=admin@example.com
 EMAIL_HOST_PASSWORD=password

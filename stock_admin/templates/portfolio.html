@@ -17,6 +17,7 @@
     <thead class="thead-dark">
       <tr>
         <th>Stock Ticker</th>
+        <th>Potential</th>
         <th>Current Price</th>
         <th>Purchase Price</th>
         <th>Shares Owned</th>
@@ -24,7 +25,7 @@
         <th>Proximity</th>
         <th>Buy Target</th>
         <th class="text-secondary bg-light">Sell Target</th>
-        <th>Potential</th>
+
         <th>Company Name</th>
         <th>Actions</th>
       </tr>
@@ -33,6 +34,7 @@
       {% for stock in object_list %}
       <tr>
         <td style="text-align:center"> {{ stock.ticker }}</td>
+        <td style="text-align:right"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}</td>
         <td style="text-align:right"> ${{ stock.current }}</td>
         <td style="text-align:right"> {% if stock.purchase %}${{ stock.purchase }}{% else %}-{% endif %}</td>
         <td style="text-align:right"> {% firstof stock.shares '-' %}</td>
@@ -43,7 +45,6 @@
         <td style="text-align:right"> {% if stock.proximity %}{{ stock.proximity}} %{% else %}-{% endif %}</td>
         <td style="text-align:right"> {% if stock.buy_target %}${{ stock.buy_target }}{% else %}-{% endif %}</td>
         <td style="text-align:right"> {% if stock.sell_target %}${{ stock.sell_target }}{% else %}-{% endif %}</td>
-        <td style="text-align:right"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}</td>
         <td style="text-align:center"> {{ stock.stock_name }}</td>
         <td style="text-align:center"><a href="{% url 'update-stock' stock.pk %}" class="btn btn-primary ml-1 mr-1"><i
               class="fa fa-pencil" aria-hidden="true"></i>
