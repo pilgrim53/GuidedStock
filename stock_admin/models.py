@@ -47,10 +47,10 @@ class Stock(models.Model):
             self.proximity = round((self.current - self.purchase)/goal, 2)*100
 
         else:
-            goal = self.sell_target - self.buy_target
+            goal = Decimal(self.sell_target - self.buy_target)
             if goal != 0:
                 self.proximity = (
-                    round((self.current - self.buy_target) / goal), 2) * 100
+                    round((self.current - self.buy_target) / goal, 2)) * 100
             else:
                 self.proximity = 0
 
@@ -58,6 +58,7 @@ class Stock(models.Model):
         """Validate the ticker before save.
         """
         if self.shares and not self.purchase:
+            print("if in in full clean stock")
             raise ValidationError({
                 'purchase': "If you own shares of %s then you should provide the purchase price." % self.ticker})
         try:
@@ -81,7 +82,7 @@ class StockManager():
         stocks = Stock.objects.filter(
             is_default=True, user__in=get_user_model().objects.filter(is_superuser=True))
         for stock in stocks:
-            Stock(is_default=False, stock_name=stock.stock_name,
+            Stock(is_default=False, stock_name=stock.stock_name, buy_target=stock.buy_target, sell_target=stock.sell_target,
                   current=stock.current, user=user, ticker=stock.ticker).save()
 
 
