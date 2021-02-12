@@ -1,0 +1,577 @@
+/*----------
+
+All Contents
+
+----------*/
+
+/*----------
+
+1. Reset CSS
+2. Common Styles CSS
+3. Helper Classes CSS
+4. Hero Content CSS
+5. Subscribe Form CSS
+6. Footer CSS
+7. Media Queries CSS
+
+----------*/
+
+
+/* ---------- Reset Section Starts ---------- */
+
+
+/* ---------- 
+	
+	http://meyerweb.com/eric/tools/css/reset/v2.0
+	License: none (public domain)
+	20110126
+
+---------- */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* ---------- HTML5 display-role reset for older browsers ---------- */
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------- Reset Section Ends ---------- */
+
+
+/* ---------- Common Styles Section Starts----------- */
+
+
+h1 {
+	font-family: Poppins;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: Poppins;
+  font-size: 12px;
+}
+
+#main {
+  height: 100%;
+}
+
+
+/* ---------- Common Styles Section Ends ----------- */
+
+
+/* ---------- Helper Classes Section Starts ---------- */
+
+html * {
+	text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+::selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.custom-padding {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.no-margin {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.spacer {
+	width: 100%;
+	height: 50px;
+}
+
+.spacer {
+	width: 100%;
+	height: 50px;
+}
+
+.spacer-big {
+	width: 100%;
+	height: 100px;
+}
+
+.error-message {
+	color: #FF3333;
+	font-family: Roboto;
+	margin-top: 5px;
+}
+
+.success-message {
+	color:#33cc33;
+	font-family: Roboto;
+	margin-top: 5px;
+}
+
+
+.btn-fill {
+	background: #FFFFFF;
+	color: #5924EC;
+	border: 2px solid #5924EC;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.btn-fill:hover, .btn-fill:focus {
+	color: #5924EC;
+	background: transparent;
+	border: 2px solid #5924EC;
+}
+
+
+/* ---------- Helper Classes Section Ends ---------- */
+
+
+/* ---------- Hero Section Styling Starts ---------- */
+
+.hero-section {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url("../images/hero3.jpg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-position: 50% 60%;
+}
+
+.jarallax {
+    position: relative;
+		background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.hero-content {
+	width: 100%;
+	height:85vh;
+	padding: 80px 0 100px 0;
+	overflow: hidden;
+}
+
+.hero-content h1 {
+	font-family: Poppins;
+	font-size: 34px;
+	color: #111111;
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: -1px;
+	margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-family: Poppins;
+  font-size: 20px;
+  color: #111111;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+	font-family: Poppins;
+	font-size: 14px;
+	color: #111111;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+ .btn-action {
+	font-family: Roboto;
+	background-color: #5924EC;
+  border: 2px solid #5924EC;
+	border-radius: 0;
+  color: #FFFFFF;
+  font-size: 12px;
+	font-weight: 400;
+  height: 38px;
+  letter-spacing: 2px;
+  line-height: 3;
+  padding: 0 21px;
+  text-transform: uppercase;
+	outline: none;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.hero-content .btn-action:hover, .hero-content .btn-action:focus,
+.hero-content .btn-action:active, .hero-content .btn-action:active:focus {
+	background: transparent;
+	outline: none;
+	color: #5924EC;
+	border-color: #5924EC;
+}
+
+.btn-action:hover, .btn-action:focus, .btn-action:active, .btn-action:active:focus {
+	background: transparent;
+	outline: none;
+	color: #5924EC;
+	border-color: #5924EC;
+}
+
+.txt-white h1 {
+	color: #FFFFFF;
+}
+
+.txt-white p {
+	color: #FFFFFF;
+}
+
+.app-hero {
+	background: #F3F3F3;
+}
+
+.app-hero-content {
+	overflow: hidden;
+	padding: 150px 0 0 0;
+}
+
+.app-hero-content h1 {
+	color: #111111;
+}
+
+.app-hero-content p {
+	color: #111111;
+}
+
+.app-hero-content img {
+	margin-top: 50px;
+}
+
+.app-sub {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 200, 0.1)), url(../images/feature_bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.app-sub-inner {
+	width: 100%;
+	height: 100%;
+	padding: 100px 0 100px 0;
+	overflow: hidden;
+}
+
+.app-sub-content {
+	padding: 100px 0 0 0;
+}
+
+.app-sub-content h1 {
+	font-family: Poppins;
+	font-size: 42px;
+	font-weight: 700;
+	color: #111111;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+
+
+.app-sub-content p {
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 100;
+	color: #111;
+	line-height: 1.4;
+	margin-bottom: 30px
+}
+
+.app-sub-content .subscribe-form {
+	text-align: left;
+}
+
+
+/* ---------- Hero Section Styling Ends ---------- */
+
+
+/* ---------- Subscribe Form Styling Starts ---------- */
+
+
+.subscribe-form {
+	text-align: center;
+}
+
+.subscribe-form .mail {
+ background-color: #F9F9F9;
+ border: none;
+ border-radius: 5px 0 0 5px;
+ outline: none;
+ height: 40px;
+ padding: 0 150px 0 20px;
+ box-shadow: none;
+ -webkit-box-sizing: content-box;
+ -moz-box-sizing: content-box;
+ box-sizing: content-box;
+ transition: all .3s;
+}
+
+
+.subscribe-form input {
+  color: #222222;
+  font-family: Poppins;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.subscribe-form .submit-button {
+  font-size: 0.9em;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+  padding: 0 25px 0 25px;
+	border-color: #474747;
+  background-color: #474747;
+  color: #FFFFFF;
+	box-shadow: 0 0 1px transparent;
+  outline: none;
+}
+
+.subscribe-form .submit-button:hover {
+  box-shadow: 0 0 10px #FFFFFF;
+  background-color: #8E3AEB;
+  border-color: #8E3AEB;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+
+/* ---------- Subscribe Form Styling Ends ---------- */
+
+
+/* ---------- Footer Section Styling Starts ---------- */
+
+
+.footer {
+  background-color: #F3F3F3;
+  width: 100%;
+  height: 100%;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.footer img {
+	margin-bottom: 0px;
+}
+
+.footer-menu ul {
+	list-style-type: none;
+}
+
+.footer-menu li {
+	display: inline;
+	line-height: 2;
+	font-family: Roboto;
+	font-size: 14px;
+	padding-right: 15px;
+	text-transform: uppercase;
+}
+
+.footer-menu li a {
+	color: #707570;
+	text-decoration: none;
+}
+
+.footer-text p {
+	font-family: Roboto;
+	font-size: 14px;
+	color: #707570;
+	font-weight: 300;
+	line-height: 2;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+.no-color {
+	background: #FFFFFF;
+}
+
+
+/* ---------- Footer Section Styling Ends ---------- */
+
+
+/*----------------------------------------------------
+------------- All ------------------------------------
+--------------------- Media --------------------------
+------------------------------- Queries --------------
+-----------------------------------------------------*/
+
+ @media only screen and (min-width: 767px) {
+
+	#left, #right {
+			width: 25px;
+			}
+	#top {
+			height: 25px;
+		}
+	#bottom {
+			height: 25px;
+		}
+
+	.custom-padding {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.hero-content {
+		width: 100%;
+		padding: 80px 0 100px 0;
+	}
+
+	.hero-content h1 {
+		font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+		margin-top: 0;
+		letter-spacing: -2px;
+    margin-bottom: 25px;
+	}
+
+	.hero-content p {
+		font-size: 14px;
+	}
+
+	.btn-action {
+	  border: 2px solid #5924EC;
+		font-weight: 500;
+	  height: 42px;
+	  padding: 0 24px;
+	}
+
+	.btn-fill {
+		border: 2px solid #5924EC;
+		height: 38px;
+	}
+
+	.app-hero-content {
+		padding: 150px 0 0 0;
+	}
+
+	.app-hero-content h1 {
+		font-size: 42px;
+		font-weight: 600;
+		line-height: 1.2;
+		letter-spacing: -1px;
+		margin-top: 25px;
+	}
+
+	.app-hero-content p {
+		font-size: 14px
+	}
+
+	.contact-form {
+		padding-top: 100px;
+	}
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+
+ .subscribe-form .mail {
+   padding: 0 30px 0 20px;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+ }
+}
+
+
+@media screen and (max-width: 399px) {
+
+ .subscribe-form .mail {
+	 text-align: center;
+   padding: 0 0 0 0;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+
+/* ---------- Media Queries End ---------- */
+
+
+
+
+
+

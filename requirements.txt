@@ -51,3 +51,4 @@ wcwidth==0.2.5
 webencodings==0.5.1
 websockets==8.1
 yahoo-fin==0.8.6
+mailchimp==2.0.9

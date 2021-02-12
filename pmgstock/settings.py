@@ -168,3 +168,9 @@ BROKER_URL = 'redis://redis:6379'
 CELERY_RESULT_BACKEND = 'redis://redis:6379'
 
 AUTH_USER_MODEL = 'users.User'
+
+# enter your MailChimp API Key
+MAILCHIMP_API_KEY = 'b3551d541b453c5ecde197d5f9bbbb06-us7'
+
+# enter your MailChimp List ID
+MAILCHIMP_SUBSCRIBE_LIST_ID = '50e0462141'
