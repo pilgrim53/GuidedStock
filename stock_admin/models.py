@@ -7,6 +7,7 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.db.models.signals import post_save, pre_save
 from django.dispatch import receiver
+from django.utils import timezone
 from yahoo_fin import stock_info
 
 
@@ -89,3 +90,11 @@ class StockManager():
 @receiver(pre_save, sender=Stock, dispatch_uid="update_stock")
 def update_stock(sender, instance, **kwargs):
     instance.update_stock()
+
+
+class Subscribe(models.Model):
+    email_id = models.EmailField(null=True, blank=True)
+    timestamp = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.email_id

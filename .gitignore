@@ -131,3 +131,5 @@ dmypy.json
 
 # VScode
 settings.json
+
+.DS_Store

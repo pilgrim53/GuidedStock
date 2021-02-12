@@ -1,5 +1,91 @@
-{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content %}
-<h2>This is a home page.</h2>
-{% endblock %}
+<head>
+    <meta charset="uft-8">
+    <title>GuidedStock | Personal Stock Portfolio Management Tools</title>
+    <link rel="icon" href="{% static 'assets/logos/favicon.png' %}" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
+    <meta name="keywords" content="stocks, trading, management, portfolio, management">
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+
+    <!-- Main Section -->
+    {% block body %}
+    <div class="main" id="main">
+        <div class="jarallax">
+            <div class="text-center">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="col-md-8 col-md-offset-2 nopadding">
+                            <img src="{% static 'assets/logos/gs_logo.png' %}" alt="GuidedStock Logo" width="150"
+                                height="80" style="padding-bottom: 50px">
+                            <h1>There's safety in numbers.</h1>
+                            <p style="padding-top: 20px">
+                                Personal stock portfolio management tools to keep you focused on your plan while
+                                avoiding common pitfalls, noise and emotional reactions.
+                            </p>
+                            <p style="padding-bottom: 20px">
+                                Join our mailing list to stay in the loop about our launch and the evolution of
+                                GuidedStock.
+                            </p>
+
+                            <!-- Subscribe Form -->
+
+                            <div class="form wow fadeInUp subscribe_form" data-wow-delay="0.3s">
+                                <form class="subscribe-form wow zoomIn" id="subscribe" form method='POST'
+                                    autocomplete="off" novalidate>
+                                    {% csrf_token %}
+                                    <input class="mail" id="email_id" type="email" name="email_id"
+                                        placeholder="Your Email" autocomplete="off"><input class="submit-button"
+                                        type="submit" value="Subscribe">
+                                </form>
+
+                                <div class="success-message"></div>
+                                <div class="error-message"></div>
+                            </div>
+                            <h2 style="padding-top: 50px">Coming March 2021</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <div class="footer no-color">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <img class="img-circle" src="{% static 'assets/logos/logo.png' %}" width="40" height="40"
+                    alt="GuidedStock abbreviated logo">
+                <div class="footer-text">
+                    <p>
+                        &copy;2021 GuidedStock. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery and Js Plugins -->
+
+    <script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"></script>
+
+
+    {% endblock %}
+</body>
+
+</html>

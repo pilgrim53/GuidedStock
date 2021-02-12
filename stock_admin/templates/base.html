@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+
 {% load static %}
 
 <html>
@@ -11,6 +13,7 @@
 </head>
 
 <body>
+    {% block body %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="{% url 'home' %}">
@@ -55,6 +58,8 @@
         {% block js %}
         {% endblock %}
     </div>
+
+    {% endblock %}
 </body>
 
 </html>
