@@ -10,9 +10,10 @@ class StockListView(ListView):
 
     def get_queryset(self):
         queryset = Stock.objects.filter(
-            user=self.request.user).order_by('potential', 'stock_name')
+            user=self.request.user)
         for stock in queryset:
             stock.update_stock()
+        queryset = queryset.order_by('potential', 'stock_name')
         return queryset
 
     def get_context_data(self, **kwargs):
