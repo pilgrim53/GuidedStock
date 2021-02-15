@@ -1,11 +1,8 @@
 from django.contrib.auth.decorators import login_required
 from django.urls import include, path
 from django.views.generic import TemplateView
-from django.conf.urls import url
 
 from . import views
-
-
 
 urlpatterns = [
     path('', include('django.contrib.auth.urls')),
@@ -19,7 +16,9 @@ urlpatterns = [
     path('portfolio/delete-stock/<int:pk>',
          login_required(views.StockDelete.as_view()), name='delete-stock'),
     path('signup', views.SignUp.as_view(), name='signup'),
+    path('password', login_required(
+        views.ChangePasswordFormView.as_view()), name='change_password'),
     path('terms-and-conditions', TemplateView.as_view(
         template_name='terms-and-conditions.html'), name='terms-and-conditions'),
-    url(r'^subscribe/', views.subscribe, name = "subscribe"),
+    path('subscribe/', views.subscribe, name="subscribe"),
 ]

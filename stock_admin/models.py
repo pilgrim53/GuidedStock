@@ -58,8 +58,8 @@ class Stock(models.Model):
     def full_clean(self, exclude=None, validate_unique=True):
         """Validate the ticker before save.
         """
+        self.ticker = str(self.ticker).upper()
         if self.shares and not self.purchase:
-            print("if in in full clean stock")
             raise ValidationError({
                 'purchase': "If you own shares of %s then you should provide the purchase price." % self.ticker})
         try:

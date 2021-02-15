@@ -3,49 +3,51 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<H1>Welcome, {{ user.get_username }}. Your Stock Portfolio.</H1>
+<h1>Welcome, {{ user.get_username }}. My Stock Portfolio</h1>
 {% else %}
 <p>Welcome, new user. Please log in.</p>
 {% endif %}
 <div id="portfolio">
   {% if user.is_authenticated %}
   <p>
-    Updated: {% now "F jS Y H:i" %}
+    Updated: {% now "F jS Y H:i:s" %}
   </p>
   <a href="{% url 'create-stock' %}" class="btn btn-primary m-2 float-right"><i class="fa fa-plus"></i> Add Stock</a>
+  {% if profit.profit__sum %}<a class="btn btn-white m-2 float-right">CURRENT PROFIT: <span
+      class="{% if profit.profit__sum < 0 %}text-danger{% else %} text-success{% endif %}">${{ profit.profit__sum|floatformat:2  }}</span></a>{% endif %}
+  {% if investment %}<a class="btn btn-white m-2 float-right">INVESTMENT: <span class="">${{ investment|floatformat:2  }}</span></a>{% endif %}
   <table class="table table-bordered table-sm">
     <thead class="thead-dark">
       <tr>
-        <th>Stock Ticker</th>
-        <th>Potential</th>
-        <th>Current Price</th>
-        <th>Purchase Price</th>
-        <th>Shares Owned</th>
-        <th>Profit</th>
-        <th>Proximity</th>
-        <th>Buy Target</th>
-        <th class="text-secondary bg-light">Sell Target</th>
-
-        <th>Company Name</th>
-        <th>Actions</th>
+        <th style="text-align:center">TICKER</th>
+        <th style="text-align:center">POTENTIAL</th>
+        <th style="text-align:center">BID</th>
+        <th style="text-align:center">BUY TARGET</th>
+        <th class="text-secondary bg-light" style="text-align:center">SELL TARGET</th>
+        <th style="text-align:center">PROXIMITY</th>
+        <th style="text-align:center">PROFIT</th>
+        <th style="text-align:center">SHARES OWNED</th>
+        <th style="text-align:center">PURCHASE PRICE</th>
+        <th>COMPANY NAME</th>
+        <th style="text-align:center">ACTIONS</th>
       </tr>
     </thead>
     <tbody>
       {% for stock in object_list %}
       <tr>
         <td style="text-align:center"> {{ stock.ticker }}</td>
-        <td style="text-align:right"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}</td>
-        <td style="text-align:right"> ${{ stock.current }}</td>
-        <td style="text-align:right"> {% if stock.purchase %}${{ stock.purchase }}{% else %}-{% endif %}</td>
-        <td style="text-align:right"> {% firstof stock.shares '-' %}</td>
-        <td style="text-align:right" class="{% if stock.profit < 0 %}text-danger{% else %} text-success{% endif %}">
-          {% if stock.profit %}${{ stock.profit }}{% else  %}-{% endif %}&nbsp;{% if stock.profit < 0 %}<i
+        <td style="text-align:center"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}</td>
+        <td style="text-align:center"> {{ stock.current }}</td>
+        <td style="text-align:center"> {% if stock.buy_target %}{{ stock.buy_target }}{% else %}-{% endif %}</td>
+        <td style="text-align:center"> {% if stock.sell_target %}{{ stock.sell_target }}{% else %}-{% endif %}</td>
+        <td style="text-align:center"> {% if stock.proximity %}{{ stock.proximity}} %{% else %}-{% endif %}</td>
+        <td style="text-align:center" class="{% if stock.profit < 0 %}text-danger{% else %} text-success{% endif %}">
+          {% if stock.profit %}{{ stock.profit }}{% else  %}-{% endif %}&nbsp;{% if stock.profit < 0 %}<i
             class="fa fa-arrow-down"></i>
           {% elif stock.profit > 0 %}<i class="fa fa-arrow-up"></i> {% endif %}</td>
-        <td style="text-align:right"> {% if stock.proximity %}{{ stock.proximity}} %{% else %}-{% endif %}</td>
-        <td style="text-align:right"> {% if stock.buy_target %}${{ stock.buy_target }}{% else %}-{% endif %}</td>
-        <td style="text-align:right"> {% if stock.sell_target %}${{ stock.sell_target }}{% else %}-{% endif %}</td>
-        <td style="text-align:center"> {{ stock.stock_name }}</td>
+        <td style="text-align:center"> {% firstof stock.shares '-' %}</td>
+        <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
+        <td style="text-align:left"> {{ stock.stock_name }}</td>
         <td style="text-align:center"><a href="{% url 'update-stock' stock.pk %}" class="btn btn-primary ml-1 mr-1"><i
               class="fa fa-pencil" aria-hidden="true"></i>
           </a><a href="{% url 'delete-stock' stock.pk %}" class="btn btn-danger ml-1 mr-1"><i class="fa fa-trash"
