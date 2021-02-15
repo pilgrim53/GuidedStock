@@ -1,12 +1,18 @@
-from django.contrib.auth import authenticate, login
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, update_session_auth_hash
+from django.contrib.auth.forms import PasswordChangeForm, UserCreationForm
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 from django.http import HttpResponse, JsonResponse
+from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views import generic
+from django.views.generic.edit import FormView
 from stock_admin.forms import UserCreationForm
 from stock_admin.models import StockManager, Subscribe
 from stock_admin.utils import SendSubscribeMail
+
+from ..models import Stock
 
 
 class SignUp(generic.CreateView):
@@ -27,6 +33,30 @@ class SignUp(generic.CreateView):
         return response
 
 
+class ChangePasswordFormView(FormView):
+    template_name = "change_password.html"
+
+    def get(self, request, *args, **kwargs):
+        form = PasswordChangeForm(request.user)
+        return render(request, self.template_name, {
+            'form': form
+        })
+
+    def post(self, request, *args, **kwargs):
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Important!
+            messages.success(
+                request, 'Your password was successfully updated!')
+            return redirect('change_password')
+        else:
+            messages.error(request, 'Please correct the error below.')
+        return render(request, self.template_name, {
+            'form': form
+        })
+
+
 def subscribe(request):
     if request.method == 'POST':
         email = request.POST['email_id']
@@ -40,7 +70,7 @@ def subscribe(request):
 
         email_qs = Subscribe.objects.filter(email_id=email)
         if email_qs.exists():
-            status = 422    
+            status = 422
             data = {'message': 'Email already exists!'}
             return JsonResponse(data, status=status)
         else:
