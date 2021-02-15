@@ -46,8 +46,8 @@ class Stock(models.Model):
                 (self.current - self.purchase) * self.shares)
             goal = self.sell_target - self.purchase
             self.proximity = round((self.current - self.purchase)/goal, 2)*100
-
         else:
+            self.profit = 0
             goal = Decimal(self.sell_target - self.buy_target)
             if goal != 0:
                 self.proximity = (
