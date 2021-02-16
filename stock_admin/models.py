@@ -78,6 +78,14 @@ class Stock(models.Model):
         return bsh.h1.string.replace('(%s)' % self.ticker, '')
 
 
+class DefaultPortfolio(Stock):
+
+    class Meta:
+        proxy = True
+        verbose_name = 'Stock'
+        verbose_name_plural = 'Default Portfolio'
+
+
 class StockManager():
     def create_default_portfolio(self, user):
         stocks = Stock.objects.filter(

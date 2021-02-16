@@ -19,7 +19,6 @@ services:
   web:
     restart: always
     build: .
-    command: gunicorn pmgstock.wsgi:application -w 2 --bind 0.0.0.0:8000 --reload
     volumes:
       - .:/code
       - static:/static
