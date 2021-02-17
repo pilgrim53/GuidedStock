@@ -862,6 +862,7 @@ body {
 .p-btn{
 	padding: 3px 7px;
 	border-radius: 5px;
+	background-color: #121e34;
 }
 
 .p-btn i{
@@ -913,6 +914,7 @@ body {
 	border-radius: 5px;
 	font-size: 14px;
 	display: block;
+	background-color: #121e34;
 }
 
 .btn-add:hover, .btn-add:focus{
@@ -923,6 +925,7 @@ body {
 .investment h2, .profit h2{
 	font-size: 16px;
 	color:#727272;
+	text-transform: uppercase;
 }
 
 .investment p, .profit p{

@@ -13,30 +13,27 @@
         <div class="login-form">
             <h2>Sign in</h2>
             {% for error in form.non_field_errors %}
-                {{ error }}
+                <p class="text-danger validation-msg">{{ error }}</p>
             {% endfor %}
             {% if next %}
-            <div>
+
                 {% if user.is_authenticated %}
-                <p>{% blocktrans %}Your account doesn't have access to this page. To proceed, please login with
+                <p class="text-error validation-msg">{% blocktrans %}Your account doesn't have access to this page. To proceed, please login with
                     an
                     account that has access.{% endblocktrans %}</p>
                 {% else %}
-                <p>{% blocktrans %}Please login to see this page.{% endblocktrans %}</p>
+                <p class="text-error validation-msg">{% blocktrans %}Please login to see this page.{% endblocktrans %}</p>
                 {% endif %}
-            </div>
+
             {% elif user.is_authenticated %}
-            <p>{% blocktrans with user=request.user %}Currently, You are login with
+            <p class="validation-msg text-warning">{% blocktrans with user=request.user %}Currently, You are login with
                 <b>{{ user }}</b>.{% endblocktrans %}
             </p>
             {% endif %}
             <form class="custom-form" action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
-                    <input type="email" name="username" class="form-control" required placeholder="Email" />
-                    {% for error in form.username.errors %}
-                        <p class="text-danger">{{ error }}</p>
-                    {% endfor %}
+                    <input type="email" name="username" {% if form.username.value %}value="{{ form.username.value }}" {% endif %} class="form-control" required placeholder="Email" />
                 </div>
 
                 <div class="form-group mb-4">

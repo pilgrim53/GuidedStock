@@ -18,21 +18,22 @@
                     <label>Email <a href="javascript:void(0)" class="info-tooltip tooltip"><i
                                 class="far fa-question-circle"></i><span class="tooltip__content">Your email will be
                                 used as your login.</span></a></label>
-                    <input type="email" name="email" required class="form-control" />
+                    <input type="email" {% if form.email.value %}value="{{ form.email.value }}" {% endif %} name="email" required class="form-control" />
                     {% for error in form.email.errors %}
-                    <p class="text-danger">{{ error }}</p>
+                    <p class="text-danger validation-msg">{{ error }}</p>
                     {% endfor %}
                 </div>
 
                 <div class="form-group">
                     <label>Password</label>
                     <div class="custom-input-field">
-                        <input type="password" name="password1" required id="passInput" class="form-control login-inputs">
+                        <input type="password" name="password1" {% if form.password1.value %}value="{{ form.password1.value }}" {% endif %} required id="passInput"
+                            class="form-control login-inputs">
                         <i class="password-show-hide toggle-password fas fa-eye"></i>
                     </div>
                     {% if form.password1.errors %}
                     {% for error in form.password1.errors %}
-                    <p class="text-danger">{{ error }}</p>
+                    <p class="text-danger validation-msg">{{ error }}</p>
                     {% endfor %}
                     {% else %}
                     <p class="caps-warning text-warning">Caps lock is ON.</p>
@@ -42,13 +43,13 @@
                 <div class="form-group">
                     <label>Confirm Password</label>
                     <div class="custom-input-field">
-                        <input type="password" name="password2" required id="passInput-confirm"
+                        <input type="password" name="password2" {% if form.password2.value %}value="{{ form.password2.value }}" {% endif %} required id="passInput-confirm"
                             class="form-control login-inputs">
                         <i class="fas fa-eye password-show-hide toggle-password-confirm"></i>
                     </div>
                     {% if form.password2.errors %}
                     {% for error in form.password2.errors %}
-                    <p class="text-danger">{{ error }}</p>
+                    <p class="text-danger validation-msg">{{ error }}</p>
                     {% endfor %}
                     {% else %}
                     <p class="caps-warning text-warning">Caps lock is ON.</p>
