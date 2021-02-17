@@ -8,7 +8,7 @@
 <div class="outside-wrapper">
     <div class="custom-col">
         <div class="header-logo">
-            <img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />
+            <a href="{% url 'home' %}"><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" /></a>
         </div>
         <div class="login-form">
             <h2>Sign in</h2>
@@ -61,5 +61,4 @@
         </div>
     </div>
 </div>
-
 {% endblock %}

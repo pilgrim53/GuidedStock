@@ -17,10 +17,9 @@
 </head>
 
 <body class="{% block body_class %}{% endblock %}">
-
+    {% block body %}
     {% block content %}
     {% endblock %}
-
     <div class="login-footer">
         <div class="footer-link">
             <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span>
@@ -28,10 +27,13 @@
             <span><a href="javascript:void(0);">Privacy Policy</a></span>
             <span><a href="javascript:void(0);">Cookie Policy</a></span>
         </div>
-    </div>
+    </div>{% endblock %}
+
     <script type="text/javascript" src="{% static 'assets/js/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+    {% block js %}
+    {% endblock %}
 </body>
 
 </html>

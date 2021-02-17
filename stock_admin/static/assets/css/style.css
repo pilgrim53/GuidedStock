@@ -804,7 +804,7 @@ body {
 	left: 0;
 	background-color: #121E34;
 	overflow-x: hidden;
-	padding: 60px 30px;
+	padding: 60px 25px;
 }
 
 .sidebar img{
@@ -846,7 +846,7 @@ body {
 
 .portofollio-table table tr th{
 	white-space: nowrap;
-	background-color: #EDEDED;
+	background-color: #fafafa;
 	text-transform: uppercase;
 	font-weight:500;
 }
@@ -863,6 +863,7 @@ body {
 	padding: 3px 7px;
 	border-radius: 5px;
 	background-color: #121e34;
+	margin-left: 6px;
 }
 
 .p-btn i{
@@ -946,6 +947,13 @@ body {
 	border-top: 1px solid #C2F1C3;
 	border-bottom: 1px solid #C2F1C3;
 }
+
+.profit-minus p{
+	background-color: #f2d1d1;
+	border-top: 1px solid #e60000;
+	border-bottom: 1px solid #e60000;
+}
+
 
 .three-bar{
 	display: none;
