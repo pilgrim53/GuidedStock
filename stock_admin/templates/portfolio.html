@@ -15,7 +15,7 @@
   <a href="{% url 'create-stock' %}" class="btn btn-primary m-2 float-right"><i class="fa fa-plus"></i> Add Stock</a>
   {% if profit.profit__sum %}<a class="btn btn-white m-2 float-right">CURRENT PROFIT: <span
       class="{% if profit.profit__sum < 0 %}text-danger{% else %} text-success{% endif %}">${{ profit.profit__sum|floatformat:2  }}</span></a>{% endif %}
-  {% if investment %}<a class="btn btn-white m-2 float-right">INVESTMENT: <span class="">${{ investment|floatformat:2  }}</span></a>{% endif %}
+  {% if investment %}<a class="btn btn-white m-2 float-right">INVESTMENT: <span>${{ investment|floatformat:2  }}</span></a>{% endif %}
   <table class="table table-bordered table-sm">
     <thead class="thead-dark">
       <tr>
@@ -26,7 +26,7 @@
         <th class="text-secondary bg-light" style="text-align:center">SELL TARGET</th>
         <th style="text-align:center">PROXIMITY</th>
         <th style="text-align:center">PROFIT</th>
-        <th style="text-align:center">SHARES OWNED</th>
+        <th style="text-align:center">SHARES OWNED</th> 
         <th style="text-align:center">PURCHASE PRICE</th>
         <th>COMPANY NAME</th>
         <th style="text-align:center">ACTIONS</th>
