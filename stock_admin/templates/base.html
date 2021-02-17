@@ -1,73 +1,38 @@
 {% load static %}
-
 <html>
 
 <head>
-    <title>{% block title %}Guided Stock{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <meta charset="uft-8">
+    <title>GuidedStock | Personal Stock Portfolio Management Tools</title>
+    <link rel="icon" href="{% static 'assets/logos/favicon.png' %}" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
+    <meta name="keywords" content="stocks, trading, management, portfolio, management">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
 </head>
 
-<body>
+<body class="{% block body_class %}{% endblock %}">
     {% block body %}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-        <div class="container">
-            {% if request.user.is_authenticated %}
-            <a class="navbar-brand" href="{% url 'portfolio' %}">
-                {% else %}
-                <a class="navbar-brand" href="{% url 'home' %}">
-                    {% endif %}
-                    <img src="{% static 'img/pmg.jpg' %}" class="w-25" alt="">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            {% if request.user.is_authenticated %}
-                            <a class="nav-link" href="{% url 'portfolio' %}">PORTFOLIO
-                                {% else %}
-                                <a class="nav-link" href="{% url 'home' %}">HOME
-                                    {% endif %}
-                                </a>
-                        </li>
-                        {% if request.user.is_authenticated %}
-                        <li class="nav-item"><a class="nav-link" href="{% url 'change_password' %}">CHANGE PASSWORD</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">LOGOUT
-                                ({{ request.user }})</a>
-                        </li>
-                        {% else %}
-                        <li class="nav-item"><a class="nav-link" href="{% url 'signup' %}">Signup</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
-                        {% endif %}
-                    </ul>
-                </div>
+    {% block content %}
+    {% endblock %}
+    <div class="login-footer">
+        <div class="footer-link">
+            <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span>
+            <span><a href="javascript:void(0);">User Agreement</a></span>
+            <span><a href="javascript:void(0);">Privacy Policy</a></span>
+            <span><a href="javascript:void(0);">Cookie Policy</a></span>
         </div>
-    </nav>
+    </div>{% endblock %}
 
-    <div class="p-5">
-        {% for message in messages %}
-        <div class="alert {{ message.tags }} alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            {{ message }}
-        </div>
-        {% endfor %}
-
-        {% block content %}
-        {% endblock %}
-
-        {% block js %}
-        {% endblock %}
-    </div>
-
+    <script type="text/javascript" src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+    {% block js %}
     {% endblock %}
 </body>
 
