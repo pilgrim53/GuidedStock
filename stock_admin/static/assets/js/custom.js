@@ -79,3 +79,37 @@ $.ajaxSetup({
     }
   }
 })
+
+$(".toggle-password").on('click', function () {
+  $(this).toggleClass("fas fa-eye-slash fas fa-eye");
+  var input = $("#passInput");
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+$(".toggle-password-confirm").on('click', function () {
+  $(this).toggleClass("fas fa-eye-slash fas fa-eye");
+  var input = $("#passInput-confirm");
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+// -----tooltip---
+
+// ----caps lock on validation---
+$('input[type="password"]').each(function () {
+  $(this).get(0).addEventListener("keyup", function (event) {
+    console.log('pass')
+    if (event.getModifierState("CapsLock")) {
+      $(this).parents('.form-group').find('.text-warning').show();
+    } else {
+      $(this).parents('.form-group').find('.text-warning').hide();
+    }
+  });
+})

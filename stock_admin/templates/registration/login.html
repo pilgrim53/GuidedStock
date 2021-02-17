@@ -1,42 +1,66 @@
 {% extends "base.html" %}
 
-{% load i18n crispy_forms_tags %}
+{% load static i18n %}
+
+{% block body_class %}login-page-outside-style{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body">
-                    {% if next %}
-                    <div>
-                        {% if user.is_authenticated %}
-                        <p>{% blocktrans %}Your account doesn't have access to this page. To proceed, please login with
-                            an
-                            account that has access.{% endblocktrans %}</p>
-                        {% else %}
-                        <p>{% blocktrans %}Please login to see this page.{% endblocktrans %}</p>
-                        {% endif %}
-                    </div>
-                    {% elif user.is_authenticated %}
-                    <p>{% blocktrans with user=request.user %}Currently, You are login with
-                        <b>{{ user }}</b>.{% endblocktrans %}
-                    </p>
-                    {% endif %}
-                    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-
-                    <form method="post" action="{% url 'login' %}">
-                        {% csrf_token %}
-                        {{ form|crispy }}
-                        <button type="submit" class="btn btn-lg btn-primary btn-block">{% trans 'Log In' %}</button>
-                        <div class="m-2">
-                            <a href="{% url 'password_reset' %}"
-                                class="text-muted">{% trans "Forgot your password?" %}</a><br>
-                            <a href="{% url 'signup' %}" class="text-muted">New User? Signup</a>
-                        </div>
-                    </form>
-                </div>
+<div class="outside-wrapper">
+    <div class="custom-col">
+        <div class="header-logo">
+            <img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />
+        </div>
+        <div class="login-form">
+            <h2>Sign in</h2>
+            {% for error in form.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+            {% if next %}
+            <div>
+                {% if user.is_authenticated %}
+                <p>{% blocktrans %}Your account doesn't have access to this page. To proceed, please login with
+                    an
+                    account that has access.{% endblocktrans %}</p>
+                {% else %}
+                <p>{% blocktrans %}Please login to see this page.{% endblocktrans %}</p>
+                {% endif %}
             </div>
+            {% elif user.is_authenticated %}
+            <p>{% blocktrans with user=request.user %}Currently, You are login with
+                <b>{{ user }}</b>.{% endblocktrans %}
+            </p>
+            {% endif %}
+            <form class="custom-form" action="{% url 'login' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="email" name="username" class="form-control" required placeholder="Email" />
+                    {% for error in form.username.errors %}
+                        <p class="text-danger">{{ error }}</p>
+                    {% endfor %}
+                </div>
+
+                <div class="form-group mb-4">
+                    <div class="custom-input-field">
+                        <input type="password" name="password" id="passInput" required placeholder="Password"
+                            class="form-control login-inputs">
+                        <i class="password-show-hide toggle-password fas fa-eye"></i>
+                    </div>
+                    <p class="text-warning caps-warning">Caps lock is ON.</p>
+                </div>
+
+                <div class="forgot-password">
+                    <a href="{% url 'password_reset' %}">Forgot password?</a>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="custom-btn">Sign in</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="new-join">
+            <p>New to GuideStock? <a href="{% url 'signup' %}">Join Now</a></p>
         </div>
     </div>
 </div>
