@@ -846,7 +846,7 @@ body {
 
 .portofollio-table table tr th{
 	white-space: nowrap;
-	background-color: #fafafa;
+	background-color: #EDEDED;
 	text-transform: uppercase;
 	font-weight:500;
 }
@@ -856,7 +856,7 @@ body {
 }
 
 .portofollio-table table tr:nth-child(even){
-	background-color: #EDEDED;
+	background-color: #FAFAFA;
 }
 
 .p-btn{
