@@ -23,9 +23,9 @@
     <div class="login-footer">
         <div class="footer-link">
             <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span>
-            <span><a href="javascript:void(0);">User Agreement</a></span>
-            <span><a href="javascript:void(0);">Privacy Policy</a></span>
-            <span><a href="javascript:void(0);">Cookie Policy</a></span>
+            <span><a href="{% url 'user-agreement' %}">User Agreement</a></span>
+            <span><a href="{% url 'privacy-policy' %}">Privacy Policy</a></span>
+            <span><a href="{% url 'cookie-policy' %}">Cookie Policy</a></span>
         </div>
     </div>{% endblock %}
 
