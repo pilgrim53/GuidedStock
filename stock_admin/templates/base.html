@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="uft-8">
-    <title>GuidedStock | Personal Stock Portfolio Management Tools</title>
+   <title> {% block title %}GuidedStock | Personal Stock Portfolio Management Tools{% endblock %}</title>
     <link rel="icon" href="{% static 'assets/logos/favicon.png' %}" type="image/png" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
@@ -22,7 +22,7 @@
     {% endblock %}
     <div class="login-footer">
         <div class="footer-link">
-            <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span>
+          <a href="{% url 'home' %}">  <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span></a>
             <span><a href="{% url 'user-agreement' %}">User Agreement</a></span>
             <span><a href="{% url 'privacy-policy' %}">Privacy Policy</a></span>
             <span><a href="{% url 'cookie-policy' %}">Cookie Policy</a></span>

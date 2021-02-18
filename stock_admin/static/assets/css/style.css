@@ -747,8 +747,7 @@ body {
 	position: absolute;
 	text-align: center;
 	transition: opacity 0.5s;
-	visibility: hidden;
-	z-index: 1;
+	z-index: 9999;
 	font-size: 14px;
 	max-width: 290px;
   }
@@ -871,6 +870,7 @@ body {
 	padding: 6px 8px;
     line-height: 12px;
 	font-size: 12px;
+	position: relative;
 }
 
 .portofollio-table table tr td{
@@ -936,6 +936,7 @@ body {
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
+	margin-bottom: 25px;
 }
 
 .investment, .profit{
@@ -1010,13 +1011,32 @@ body {
 }
 
 .port-header{
-	margin-bottom: 135px;
+	margin-bottom: 120px;
+}
+
+.add-ticker-btn{
+	display: inline-flex;
+	float: right;
 }
 
 .add-ticker-btn a{
 	background-color: #10A736;
-	display: inline;
 	color: #fff;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.add-ticker-btn a:hover, .add-ticker-btn a:focus{
+	text-decoration: none;
+}
+
+.add-ticker-btn a i{
+	font-size:35px;
+	margin-left: 10px;
 }
 
 /* -----Forgot password style ------ */
@@ -1025,11 +1045,12 @@ body {
 	color: #8d9297;
     line-height: 28px;
     margin-bottom: 5px;
+	font-size:14px;
 }
 
 .back-login{
 	display: block;	
-	margin-top: 50px;
+	margin-top: 50px; 
 }
 
 .back-login:hover{
@@ -1240,6 +1261,10 @@ body {
 
 	.left-side-header {
 		justify-content: center;
+	}
+
+	.add-ticker-btn {
+		float: left;
 	}
 
 }
