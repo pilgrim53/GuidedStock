@@ -16,9 +16,11 @@
                 {% csrf_token %}
                 <div class="form-group">
                     <label>Email <a href="javascript:void(0)" class="info-tooltip tooltip"><i
-                                class="far fa-question-circle"></i><span class="tooltip__content">Your email will be
+                                class="far fa-question-circle"></i><span class="tooltip__content email-tooltip">Your
+                                email will be
                                 used as your login.</span></a></label>
-                    <input type="email" {% if form.email.value %}value="{{ form.email.value }}" {% endif %} name="email" required class="form-control" />
+                    <input type="email" {% if form.email.value %}value="{{ form.email.value }}" {% endif %} name="email"
+                        required class="form-control" />
                     {% for error in form.email.errors %}
                     <p class="text-danger validation-msg">{{ error }}</p>
                     {% endfor %}
@@ -27,8 +29,9 @@
                 <div class="form-group">
                     <label>Password</label>
                     <div class="custom-input-field">
-                        <input type="password" name="password1" {% if form.password1.value %}value="{{ form.password1.value }}" {% endif %} required id="passInput"
-                            class="form-control login-inputs">
+                        <input type="password" name="password1"
+                            {% if form.password1.value %}value="{{ form.password1.value }}" {% endif %} required
+                            id="passInput" class="form-control login-inputs">
                         <i class="password-show-hide toggle-password fas fa-eye"></i>
                     </div>
                     {% if form.password1.errors %}
@@ -43,8 +46,9 @@
                 <div class="form-group">
                     <label>Confirm Password</label>
                     <div class="custom-input-field">
-                        <input type="password" name="password2" {% if form.password2.value %}value="{{ form.password2.value }}" {% endif %} required id="passInput-confirm"
-                            class="form-control login-inputs">
+                        <input type="password" name="password2"
+                            {% if form.password2.value %}value="{{ form.password2.value }}" {% endif %} required
+                            id="passInput-confirm" class="form-control login-inputs">
                         <i class="fas fa-eye password-show-hide toggle-password-confirm"></i>
                     </div>
                     {% if form.password2.errors %}
@@ -62,14 +66,15 @@
                             value="value1">
                         <label for="styled-checkbox-1">I would like the default portfolio
                             <a href="javascript:void(0)" class="info-tooltip tooltip"><i
-                                    class="far fa-question-circle"></i><span class="tooltip__content">The default
+                                    class="far fa-question-circle"></i><span class="tooltip__content d-port-tooltip">The
+                                    default
                                     portfolio contains a selection of default stocks with sample
                                     data.</span></a></label>
                     </li>
                     <li>
                         <input class="styled-checkbox" id="styled-checkbox-2" required type="checkbox" value="value1">
                         <label for="styled-checkbox-2">I agree with the &nbsp; <a
-                                href="{% url 'terms-and-conditions' %}">terms and conditions</a></label>
+                                href="{% url 'user-agreement' %}">terms and conditions</a></label>
                     </li>
                 </ul>
 

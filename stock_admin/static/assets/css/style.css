@@ -747,8 +747,7 @@ body {
 	position: absolute;
 	text-align: center;
 	transition: opacity 0.5s;
-	visibility: hidden;
-	z-index: 1;
+	z-index: 9999;
 	font-size: 14px;
 	max-width: 290px;
   }
@@ -790,6 +789,23 @@ body {
 	margin-bottom: 25px;
  }
 
+.user-agreement{
+	 font-size: 13px;
+	 line-height: 20px;
+	 margin:15px 0 0 50px;
+	 font-weight: 500;
+}
+
+.user-agreement a{
+	color: #11A837;
+	font-weight: 600;
+}
+
+.user-agreement a:hover, .user-agreement a:focus{
+	color: #11A837;
+	text-decoration: none;
+}
+
 /* -----Portfollio Screen---- */
 
 .custom-col-portfollio{
@@ -805,6 +821,7 @@ body {
 	background-color: #121E34;
 	overflow-x: hidden;
 	padding: 60px 25px;
+	max-width: 280px;
 }
 
 .sidebar img{
@@ -844,15 +861,33 @@ body {
     overflow-x: auto;
 }
 
+
 .portofollio-table table tr th{
 	white-space: nowrap;
 	background-color: #EDEDED;
 	text-transform: uppercase;
 	font-weight:500;
+	padding: 6px 8px;
+    line-height: 12px;
+	font-size: 12px;
+	position: relative;
 }
 
 .portofollio-table table tr td{
 	white-space: nowrap;
+}
+
+.portofollio-table table tr{
+	border-top:2px solid #dddddd;
+}
+
+.portofollio-table table thead tr a{
+	color: #121E34;
+	margin-left: 3px;
+}
+
+.portofollio-table table tbody tr:hover{
+	background-color: #E6E6E6;
 }
 
 .portofollio-table table tr:nth-child(even){
@@ -890,7 +925,7 @@ body {
 .table-header p{
 	display: inline-flex;
 	padding: 4px 7px;
-	margin:13px 0;
+	margin:5px 0;
 	background-color: #CCEDFF;
 	font-size: 14px;
 	border-top: 1px solid #A8D5EC;
@@ -900,12 +935,16 @@ body {
 .left-side-header{
 	display: flex;
 	align-items: flex-end;
-	justify-content: flex-end;		
-	margin-bottom: 22px;
+	justify-content: flex-end;
+	margin-bottom: 25px;
 }
 
-.investment{
-	margin-bottom: 15px;
+.investment, .profit{
+	margin: 20px 0 0;
+}
+
+.profit{
+	margin-left: 25px;
 }
 
 .btn-add{
@@ -924,15 +963,15 @@ body {
 }
 
 .investment h2, .profit h2{
-	font-size: 16px;
+	font-size: 12px;
 	color:#727272;
 	text-transform: uppercase;
 }
 
 .investment p, .profit p{
 	display: inline-flex;
-	padding: 4px 7px;
-	margin:7px 0 0 0;
+	padding: 4px 32px 4px 0px;
+	margin:3px 0 0 0;
 	font-size: 20px;
 }
 
@@ -961,6 +1000,62 @@ body {
 
 .close-btn{
 	display: none;
+}
+
+.three-bar i{
+	cursor: pointer;
+}
+
+.close-btn i{
+	cursor: pointer;
+}
+
+.port-header{
+	margin-bottom: 120px;
+}
+
+.add-ticker-btn{
+	display: inline-flex;
+	float: right;
+}
+
+.add-ticker-btn a{
+	background-color: #10A736;
+	color: #fff;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.add-ticker-btn a:hover, .add-ticker-btn a:focus{
+	text-decoration: none;
+}
+
+.add-ticker-btn a i{
+	font-size:35px;
+	margin-left: 10px;
+}
+
+/* -----Forgot password style ------ */
+
+.sucess-msg p{
+	color: #8d9297;
+    line-height: 28px;
+    margin-bottom: 5px;
+	font-size:14px;
+}
+
+.back-login{
+	display: block;	
+	margin-top: 50px; 
+}
+
+.back-login:hover{
+	text-decoration: none;
+	color: #fff;			
 }
 
 
@@ -1080,7 +1175,7 @@ body {
 		font-size: 14px;
 	}
 
-	.btn-action {
+	.btn-action{
 		border: 2px solid #5924EC;
 		font-weight: 500;
 		height: 42px;
@@ -1166,6 +1261,10 @@ body {
 
 	.left-side-header {
 		justify-content: center;
+	}
+
+	.add-ticker-btn {
+		float: left;
 	}
 
 }
