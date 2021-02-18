@@ -808,7 +808,7 @@ body {
 
 /* -----Portfollio Screen---- */
 
-.custom-col-portfollio{
+.custom-col-portfollio, .responsive-los-profit{
 	padding: 0;
 }
 
@@ -1028,6 +1028,8 @@ body {
 	padding: 5px 15px;
 	margin-bottom: 10px;
 	border-radius: 5px;
+	font-size:14px;
+	font-weight: 600;
 }
 
 .add-ticker-btn a:hover, .add-ticker-btn a:focus{
@@ -1035,8 +1037,23 @@ body {
 }
 
 .add-ticker-btn a i{
-	font-size:35px;
+	font-size:30px;
 	margin-left: 10px;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
 }
 
 /* -----Forgot password style ------ */

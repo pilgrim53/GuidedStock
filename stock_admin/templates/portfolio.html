@@ -15,7 +15,7 @@
   </div>
   <div class="col-xs-10 right-col" id="portfolio">
     <div class="right-side-section">
-      <div>
+      <div class="port-header">
         <div class="three-bar"><i class="fas fa-bars"></i></div>
         <div class="col-xs-6 custom-col-portfollio">
           <div class="table-header">
@@ -25,29 +25,24 @@
         </div>
         <div class="col-xs-6 responsive-los-profit">
           <div class="left-side-header">
-            <div>
-
-              {% if investment %}
-              <div class="investment">
-                <h2>Investment</h2>
-                <p>${{ investment|floatformat:2  }}</p>
-              </div>
-
-              {% endif %}
-              {% if profit.profit__sum %}
-              <div class="profit {% if profit.profit__sum < 0 %}profit-minus{% endif %}"
-                class="{% if profit.profit__sum < 0 %}text-danger{% else %} text-success{% endif %}">
-                <h2>Current Profit</h2>
-                <p>${{ profit.profit__sum|floatformat:2  }}</p>
-              </div>
-              {% endif %}
-
+            {% if investment %}
+            <div class="investment">
+              <h2>Total Investment</h2>
+              <p>${{ investment|floatformat:2  }}</p>
             </div>
-            <div>
-              <a type="button" class="btn-add" href="{% url 'create-stock' %}"><i class="fas fa-plus"></i> Add new</a>
+
+            {% endif %}
+            {% if profit.profit__sum %}
+            <div class="profit {% if profit.profit__sum < 0 %}profit-minus{% endif %}">
+              <h2>Current Profit</h2>
+              <p>${{ profit.profit__sum|floatformat:2  }}</p>
             </div>
+            {% endif %}
           </div>
         </div>
+      </div>
+      <div class="add-ticker-btn">
+        <a href="{% url 'create-stock' %}">Add Ticker <i class="far fa-plus-square"></i></a>
       </div>
       <div class="portofollio-table">
         <table class="table">

@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="uft-8">
-   <title> {% block title %}GuidedStock | Personal Stock Portfolio Management Tools{% endblock %}</title>
+    <title> {% block title %}GuidedStock | Personal Stock Portfolio Management Tools{% endblock %}</title>
     <link rel="icon" href="{% static 'assets/logos/favicon.png' %}" type="image/png" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
     <meta name="keywords" content="stocks, trading, management, portfolio, management">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">
     <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
@@ -22,7 +22,7 @@
     {% endblock %}
     <div class="login-footer">
         <div class="footer-link">
-          <a href="{% url 'home' %}">  <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span></a>
+            <a href="{% url 'home' %}">  <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span></a>
             <span><a href="{% url 'user-agreement' %}">User Agreement</a></span>
             <span><a href="{% url 'privacy-policy' %}">Privacy Policy</a></span>
             <span><a href="{% url 'cookie-policy' %}">Cookie Policy</a></span>

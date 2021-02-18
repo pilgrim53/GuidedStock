@@ -1,3 +1,7 @@
+/* ----- Custom Scripts for Destiny template ----- */
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
 $('#subscribe').submit(function (e) {
   e.preventDefault();
   var email_id = $("#email_id").val();
@@ -77,6 +81,7 @@ $.ajaxSetup({
     }
   }
 })
+
 // -----password---
 
 $(".toggle-password").on('click', function () {
