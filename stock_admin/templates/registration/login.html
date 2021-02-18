@@ -13,17 +13,18 @@
         <div class="login-form">
             <h2>Sign in</h2>
             {% for error in form.non_field_errors %}
-                <p class="text-danger validation-msg">{{ error }}</p>
+            <p class="text-danger validation-msg">{{ error }}</p>
             {% endfor %}
             {% if next %}
 
-                {% if user.is_authenticated %}
-                <p class="text-error validation-msg">{% blocktrans %}Your account doesn't have access to this page. To proceed, please login with
-                    an
-                    account that has access.{% endblocktrans %}</p>
-                {% else %}
-                <p class="text-error validation-msg">{% blocktrans %}Please login to see this page.{% endblocktrans %}</p>
-                {% endif %}
+            {% if user.is_authenticated %}
+            <p class="text-error validation-msg">{% blocktrans %}Your account doesn't have access to this page. To
+                proceed, please login with
+                an
+                account that has access.{% endblocktrans %}</p>
+            {% else %}
+            <p class="text-error validation-msg">{% blocktrans %}Please login to see this page.{% endblocktrans %}</p>
+            {% endif %}
 
             {% elif user.is_authenticated %}
             <p class="validation-msg text-warning">{% blocktrans with user=request.user %}Currently, You are login with
@@ -33,7 +34,8 @@
             <form class="custom-form" action="{% url 'login' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
-                    <input type="email" name="username" {% if form.username.value %}value="{{ form.username.value }}" {% endif %} class="form-control" required placeholder="Email" />
+                    <input type="email" name="username" {% if form.username.value %}value="{{ form.username.value }}"
+                        {% endif %} class="form-control" required placeholder="Email" />
                 </div>
 
                 <div class="form-group mb-4">
@@ -55,6 +57,9 @@
 
             </form>
         </div>
+        <p class="user-agreement">By loggin in, you agree to the terms and conditions <br /> outlined in the <a
+                href="javascript:void(0);">User Aggreement</a></p>
+
 
         <div class="new-join">
             <p>New to GuideStock? <a href="{% url 'signup' %}">Join Now</a></p>
