@@ -42,19 +42,28 @@
           </div>
         </div>
       </div>
-      <div class="add-ticker-btn">
-        <a href="{% url 'create-stock' %}">Add Ticker <i class="far fa-plus-square"></i></a>
+      <div class="text-right add-port-btn">
+        <a href="{% url 'create-stock' %}" class="plus-square"><span>Add ticker</span> <i
+            class="far fa-plus-square"></i></a>
       </div>
+
+
       <div class="portofollio-table">
         <table class="table">
           <thead>
             <tr>
               <th style="text-align:center">TICKER</th>
-              <th style="text-align:center">POTENTIAL</th>
-              <th style="text-align:center">BID</th>
-              <th style="text-align:center">BUY TARGET</th>
-              <th class="text-secondary bg-light" style="text-align:center">SELL TARGET</th>
-              <th style="text-align:center">PROXIMITY</th>
+              <th style="text-align:center">POTENTIAL<a href="#" data-toggle="tooltip" data-container="body"
+                  data-placement="top" title="Potential"><i class="fas fa-info-circle"></i></a></th>
+              <th style="text-align:center">BID<a href="#" data-toggle="tooltip" data-container="body"
+                  data-placement="top" title="Current Stock Price"><i class="fas fa-info-circle"></i></a></th>
+              <th style="text-align:center">BUY TARGET<a href="#" data-toggle="tooltip" data-container="body"
+                  data-placement="top" title="Buy Target"><i class="fas fa-info-circle"></i></a></th>
+              <th class="text-secondary bg-light" style="text-align:center">SELL TARGET<a href="#" data-toggle="tooltip"
+                  data-container="body" data-placement="top" title="Sell Target"><i class="fas fa-info-circle"></i></a>
+              </th>
+              <th style="text-align:center">PROXIMITY<a href="#" data-toggle="tooltip" data-container="body"
+                  data-placement="top" title="proximity"><i class="fas fa-info-circle"></i></a></th>
               <th style="text-align:center">PROFIT</th>
               <th style="text-align:center">SHARES OWNED</th>
               <th style="text-align:center">PURCHASE PRICE</th>
@@ -89,9 +98,6 @@
             </tr>
             {% endfor %}
 
-
-
-
           </tbody>
         </table>
       </div>
@@ -108,6 +114,7 @@
     $.ajax({
       url: "{% url 'portfolio' %}",
       success: function (data) {
+
         $('#portfolio').replaceWith($('#portfolio', data));
       }
     });

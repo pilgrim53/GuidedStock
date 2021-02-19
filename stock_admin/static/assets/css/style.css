@@ -417,12 +417,11 @@ body {
 
 
 .footer {
-  background-color: #F3F3F3;
-  width: 100%;
-  height: 100%;
+  	background-color: #F3F3F3;
+  	width: 100%;
 	overflow: hidden;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding: 20px 0 15px 0;
+	margin-top: auto;
 }
 
 .footer img {
@@ -475,6 +474,7 @@ body {
     align-items: center;
     justify-content: center;
 	height: 100%;
+	min-height: 84vh;
 }
 
 .login-footer{
@@ -642,6 +642,12 @@ body {
 	position: relative;	
 }
 
+.register-guid{
+	height: auto;
+	margin-top: 50px;
+}
+
+
 .register-guid .new-join{
 	margin-top: 20px;
 }
@@ -672,6 +678,11 @@ body {
     align-items: center;
 	font-size: 14px;
   }
+
+  .terms-department li label p{
+	max-width: 300px;
+  }
+
   .styled-checkbox + label:before {
 	content: "";
 	margin-right: 10px;
@@ -701,7 +712,7 @@ body {
 	content: "";
 	position: absolute;
 	left: 7px;
-    top: 12px;
+    top: 50%;
 	background: white;
 	width: 2px;
 	height: 2px;
@@ -745,11 +756,12 @@ body {
 	opacity: 0;
 	padding: 3px 0.5rem;
 	position: absolute;
-	text-align: center;
+	text-align: left;
 	transition: opacity 0.5s;
 	z-index: 9999;
 	font-size: 14px;
 	max-width: 290px;
+	background: #fff;
   }
 
   .email-tooltip{
@@ -794,6 +806,7 @@ body {
 	 line-height: 20px;
 	 margin:15px 0 0 50px;
 	 font-weight: 500;
+	 max-width: 350px;
 }
 
 .user-agreement a{
@@ -820,7 +833,7 @@ body {
 	left: 0;
 	background-color: #121E34;
 	overflow-x: hidden;
-	padding: 60px 25px;
+	padding: 50px 25px 60px;
 	max-width: 280px;
 }
 
@@ -836,6 +849,10 @@ body {
 
 .menu-link li{
 	margin-bottom: 25px;
+}
+
+.menu-link li:first-child{
+	margin: 110px 0 100px 0;
 }
 
 .menu-link li a{
@@ -1015,46 +1032,49 @@ body {
 }
 
 .add-ticker-btn{
-	display: inline-flex;
-	float: right;
-}
-
-.add-ticker-btn a{
 	background-color: #10A736;
 	color: #fff;
 	padding: 15px 0;
-	display: flex;
-	align-items: center;
 	padding: 5px 15px;
 	margin-bottom: 10px;
 	border-radius: 5px;
 	font-size:14px;
 	font-weight: 600;
+	display: none;
 }
 
-.add-ticker-btn a:hover, .add-ticker-btn a:focus{
+.add-ticker-btn:hover, .add-ticker-btn:focus{
 	text-decoration: none;
+	color: #fff;
 }
 
-.add-ticker-btn a i{
+.add-ticker-btn i{
 	font-size:30px;
 	margin-left: 10px;
 }
 
+
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #473EBF;
+	border: 2px solid #473EBF;
+    text-align: left;
+    background-color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+    font-weight: 600;
+}
+
 .tooltip.top .tooltip-arrow {
-    bottom: 0;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px 5px 0;
-    border-top-color: #000;
+    border-top-color: #473EBF;
 }
-.tooltip-arrow {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-color: transparent;
-    border-style: solid;
+
+.add-port-btn span{
+	display: none;
 }
+
+
 
 /* -----Forgot password style ------ */
 
@@ -1075,6 +1095,78 @@ body {
 	color: #fff;			
 }
 
+.plus-square{
+	color: #9A9A9A;
+	font-size: 30px;
+	position: relative;
+	margin:0 0px 10px 0;
+	display: inline-flex;
+	transition: all .5s ease;
+	padding: 5px 15px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.plus-square:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:#11A837;
+	transform: scaleX(0);
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	z-index: -1;
+	border-radius: 5px;
+  }
+
+.plus-square:hover:before {
+	transform: scaleX(1);
+  }
+
+  .plus-square:hover{
+	color: #fff;
+	text-decoration: none;
+	}
+
+  .plus-square:focus{
+	color: #fff;
+	text-decoration: none;
+	}
+
+.plus-square:hover, .plus-square:focus{
+	color: #9A9A9A;
+}
+
+.add-port-btn{
+	display: inline-flex;
+	float: right;
+}
+
+.plus-square span{
+	color: #fff;
+	border-radius: 5px;
+	font-size:14px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+.plus-square:focus{
+	text-decoration: none;
+}
+
+.plus-square:hover span{
+	color:#fff;
+	display: flex;
+    align-items: center;
+}
+
+.plus-square:hover i{
+	color: #fff;
+}
 
 /* ---------- Footer Section Styling Ends ---------- */
 
@@ -1084,6 +1176,12 @@ body {
 --------------------- Media --------------------------
 ------------------------------- Queries --------------
 -----------------------------------------------------*/
+
+@media(max-width:1800px){
+	.custom-col{
+		padding: 50px 15px;
+	}
+}
 
 @media(max-width:991px){
 	.right-col{
@@ -1132,6 +1230,8 @@ body {
 	
 }
 
+
+
 @media(max-width:1199px){
 	.sidebar{
 		padding: 60px 25px;
@@ -1140,6 +1240,7 @@ body {
 	.menu-link li a {
 		font-size: 14px;
 	}
+
 }
 
 @media(min-width:768px) and (max-width:991px){
@@ -1236,8 +1337,6 @@ body {
 		right: -26px;
 		width: 100px;
 		display: block;
-		background: #1849AB;
-		color: #fff;
 	}
 
 	.tooltip .tooltip__content::after {
@@ -1253,10 +1352,6 @@ body {
 
 	.login-page-outside-style {
 		height: 100%;
-	}
-
-	.custom-col{
-		padding: 50px 15px;
 	}
 
 	.btn-add {
@@ -1278,10 +1373,6 @@ body {
 
 	.left-side-header {
 		justify-content: center;
-	}
-
-	.add-ticker-btn {
-		float: left;
 	}
 
 }
@@ -1350,6 +1441,10 @@ body {
    padding: 0 5px 0 5px;
    border-radius: 0 5px 5px 0;
 	 margin-top: 15px;
+ }
+
+ .terms-department li label p {
+    max-width: 189px;
  }
 
 }
