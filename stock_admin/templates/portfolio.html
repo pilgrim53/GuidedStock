@@ -1,6 +1,9 @@
 {% extends "base.html" %}
+
 {% block title %}My Stock Portfolio{% endblock %}
-{% load static %}
+
+{% load static humanize %}
+
 {% block body %}
 <div class="portfollio-row">
   <div class="col-xs-2 custom-col-portfollio responsive-menu">
@@ -8,35 +11,38 @@
       <div class="close-btn"><i class="fas fa-times"></i></div>
       <a href="{% url 'portfolio' %}"> <img src="{% static 'assets/images/gs.png' %}" alt="logo" /></a>
       <ul class="menu-link">
-        <li><a href="{% url 'portfolio' %}"><i class="fas fa-tachometer-alt"></i> DashBoard</a></li>
-        <li><a href="{% url 'change_password' %}"><i class="fas fa-user-alt"></i> Change Password</a></li>
-        <li><a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        {% url 'portfolio' as url %}
+        <li><a {% if url == request.path %}class="active" {% endif %} href="{{ url }}">DASHBOARD</a></li>
+        {% url 'change_password' as url %}
+        <li><a {% if url == request.path %}class="active" {% endif %} href="{{ url }}">CHANGE PASSWORD</a></li>
+        {% url 'logout' as url %}
+        <li><a {% if url == request.path %}class="active" {% endif %} href="{{ url }}">LOGOUT</a></li>
       </ul>
     </div>
   </div>
-  <div class="col-xs-10 right-col" id="portfolio">
+  <div class="col-xs-10 right-col">
     <div class="right-side-section">
       <div class="port-header">
         <div class="three-bar"><i class="fas fa-bars"></i></div>
         <div class="col-xs-6 custom-col-portfollio">
           <div class="table-header">
             <h2>My Stock Portfolio</h2>
-            <p>Updated: {% now "F jS Y H:i:s" %}</p>
+            <p id="updated-time">Updated: {% now "F j, Y H:i:s" %}</p>
           </div>
         </div>
         <div class="col-xs-6 responsive-los-profit">
-          <div class="left-side-header">
+          <div class="left-side-header" id="investment-profit">
             {% if investment %}
             <div class="investment">
               <h2>Total Investment</h2>
-              <p>${{ investment|floatformat:2  }}</p>
+              <p>${{ investment|floatformat:2|intcomma  }}</p>
             </div>
 
             {% endif %}
             {% if profit.profit__sum %}
             <div class="profit {% if profit.profit__sum < 0 %}profit-minus{% endif %}">
               <h2>Current Profit</h2>
-              <p>${{ profit.profit__sum|floatformat:2  }}</p>
+              <p>${{ profit.profit__sum|floatformat:2|intcomma  }}</p>
             </div>
             {% endif %}
           </div>
@@ -52,11 +58,11 @@
         <table class="table">
           <thead>
             <tr>
-              <th style="text-align:center">TICKER</th>
+              <th>TICKER</th>
               <th style="text-align:center">POTENTIAL<a href="#" data-toggle="tooltip" data-container="body"
                   data-placement="top" title="Potential"><i class="fas fa-info-circle"></i></a></th>
               <th style="text-align:center">BID<a href="#" data-toggle="tooltip" data-container="body"
-                  data-placement="top" title="Current Stock Price"><i class="fas fa-info-circle"></i></a></th>
+                  data-placement="top" title="Current stock price."><i class="fas fa-info-circle"></i></a></th>
               <th style="text-align:center">BUY TARGET<a href="#" data-toggle="tooltip" data-container="body"
                   data-placement="top" title="Buy Target"><i class="fas fa-info-circle"></i></a></th>
               <th class="text-secondary bg-light" style="text-align:center">SELL TARGET<a href="#" data-toggle="tooltip"
@@ -68,13 +74,13 @@
               <th style="text-align:center">SHARES OWNED</th>
               <th style="text-align:center">PURCHASE PRICE</th>
               <th>COMPANY NAME</th>
-              <th style="text-align:center">ACTIONS</th>
+              <th>ACTIONS</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="table-body">
             {% for stock in object_list %}
             <tr>
-              <td style="text-align:center"> {{ stock.ticker }}</td>
+              <td> {{ stock.ticker }}</td>
               <td style="text-align:center"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}</td>
               <td style="text-align:center"> {{ stock.current }}</td>
               <td style="text-align:center"> {% if stock.buy_target %}{{ stock.buy_target }}{% else %}-{% endif %}</td>
@@ -88,9 +94,9 @@
                 {% elif stock.profit > 0 %}<i class="fa fa-arrow-up"></i> {% endif %}</td>
               <td style="text-align:center"> {% firstof stock.shares '-' %}</td>
               <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
-              <td style="text-align:left"> {{ stock.stock_name }}</td>
+              <td> {{ stock.stock_name }}</td>
               <td>
-                <a href="{% url 'update-stock' stock.pk %}" class="p-btn "><i class="fas fa-pencil-alt"
+                <a href="{% url 'update-stock' stock.pk %}" class="p-btn"><i class="fas fa-pencil-alt"
                     aria-hidden="true"></i>
                 </a><a href="{% url 'delete-stock' stock.pk %}" class="p-btn"><i class="fas fa-trash"
                     aria-hidden="true"></i>
@@ -114,8 +120,9 @@
     $.ajax({
       url: "{% url 'portfolio' %}",
       success: function (data) {
-
-        $('#portfolio').replaceWith($('#portfolio', data));
+        $('#table-body').replaceWith($('#table-body', data));
+        $('#investment-profit').replaceWith($('#investment-profit', data));
+        $('#updated-time').replaceWith($('#updated-time', data));
       }
     });
   }

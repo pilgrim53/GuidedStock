@@ -16,44 +16,51 @@ class Stock(models.Model):
     ticker = models.CharField(blank=False, null=False, max_length=40)
     purchase = models.DecimalField(
         default=0,
-        blank=True, null=True, max_digits=10, decimal_places=2)
+        blank=True, max_digits=10, decimal_places=2)
     sell_target = models.DecimalField(
-        blank=True, null=True, max_digits=10, decimal_places=2, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0)
     buy_target = models.DecimalField(
-        blank=True, null=True, max_digits=10, decimal_places=2, default=0)
-    shares = models.IntegerField(blank=True, null=True, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0)
+    shares = models.IntegerField(blank=True, default=0)
     current = models.DecimalField(
-        blank=True, null=True, max_digits=10, decimal_places=2)
+        blank=True, max_digits=10, decimal_places=2, default=0)
     proximity = models.DecimalField(
-        blank=True, null=True, max_digits=10, decimal_places=2)
+        blank=True, max_digits=10, decimal_places=2, default=0)
     profit = models.DecimalField(
-        blank=True, null=True, max_digits=10, decimal_places=2)
+        blank=True, max_digits=10, decimal_places=2, default=0)
     is_default = models.BooleanField(default=False)
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     potential = models.DecimalField(
-        blank=True, null=True, max_digits=10, decimal_places=2)
+        blank=True, max_digits=10, decimal_places=2, default=0)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'Stock'
 
+    def __str__(self):
+        return '%s (%s)' % (self.stock_name, self.ticker)
+
     def update_stock(self):
+        if not self.purchase:
+            self.purchase = 0
+        if not self.shares:
+            self.shares = 0
+        if not self.buy_target:
+            self.buy_target = 0
+        if not self.sell_target:
+            self.sell_target = 0
         self.potential = round(
             self.sell_target/self.current, 2) if self.sell_target else 0
-        # Calculate Profit and Proximity differently if we own shares
-        if self.shares > 0 and self.purchase:
-            self.profit = round(
-                (self.current - self.purchase) * self.shares)
-            goal = self.sell_target - self.purchase
-            self.proximity = round((self.current - self.purchase)/goal, 2)*100
-        else:
-            self.profit = 0
+        self.profit = round((self.current - self.purchase) * self.shares)
+        self.proximity = 0
+        if self.sell_target and self.purchase:
+            self.proximity = round(
+                (self.current - self.purchase)/(self.sell_target - self.purchase), 2)*100
+        elif self.sell_target and self.buy_target:
             goal = Decimal(self.sell_target - self.buy_target)
-            if goal != 0:
+            if goal:
                 self.proximity = (
                     round((self.current - self.buy_target) / goal, 2)) * 100
-            else:
-                self.proximity = 0
 
     def full_clean(self, exclude=None, validate_unique=True):
         """Validate the ticker before save.
@@ -62,6 +69,9 @@ class Stock(models.Model):
         if self.shares and not self.purchase:
             raise ValidationError({
                 'purchase': "If you own shares of %s then you should provide the purchase price." % self.ticker})
+        if self.purchase and not self.shares:
+            raise ValidationError({
+                'shares': "If you have purchase price of %s then you should provide the shares." % self.ticker})
         try:
             self.current = round(
                 Decimal(stock_info.get_live_price(self.ticker)), 2)

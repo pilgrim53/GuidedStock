@@ -31,14 +31,17 @@ class StockCreate(CreateView, BaseStockFormView, BaseStockView):
 
     def form_valid(self, form):
         try:
-            self.object = stock = Stock.objects.get(
+            self.object = stock = self.model.objects.get(
                 ticker=form.instance.ticker, user=self.request.user)
-            stock.purchase = (stock.purchase * stock.shares) + \
-                (form.instance.shares * form.instance.purchase)
-            stock.shares += form.instance.shares
-            stock.purchase /= stock.shares
-            stock.buy_target = form.instance.buy_target
-            stock.sell_target = form.instance.sell_target
+            if form.instance.shares and form.instance.purchase:
+                stock.purchase = (stock.purchase * stock.shares) + \
+                    (form.instance.shares * form.instance.purchase)
+                stock.shares += form.instance.shares
+                stock.purchase /= stock.shares
+            if form.instance.buy_target:
+                stock.buy_target = form.instance.buy_target
+            if form.instance.sell_target:
+                stock.sell_target = form.instance.sell_target
             stock.save()
             return HttpResponseRedirect(self.get_success_url())
         except Stock.DoesNotExist:
