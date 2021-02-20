@@ -1,7 +1,10 @@
 /* ----- Custom Scripts for Destiny template ----- */
+
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+
 $('#subscribe').submit(function (e) {
   e.preventDefault();
   var email_id = $("#email_id").val();
@@ -118,12 +121,13 @@ $('input[type="password"]').each(function () {
   });
 })
 
-$(".three-bar i").click(function () {
+
+$(document).on("click", ".three-bar i", function () {
   $(".sidebar").toggleClass("show-sidebar");
   $(".sidebar").removeClass("hide-sidebar");
 });
 
-$(".close-btn i").click(function () {
+$(document).on("click", ".close-btn i", function () {
   $(".sidebar").toggleClass("hide-sidebar");
   $(".sidebar").removeClass("show-sidebar");
 });

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="uft-8">
-    <title> {% block title %}GuidedStock | Personal Stock Portfolio Management Tools{% endblock %}</title>
+    <title>{% block title %}GuidedStock | Personal Stock Portfolio Management Tools{% endblock %}</title>
     <link rel="icon" href="{% static 'assets/logos/favicon.png' %}" type="image/png" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
@@ -20,14 +20,21 @@
     {% block body %}
     {% block content %}
     {% endblock %}
-    <div class="login-footer">
-        <div class="footer-link">
-            <a href="{% url 'home' %}">  <span><img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" />©2021</span></a>
-            <span><a href="{% url 'user-agreement' %}">User Agreement</a></span>
-            <span><a href="{% url 'privacy-policy' %}">Privacy Policy</a></span>
-            <span><a href="{% url 'cookie-policy' %}">Cookie Policy</a></span>
+    <!-- Footer Section -->
+    <div class="footer no-color">
+        <div class="container">
+            <div class="col-md-12 text-center">
+                <img class="img-circle" src="{% static 'assets/logos/logo.png' %}" width="40" height="40"
+                    alt="GuidedStock abbreviated logo">
+                <div class="footer-text">
+                    <p>
+                        &copy;2021 GuidedStock. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>{% endblock %}
+    </div>
+    {% endblock %}
 
     <script type="text/javascript" src="{% static 'assets/js/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>

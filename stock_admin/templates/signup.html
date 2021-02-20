@@ -2,6 +2,8 @@
 
 {% load static i18n %}
 
+{% block title %}Sign up{% endblock %}
+
 {% block body_class %}login-page-outside-style register-guid{% endblock %}
 
 {% block content %}
@@ -64,13 +66,16 @@
                     <li>
                         <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" name="default_portfolio"
                             value="value1">
-                        <label for="styled-checkbox-1">I would like the default portfolio
+                        <label for="styled-checkbox-1">
+                            <p>I would like the default portfolio</p>
                             <a href="javascript:void(0)" class="info-tooltip tooltip"><i
-                                    class="far fa-question-circle"></i><span class="tooltip__content d-port-tooltip">The
-                                    default
-                                    portfolio contains a selection of default stocks with sample
-                                    data.</span></a></label>
+                                    class="far fa-question-circle"></i><span
+                                    class="tooltip__content d-port-tooltip">Start with a small preselected set of stocks
+                                    to get you started. These can be updated, changed, or deleted by you at any
+                                    time.</span></a>
+                        </label>
                     </li>
+
                     <li>
                         <input class="styled-checkbox" id="styled-checkbox-2" required type="checkbox" value="value1">
                         <label for="styled-checkbox-2">I agree with the &nbsp; <a
@@ -86,9 +91,10 @@
         </div>
 
         <div class="new-join">
-            <p>Already a user? <a href="{% url 'login' %}">Sign In</a></p>
+            <p>Already a user? <a href="{% url 'login' %}">Log in</a></p>
         </div>
     </div>
+
 </div>
 
 {% endblock %}

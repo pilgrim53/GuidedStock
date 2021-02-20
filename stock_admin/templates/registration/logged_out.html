@@ -2,24 +2,24 @@
 
 {% load static i18n %}
 
+{% block title %}You logged out{% endblock %}
+
+{% block body_class %}login-page-outside-style{% endblock %}
+
 {% block content %}
-
-<body class="{% block body_class %}login-page-outside-style{% endblock %}">
-
-    <div class="outside-wrapper">
-        <div class="custom-col">
-            <div class="header-logo">
-                <a href="{% url 'home' %}"> <img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" /></a>
-            </div>
-            <div class="login-form sucess-msg">
-                <h2>You signed out.</h2>
-                <p>Didn't mean to sign out?</p>
-                <p>You can sign in again now.</p>
-                <div class="form-group text-center">
-                    <a href="{% url 'login'%}" type="submit" class="custom-btn back-login">Sign in</a>
-                </div>
+<div class="outside-wrapper">
+    <div class="custom-col">
+        <div class="header-logo">
+            <a href="{% url 'home' %}"> <img src="{% static 'assets/logos/gs_logo.png' %}" alt="footer-logo" /></a>
+        </div>
+        <div class="login-form sucess-msg">
+            <h2>You logged out.</h2>
+            <p>Didn't mean to log out?</p>
+            <p>You can log in again now.</p>
+            <div class="form-group text-center">
+                <a href="{% url 'login'%}" type="submit" class="custom-btn back-login">Log in</a>
             </div>
         </div>
     </div>
-
-    {% endblock %}
+</div>
+{% endblock %}
