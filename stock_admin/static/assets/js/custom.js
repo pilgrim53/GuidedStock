@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
-
 $('#subscribe').submit(function (e) {
   e.preventDefault();
   var email_id = $("#email_id").val();
@@ -130,4 +129,24 @@ $(document).on("click", ".three-bar i", function () {
 $(document).on("click", ".close-btn i", function () {
   $(".sidebar").toggleClass("hide-sidebar");
   $(".sidebar").removeClass("show-sidebar");
+});
+
+//-----Sider Add Ticker Script---
+$(".plus-square").click(function () {
+  $(".real-ticker-filed").toggleClass("show-ticker-sidebar");
+  $(".real-ticker-filed").removeClass("hide-ticker-sidebar");
+  $(".add-ticker-sidebar .tiker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
+});
+
+function hideOverlay() {
+  $(".real-ticker-filed").toggleClass("hide-ticker-sidebar");
+  $(".real-ticker-filed").removeClass("show-ticker-sidebar");
+  $(".add-ticker-sidebar .tiker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+}
+$(".close-ticker-sidebar i").click(hideOverlay);
+//-----Edit Ticker Script---
+$(".edit-ticker-siderbar").click(function () {
+  $(".real-ticker-filed").toggleClass("show-ticker-sidebar");
+  $(".real-ticker-filed").removeClass("hide-ticker-sidebar");
+  $(".add-ticker-sidebar .tiker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });

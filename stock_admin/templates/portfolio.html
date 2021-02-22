@@ -49,8 +49,7 @@
         </div>
       </div>
       <div class="text-right add-port-btn">
-        <a href="{% url 'create-stock' %}" class="plus-square"><span>Add ticker</span> <i
-            class="far fa-plus-square"></i></a>
+        <a href="#" class="plus-square"><span>Add ticker</span> <i class="far fa-plus-square"></i></a>
       </div>
 
 
@@ -110,9 +109,41 @@
     </div>
   </div>
 </div>
+<div class="add-ticker-sidebar">
+  <div class="tiker-overlay"></div>
+  <div class="real-ticker-filed">
+    <div class="close-ticker-sidebar">
+      <i class="far fa-window-close"></i>
+    </div>
+    <form class="tiker-form" id="add-stock-form" action="{% url 'create-stock' %}" method="POST">
+      {% csrf_token %}
+      <div class="form-group">
+        <label>Stock Ticker*</label>
+        <input type="text" name="ticker" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Sell Target</label>
+        <input type="number" step="0.01" name="sell_target" inputmode="numeric" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Buy Target</label>
+        <input type="number" step="0.01" name="buy_target" inputmode="numeric" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Shares Owned</label>
+        <input type="number" step="0.01" name="shares" inputmode="numeric" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label>Purchase Price</label>
+        <input type="number" step="1" name="purchase" inputmode="numeric" class="form-control" />
+      </div>
+      <div class="text-right">
+        <button type="submit" class="custom-add-btn">Add</button>
+      </div>
+    </form>
+  </div>
+</div>
 {% endblock %}
-
-
 
 {% block js %}
 <script>
@@ -128,5 +159,30 @@
   }
   let seconds = 3;
   setInterval(refresh, seconds * 1000);
+  $(document).ready(function () {
+    $('#add-stock-form').submit(function () { // catch the form's submit event
+      let form = $('#add-stock-form');
+      form.find('.validation-msg').remove();
+      $.ajax({ // create an AJAX call...
+        data: $(this).serialize(), // get the form data
+        type: $(this).attr('method'), // GET or POST
+        url: $(this).attr('action'), // the file to call
+        success: function (response) { // on success..
+          form.get(0).reset();
+          refresh();
+          hideOverlay();
+        },
+        error: function (response) {
+          respnseObj = JSON.parse(response.responseText);
+          for (var key in respnseObj) {
+            error_messages = respnseObj[key];
+            $(`[name="${key}"]`).parent().append(
+              `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
+          }
+        }
+      });
+      return false;
+    });
+  });
 </script>
 {% endblock %}
