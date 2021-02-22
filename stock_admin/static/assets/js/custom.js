@@ -106,8 +106,6 @@ $(".toggle-password-confirm").on('click', function () {
   }
 });
 
-// -----tooltip---
-
 // ----caps lock on validation---
 $('input[type="password"]').each(function () {
   $(this).get(0).addEventListener("keyup", function (event) {
@@ -120,7 +118,7 @@ $('input[type="password"]').each(function () {
   });
 })
 
-
+// -----Mobile menu---
 $(document).on("click", ".three-bar i", function () {
   $(".sidebar").toggleClass("show-sidebar");
   $(".sidebar").removeClass("hide-sidebar");
@@ -143,7 +141,9 @@ function hideOverlay() {
   $(".real-ticker-filed").removeClass("show-ticker-sidebar");
   $(".add-ticker-sidebar .tiker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
 }
+
 $(".close-ticker-sidebar i").click(hideOverlay);
+
 //-----Edit Ticker Script---
 $(".edit-ticker-siderbar").click(function () {
   $(".real-ticker-filed").toggleClass("show-ticker-sidebar");
