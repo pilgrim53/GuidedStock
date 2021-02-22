@@ -148,7 +148,7 @@ function hideOverlay() {
 
 $(".close-ticker-sidebar i").click(hideOverlay);
 //-----Edit Ticker Script---
-$(".edit-ticker-sidebar").click(function () {
+$(document).on('click', '.edit-ticker-sidebar', function () {
   $(".edit-real-ticker-filed").toggleClass("edit-show-ticker-sidebar");
   $(".edit-real-ticker-filed").removeClass("edit-hide-ticker-sidebar");
   $(".add-ticker-sidebar .tiker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
