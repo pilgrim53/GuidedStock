@@ -19,8 +19,8 @@ urlpatterns = [
     path('password', login_required(
         views.ChangePasswordFormView.as_view()), name='change_password'),
 
-    path('user-agreement', TemplateView.as_view(template_name="user_agreement.html"),
-         name='user-agreement'),
+    path('terms-of-service', TemplateView.as_view(template_name="terms_of_service.html"),
+         name='terms-of-service'),
     path('privacy-policy', TemplateView.as_view(template_name="privacy_policy.html"),
          name='privacy-policy'),
     path('cookie-policy', TemplateView.as_view(template_name="cookie_policy.html"),
