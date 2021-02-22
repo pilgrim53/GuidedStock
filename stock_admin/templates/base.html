@@ -47,7 +47,7 @@
                         <li {% if url == request.path %}class="active" {% endif %}><a href="{{ url }}"><span>Privacy
                                     Policy</span></a></li>
 
-                        {% url 'user-agreement' as url %}
+                        {% url 'terms-of-service' as url %}
                         <li {% if url == request.path %}class="active" {% endif %}><a href="{{ url }}"><span>Terms of
                                     Service</span></a></li>
                         <li class="vertical-line"><span>|</span></li>
