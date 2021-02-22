@@ -8,7 +8,7 @@
 
 {% block content %}
 <div class="portfollio-row">
-  <div class="col-xs-2 custom-col-portfollio responsive-menu">
+  <div class="left-col custom-col-portfollio responsive-menu">
     <div class="sidebar">
       <div class="close-btn"><i class="fas fa-times"></i></div>
       <a href="{% url 'portfolio' %}"> <img src="{% static 'assets/images/gs.png' %}" alt="logo" /></a>
@@ -22,7 +22,7 @@
       </ul>
     </div>
   </div>
-  <div class="col-xs-10 right-col">
+  <div class="right-col">
     <div class="right-side-section">
       <div class="port-header">
         <div class="three-bar"><i class="fas fa-bars"></i></div>
@@ -137,7 +137,7 @@
         <input type="number" step="1" name="purchase" inputmode="numeric" class="form-control" />
       </div>
       <div class="text-right">
-        <button type="submit" class="custom-add-btn">Add</button>
+        <button type="submit" class="custom-add-btn"><i class="fa fa-spinner fa-spin"></i> Add</button>
       </div>
     </form>
   </div>

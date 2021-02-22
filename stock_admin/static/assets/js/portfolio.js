@@ -1,6 +1,6 @@
 function refresh() {
     $.ajax({
-        url: "{% url 'portfolio' %}",
+        url: "/portfolio",
         success: function (data) {
             $('#table-body').replaceWith($('#table-body', data));
             $('#investment-profit').replaceWith($('#investment-profit', data));
@@ -11,7 +11,9 @@ function refresh() {
 let seconds = 3;
 setInterval(refresh, seconds * 1000);
 $(document).ready(function () {
+    $('.fa-spin').hide();
     $('#add-stock-form').submit(function () { // catch the form's submit event
+        $('.fa-spin').show();
         let form = $('#add-stock-form');
         form.find('.validation-msg').remove();
         $.ajax({ // create an AJAX call...
@@ -19,11 +21,13 @@ $(document).ready(function () {
             type: $(this).attr('method'), // GET or POST
             url: $(this).attr('action'), // the file to call
             success: function (response) { // on success..
+                $('.fa-spin').hide();
                 form.get(0).reset();
                 refresh();
                 hideOverlay();
             },
             error: function (response) {
+                $('.fa-spin').hide();
                 respnseObj = JSON.parse(response.responseText);
                 for (var key in respnseObj) {
                     error_messages = respnseObj[key];

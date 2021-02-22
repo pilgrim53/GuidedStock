@@ -4,6 +4,7 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
+
 $('#subscribe').submit(function (e) {
   e.preventDefault();
   var email_id = $("#email_id").val();
@@ -129,7 +130,7 @@ $(document).on("click", ".close-btn i", function () {
   $(".sidebar").removeClass("show-sidebar");
 });
 
-//-----Sider Add Ticker Script---
+//-----Side Add Ticker Script---
 $(".plus-square").click(function () {
   $(".real-ticker-filed").toggleClass("show-ticker-sidebar");
   $(".real-ticker-filed").removeClass("hide-ticker-sidebar");
@@ -140,13 +141,16 @@ function hideOverlay() {
   $(".real-ticker-filed").toggleClass("hide-ticker-sidebar");
   $(".real-ticker-filed").removeClass("show-ticker-sidebar");
   $(".add-ticker-sidebar .tiker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+  $(".edit-real-ticker-filed").toggleClass("edit-hide-ticker-sidebar");
+  $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
+  $(".add-ticker-sidebar .tiker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
 }
 
 $(".close-ticker-sidebar i").click(hideOverlay);
-
 //-----Edit Ticker Script---
-$(".edit-ticker-siderbar").click(function () {
-  $(".real-ticker-filed").toggleClass("show-ticker-sidebar");
-  $(".real-ticker-filed").removeClass("hide-ticker-sidebar");
+$(".edit-ticker-sidebar").click(function () {
+  $(".edit-real-ticker-filed").toggleClass("edit-show-ticker-sidebar");
+  $(".edit-real-ticker-filed").removeClass("edit-hide-ticker-sidebar");
   $(".add-ticker-sidebar .tiker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
+$(".close-ticker-sidebar i").click(hideOverlay);
