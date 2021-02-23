@@ -10,58 +10,43 @@ function refresh() {
 }
 let seconds = 2;
 setInterval(refresh, seconds * 1000);
+
+function ajaxFormCall(form, element) {
+    $('.fa-spin').show();
+    form.find('button[type="submit"]').prop('disabled', true);
+    form.find('.validation-msg').remove();
+    $.ajax({ // create an AJAX call...
+        data: element.serialize(), // get the form data
+        type: element.attr('method'), // GET or POST
+        url: element.attr('action'), // the file to call
+        success: function (response) { // on success..
+            $('.fa-spin').hide();
+            form.find('button[type="submit"]').prop('disabled', false);
+            form.get(0).reset();
+            refresh();
+            $(".close-ticker-sidebar i").click();
+        },
+        error: function (response) {
+            $('.fa-spin').hide();
+            form.find('button[type="submit"]').prop('disabled', false);
+            respnseObj = JSON.parse(response.responseText);
+            for (var key in respnseObj) {
+                error_messages = respnseObj[key];
+                form.find(`[name="${key}"]`).parent().append(
+                    `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
+            }
+        }
+    });
+}
+
 $(document).ready(function () {
     $('.fa-spin').hide();
     $('#add-stock-form').submit(function () { // catch the form's submit event
-        $('.fa-spin').show();
-        let form = $('#add-stock-form');
-        form.find('.validation-msg').remove();
-        $.ajax({ // create an AJAX call...
-            data: $(this).serialize(), // get the form data
-            type: $(this).attr('method'), // GET or POST
-            url: $(this).attr('action'), // the file to call
-            success: function (response) { // on success..
-                $('.fa-spin').hide();
-                form.get(0).reset();
-                refresh();
-                $(".close-ticker-sidebar i").click();
-            },
-            error: function (response) {
-                $('.fa-spin').hide();
-                respnseObj = JSON.parse(response.responseText);
-                for (var key in respnseObj) {
-                    error_messages = respnseObj[key];
-                    form.find(`[name="${key}"]`).parent().append(
-                        `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
-                }
-            }
-        });
+        ajaxFormCall($('#add-stock-form'), $(this));
         return false;
     });
     $('#stock-edit-form').submit(function () { // catch the form's submit event
-        $('.fa-spin').show();
-        let form = $('#stock-edit-form');
-        form.find('.validation-msg').remove();
-        $.ajax({ // create an AJAX call...
-            data: $(this).serialize(), // get the form data
-            type: $(this).attr('method'), // GET or POST
-            url: $(this).attr('action'), // the file to call
-            success: function (response) { // on success..
-                $('.fa-spin').hide();
-                form.get(0).reset();
-                refresh();
-                $(".close-ticker-sidebar i").click();
-            },
-            error: function (response) {
-                $('.fa-spin').hide();
-                respnseObj = JSON.parse(response.responseText);
-                for (var key in respnseObj) {
-                    error_messages = respnseObj[key];
-                    form.find(`[name="${key}"]`).parent().append(
-                        `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
-                }
-            }
-        });
+        ajaxFormCall($('#stock-edit-form'), $(this));
         return false;
     });
 
@@ -97,7 +82,8 @@ $(document).ready(function () {
         $.ajax({
             url: fundamentalsUrl,
             type: 'GET',
-            success: function (response) {
+            success: function (res) {
+                let response = JSON.parse(res.replace(/\bNaN\b/g, "null"))
                 $('#open').html(response['Open'] ? response['Open'] : '-');
                 $('#pe').html(response['PE Ratio (TTM)'] ? response['PE Ratio (TTM)'] : '-');
                 $('#avg-vol').html(response['Avg. Volume'] ? response['Avg. Volume'] : '-');

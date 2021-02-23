@@ -118,4 +118,4 @@ class StockDelete(DeleteView):
 
 def get_fundamentals(request, ticker):
     obj = si.get_quote_table(ticker)
-    return JsonResponse(obj)
+    return JsonResponse(json.dumps(obj, allow_nan=True), safe=False)
