@@ -87,25 +87,12 @@ $.ajaxSetup({
 
 // -----password---
 
-$(".toggle-password").on('click', function () {
-  $(this).toggleClass("fas fa-eye-slash fas fa-eye");
-  var input = $("#passInput");
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
-  }
+$(document).on('click', '.fa-eye', function () {
+  $(this).toggleClass("fa-eye-slash");
+  let input = $(this).prev();
+  (input.attr("type") == "password") ? input.attr("type", "text"): input.attr("type", "password");
 });
 
-$(".toggle-password-confirm").on('click', function () {
-  $(this).toggleClass("fas fa-eye-slash fas fa-eye");
-  var input = $("#passInput-confirm");
-  if (input.attr("type") == "password") {
-    input.attr("type", "text");
-  } else {
-    input.attr("type", "password");
-  }
-});
 
 // ----caps lock on validation---
 $('input[type="password"]').each(function () {

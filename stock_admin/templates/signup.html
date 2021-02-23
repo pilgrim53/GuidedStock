@@ -35,8 +35,8 @@
                     <div class="custom-input-field">
                         <input type="password" name="password1"
                             {% if form.password1.value %}value="{{ form.password1.value }}" {% endif %} required
-                            id="passInput" class="form-control login-inputs">
-                        <i class="password-show-hide toggle-password fas fa-eye"></i>
+                            class="form-control">
+                        <i class="fas fa-eye"></i>
                     </div>
                     {% if form.password1.errors %}
                     {% for error in form.password1.errors %}
@@ -52,8 +52,8 @@
                     <div class="custom-input-field">
                         <input type="password" name="password2"
                             {% if form.password2.value %}value="{{ form.password2.value }}" {% endif %} required
-                            id="passInput-confirm" class="form-control login-inputs">
-                        <i class="fas fa-eye password-show-hide toggle-password-confirm"></i>
+                            class="form-control">
+                        <i class="fas fa-eye"></i>
                     </div>
                     {% if form.password2.errors %}
                     {% for error in form.password2.errors %}

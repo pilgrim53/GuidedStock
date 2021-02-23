@@ -34,7 +34,7 @@ class SignUp(generic.CreateView):
 
 
 class ChangePasswordFormView(FormView):
-    template_name = "change_password.html"
+    template_name = "registration/password_change_form.html"
 
     def get(self, request, *args, **kwargs):
         form = PasswordChangeForm(request.user)
@@ -47,11 +47,7 @@ class ChangePasswordFormView(FormView):
         if form.is_valid():
             user = form.save()
             update_session_auth_hash(request, user)  # Important!
-            messages.success(
-                request, 'Your password was successfully updated!')
-            return redirect('change_password')
-        else:
-            messages.error(request, 'Please correct the error below.')
+            return redirect('change-password-done')
         return render(request, self.template_name, {
             'form': form
         })
