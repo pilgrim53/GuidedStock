@@ -26,4 +26,5 @@ urlpatterns = [
     path('cookie-policy', TemplateView.as_view(template_name="cookie_policy.html"),
          name='cookie-policy'),
     path('subscribe/', views.subscribe, name="subscribe"),
+    path('stock/<str:ticker>', views.get_fundamentals, name="stock-fundamentals"),
 ]

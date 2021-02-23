@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}My Stock Portfolio{% endblock %}
+{% block title %}Watchlist{% endblock %}
 
 {% load static humanize %}
 
 {% block header %}{% endblock %}
 
 {% block content %}
-<div class="portfollio-row">
-  <div class="left-col custom-col-portfollio responsive-menu">
+<div class="portfolio-row">
+  <div class="left-col custom-col-portfolio responsive-menu">
     <div class="sidebar">
       <div class="close-btn"><i class="fas fa-times"></i></div>
       <a href="{% url 'portfolio' %}"> <img src="{% static 'assets/images/gs.png' %}" alt="logo" /></a>
@@ -26,13 +26,13 @@
     <div class="right-side-section">
       <div class="port-header">
         <div class="three-bar"><i class="fas fa-bars"></i></div>
-        <div class="col-xs-6 custom-col-portfollio">
+        <div class="col-xs-6 custom-col-portfolio">
           <div class="table-header">
-            <h2>My Stock Portfolio</h2>
+            <h2>Watchlist</h2>
             <p id="updated-time">Updated: {% now "F j, Y H:i:s" %}</p>
           </div>
         </div>
-        <div class="col-xs-6 responsive-los-profit">
+        <div class="col-xs-6 responsive-loss-profit">
           <div class="left-side-header" id="investment-profit">
             {% if investment %}
             <div class="investment">
@@ -53,22 +53,27 @@
       <div class="text-right add-port-btn">
         <a href="#" class="plus-square"><span>Add ticker</span> <i class="far fa-plus-square"></i></a>
       </div>
-      <div class="portofollio-table">
+      <div class="portfolio-table">
         <table class="table">
           <thead>
             <tr>
               <th>TICKER</th>
               <th style="text-align:center">POTENTIAL<a href="#" data-toggle="tooltip" data-container="body"
-                  data-placement="top" title="Potential"><i class="fas fa-info-circle"></i></a></th>
+                  data-placement="top" title='Your sell target has been met when potential reaches "1".'><i
+                    class="fas fa-info-circle"></i></a></th>
               <th style="text-align:center">BID<a href="#" data-toggle="tooltip" data-container="body"
-                  data-placement="top" title="Current stock price."><i class="fas fa-info-circle"></i></a></th>
+                  data-placement="top" title="Current listed stock price."><i class="fas fa-info-circle"></i></a></th>
               <th style="text-align:center">BUY TARGET<a href="#" data-toggle="tooltip" data-container="body"
-                  data-placement="top" title="Buy Target"><i class="fas fa-info-circle"></i></a></th>
+                  data-placement="top" title="Your entry point for purchasing stock."><i
+                    class="fas fa-info-circle"></i></a></th>
               <th class="text-secondary bg-light" style="text-align:center">SELL TARGET<a href="#" data-toggle="tooltip"
-                  data-container="body" data-placement="top" title="Sell Target"><i class="fas fa-info-circle"></i></a>
+                  data-container="body" data-placement="top" title="Your exit point for selling stock."><i
+                    class="fas fa-info-circle"></i></a>
               </th>
               <th style="text-align:center">PROXIMITY<a href="#" data-toggle="tooltip" data-container="body"
-                  data-placement="top" title="proximity"><i class="fas fa-info-circle"></i></a></th>
+                  data-placement="top"
+                  title='Where the bid is compared to your buy target ("0.00%") sell target ("100.00%").'><i
+                    class="fas fa-info-circle"></i></a></th>
               <th style="text-align:center">PROFIT</th>
               <th style="text-align:center">SHARES OWNED</th>
               <th style="text-align:center">PURCHASE PRICE</th>
@@ -95,7 +100,7 @@
               <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
               <td> {{ stock.stock_name }}</td>
               <td>
-                <a href="#" class="p-btn edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}"><i
+                <a href="#" class="p-btn edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}" data-fundamentals-url="{% url 'stock-fundamentals' stock.ticker %}"><i
                     class="fas fa-pencil-alt" aria-hidden="true"></i>
                 </a><a href="{% url 'delete-stock' stock.pk %}" class="p-btn"><i class="fas fa-trash"
                     aria-hidden="true"></i>
@@ -109,12 +114,12 @@
   </div>
 </div>
 <div class="add-ticker-sidebar">
-  <div class="tiker-overlay"></div>
+  <div class="ticker-overlay"></div>
   <div class="real-ticker-filed">
     <div class="close-ticker-sidebar">
       <i class="far fa-window-close"></i>
     </div>
-    <form class="tiker-form" id="add-stock-form" action="{% url 'create-stock' %}" method="POST">
+    <form class="ticker-form" id="add-stock-form" action="{% url 'create-stock' %}" method="POST">
       {% csrf_token %}
       <div class="form-group">
         <label>Stock Ticker*</label>
@@ -144,7 +149,7 @@
 </div>
 
 <div class="add-ticker-sidebar">
-  <div class="tiker-overlay"></div>
+  <div class="ticker-overlay"></div>
   <div class="edit-real-ticker-filed">
     <div class="close-ticker-sidebar">
       <i class="far fa-window-close"></i>
@@ -152,45 +157,42 @@
     <div class="edit-stock-header">
       <h2 id="ticker">ostk</h2>
       {% comment %} <a href="javascript:void(0);"><i class="far fa-edit"></i></a> {% endcomment %}
-      {% comment %} <a href="javascript:void(0);"><i class="far fa-trash-alt"></i></a> {% endcomment %}
+      <a href="javascript:void(0);"><i class="far fa-trash-alt"></i></a>
     </div>
 
-    {% comment %} <div class="stock-edit-table">
+    <div class="stock-edit-table">
       <table class="table">
         <tbody>
           <tr>
-            <td>Open <span>91.55</span></td>
-            <td>P/E <span>91.55</span></td>
-            <td>Avg Vol <span>91.55</span></td>
+            <td>Open <span id="open">-</span></td>
+            <td>P/E <span id="pe">-</span></td>
+            <td>Avg Vol <span id="avg-vol">-</span></td>
           </tr>
           <tr>
-            <td>High <span>91.55</span></td>
-            <td>Mkt Cap<span>91.55</span></td>
-            <td>Yield <span>91.55</span></td>
+            <td>High <span id="high">-</span></td>
+            <td>Mkt Cap<span id="mkt-cap">-</span></td>
+            <td>Yield <span id="yield">-</span></td>
           </tr>
           <tr>
-            <td>Low<span>91.55</span></td>
-            <td>52W H<span>91.55</span></td>
-            <td>Beta <span>91.55</span></td>
+            <td>Low<span id="low">-</span></td>
+            <td>52W H<span id="high-52">-</span></td>
+            <td>Beta <span id="beta">-</span></td>
           </tr>
           <tr>
-            <td>Vol <span>91.55</span></td>
-            <td>52W L<span>91.55</span></td>
-            <td>EPS<span>91.55</span></td>
+            <td>Vol <span id="vol">-</span></td>
+            <td>52W L<span id="low-52">-</span></td>
+            <td>EPS<span id="eps">-</span></td>
           </tr>
         </tbody>
       </table>
-    </div> {% endcomment %}
+    </div>
 
     <div class="stock-edit-header-name">
       <span>Stock Name</span>
       <h2 id="stock-name">Overstock.com, Inc.</h2>
     </div>
-
     <div>
-
       <form class="stock-edit-form" id="stock-edit-form" action="" method="POST">
-
         <div class="edit-portfolio-all-field">
           <div class="col-sm-6">
             <div class="form-group">
@@ -234,28 +236,20 @@
               <input type="number" step="0.01" name="purchase" inputmode="numeric" class="form-control" />
             </div>
           </div>
-
           <div class="col-sm-6">
             <div class="form-group stock-bid-range">
               <label>Profit</label>
               <span id="profit">$8635.23</span>
             </div>
           </div>
-
-
         </div>
-
         <div class="text-left edit-submit-btn">
-          <button type="submit" class="custom-add-btn "><i class="fa fa-spinner fa-spin"></i> Submit</button>
+          <button type="submit" class="custom-add-btn "><i class="fa fa-spinner fa-spin"></i> Save Changes</button>
         </div>
-
       </form>
-
     </div>
-
   </div>
 </div>
-
 {% endblock %}
 
 {% block footer %}

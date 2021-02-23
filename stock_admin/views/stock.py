@@ -1,8 +1,9 @@
 import json
 
+import yahoo_fin.stock_info as si
 from django.contrib import messages
 from django.core import serializers
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import _get_queryset
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, FormView, UpdateView
@@ -113,3 +114,8 @@ class StockDelete(DeleteView):
     model = Stock
     success_url = reverse_lazy('portfolio')
     template_name = 'stock_confirm_delete.html'
+
+
+def get_fundamentals(request, ticker):
+    obj = si.get_quote_table(ticker)
+    return JsonResponse(obj)
