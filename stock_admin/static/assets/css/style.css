@@ -804,7 +804,7 @@ body {
 	  margin:5px 0;
   }
   
- .combile-validation-msg{
+ .combine-validation-msg{
 	color: red;
 	margin-bottom: 25px;
  }
@@ -838,6 +838,7 @@ body {
 }
 
 .sidebar{
+	position: fixed;
 	height: 100vh;
 	width: 100%;
 	z-index: 99;
@@ -846,7 +847,7 @@ body {
 	background-color: 	#181818;
 	overflow-x: hidden;
 	padding: 25px 25px 60px;
-	max-width: 280px;
+	max-width: 230px;
 }
 
 .sidebar img{
@@ -888,14 +889,14 @@ body {
 	padding-top: 8px;
 }
 
-.portofollio-table{
+.portfolio-table{
 	display: block;
     width: 100%;
     overflow-x: auto;
 }
 
 
-.portofollio-table table tr th{
+.portfolio-table table tr th{
 	white-space: nowrap;
 	background-color: #EDEDED;
 	text-transform: uppercase;
@@ -906,30 +907,30 @@ body {
 	position: relative;
 }
 
-.portofollio-table table tr td{
+.portfolio-table table tr td{
 	white-space: nowrap;
 	font-weight: 500;
 	padding: 15px;
 }
 
-.portofollio-table table tr td:first-child{
+.portfolio-table table tr td:first-child{
 	text-transform: uppercase;
 }
 
-.portofollio-table table tr{
+.portfolio-table table tr{
 	border-top:2px solid #dddddd;
 }
 
-.portofollio-table table thead tr a{
+.portfolio-table table thead tr a{
 	color: #181818;
 	margin-left: 3px;
 }
 
-.portofollio-table table tbody tr:hover{
+.portfolio-table table tbody tr:hover{
 	background-color: #E6E6E6;
 }
 
-.portofollio-table table tr:nth-child(even){
+.portfolio-table table tr:nth-child(even){
 	background-color: #FAFAFA;
 }
 
@@ -1096,13 +1097,13 @@ body {
 	display: none;
 }
 
-.portfollio-row{
+.portfolio-row{
 	display: flex;
 }
 
 .left-col{
 	width: 100%;
-	max-width: 230px;
+	max-width: 280px;
 }
 
 .right-col{
@@ -1110,8 +1111,8 @@ body {
 	width: 88%;
 }
 
-/* ---Add tiker sidebar--- */
-.real-ticker-filed, .edit-real-ticker-filed{
+/* ---Add ticker sidebar--- */
+.real-ticker-filed, .edit-real-ticker-filed, .delete-sidebar{
   position: fixed;
   top: 0;
   right: -530px;
@@ -1123,12 +1124,12 @@ body {
   box-shadow: 0 6px 12px rgba(107, 82, 82, 0.3);
   background-color:#FAFAFA;
   box-sizing: border-box;
-  transition: ease 0.7s all;
+  transition: ease 0.5s all;
   padding: 150px;
   overflow: auto;
 }	
 
-.tiker-overlay{
+.ticker-overlay, .edit-ticker-overlay, .delete-overlay{
 	width: 100vw;
 	height: 100vh;
 	display: none;
@@ -1139,6 +1140,7 @@ body {
 	background: rgba(76,76,76,0.5);
 }
 
+
   .show-ticker-sidebar{
 	  right: 0;
   }
@@ -1147,13 +1149,13 @@ body {
 	right: 0;
   }
 
-  .tiker-form label{
+  .ticker-form label{
 	  color: #8E8E8E;
 	  margin-bottom:7px;
 	  padding-left:10px;
   }
 
-  .tiker-form input{
+  .ticker-form input{
 	border: 2px solid #C7C7C7;
     font-size: 14px;
     padding: 22px 12px;
@@ -1161,7 +1163,7 @@ body {
 	border-radius: 13px;
   }
 
-  .tiker-form .form-group{
+  .ticker-form .form-group{
 	  margin-bottom: 40px;
   }
 
@@ -1216,7 +1218,7 @@ body {
 
  .edit-real-ticker-filed{
 	max-width: 530px;
-	padding: 90px 30px;
+	padding: 90px 15px;
   }
 
   .edit-stock-header{
@@ -1248,7 +1250,8 @@ body {
 .stock-edit-table table tr td{
 	white-space: nowrap;
 	font-weight: 500;
-	padding:7px 12px ;
+	padding:7px 5px;
+	font-size: 12px;
 	border-right: 2px solid #B7B7B7;
 	border-top: none;
 	width: 150px;
@@ -1341,13 +1344,66 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
-  
+
+
+/* ----Confirm Delete Ticker--- */
+.delete-sidebar{
+	max-width: 530px;
+	padding: 90px 63px;
+  }
+
+.confirm-delete-content img{
+	width: 100%;
+	max-width: 250px;
+	margin-bottom: 15px;
+}
+
+.confirm-delete-content p{
+	color: #8E8E8E;
+    margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.delete-cancel-btn{
+	margin-top: 30px;
+	display: block;
+}
+
+.delete-cancel-btn a{
+	color: #347BB7;
+	font-weight: 500;
+}
+
+.delete-cancel-btn a:hover{
+	text-decoration: none;
+}
+
+.delete-cancel-btn a:focus{
+	text-decoration: none;
+}
+
+.confirm-delete-btn{
+	background-color: #ec0000;
+	border: none;
+	color: #fff !important;
+	margin-right: 15px;
+	padding: 10px 15px;
+	user-select: none;
+}
+
+.confirm-delete-btn:hover{
+	color: #fff;
+}
+
+.delete-show-ticker-sidebar{
+	right: 0;
+}
 
 
 
 /* -----Forgot password style ------ */
 
-.sucess-msg p{
+.success-msg p{
 	color: #8d9297;
     line-height: 28px;
     margin-bottom: 5px;
@@ -1506,7 +1562,6 @@ body {
 
 .header-security p{
 	font-style: italic;
-	/* color: #696969; */
 	font-weight: 500;
 	font-size:14px;
 	line-height: 22px;
@@ -1519,16 +1574,18 @@ body {
 .privacy-info ol{
 	list-style: decimal;
 	font-weight: bold;
+	font-size: 14px;
 }
 
 .privacy-info ol li{
 	margin-left: 10px;
 }
 
-.alphabet-info{
+.alphabet-info, .guided-inner-alphabet{
 	list-style-type: lower-alpha !important;
 	font-weight: normal !important;
 	margin:15px 10px;
+	font-size: 14px;
 }
 
 .alphabet-info p{
@@ -1542,9 +1599,10 @@ body {
 }
 
 .inner-roman-point{
-	list-style-type: upper-roman !important;
+	list-style-type: lower-roman !important;
 	font-weight: normal !important;
 	margin:8px 10px;
+	font-size: 14px;
 }
 
 .inner-roman-point p{
@@ -1557,15 +1615,14 @@ body {
 	font-weight: bold;
 }
 
-.numreic-inner-point{
+.numeric-inner-point{
 	list-style-type:decimal !important;
 	font-weight: normal !important;
 	margin:15px 10px;
+	font-size: 14px;
 }
 
-.guided-inner-alpahabet{
-	list-style-type: lower-alpha !important;
-	font-weight: normal !important;
+.guided-inner-alphabet{
 	margin:8px 10px;
 }
 
@@ -1575,11 +1632,11 @@ body {
 
 /* ---Term Service style--- */
 
-.terms-serivce p{
+.terms-service p{
 	margin-bottom: 15px;
 }
 
-.terms-serivce strong{
+.terms-service strong{
 	font-weight: 700;
 	line-height: 22px;
 	font-size:14px;
@@ -1606,7 +1663,7 @@ body {
 	}
 
 	.right-col{
-		min-width: calc(100% - 250px);
+		min-width: calc(100% - 230px);
 	}
 	
 }
@@ -1748,7 +1805,6 @@ body {
 	.contact-form {
 		padding-top: 100px;
 	}
-
 	
 }
 
@@ -1813,6 +1869,18 @@ body {
 
 	.header-security h2 {
 		font-size: 20px;
+	}
+
+	.edit-portfolio-all-field .form-group{	
+		margin-top: 10px;
+	}
+
+	.stock-edit-header-name h2 {
+		font-size: 28px;
+	}
+
+	.edit-portfolio-all-field {
+		display: block;
 	}
 
 }

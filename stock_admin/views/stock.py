@@ -1,7 +1,9 @@
 import json
 
+import yahoo_fin.stock_info as si
 from django.contrib import messages
-from django.http import HttpResponse, HttpResponseRedirect
+from django.core import serializers
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import _get_queryset
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, FormView, UpdateView
@@ -43,6 +45,8 @@ def convert_context_to_json(context):
 # a mixin to add AJAX support to a form
 # must be used with an object-based FormView (e.g. CreateView)
 class AjaxFormResponseMixin(object):
+    def get_object(self, queryset=None):
+        return get_object_or_json404(self.model, pk=self.kwargs['pk'])
 
     def form_invalid(self, form):
         return render_to_json_response(form.errors, status=400)
@@ -62,9 +66,6 @@ class AjaxFormResponseMixin(object):
 class StockCreate(AjaxFormResponseMixin, CreateView):
     model = Stock
     fields = ('ticker', 'shares', 'purchase', 'buy_target', 'sell_target')
-
-    def get_object(self, queryset=None):
-        return get_object_or_json404(self.model, pk=self.kwargs['pk'])
 
     def get_context_data(self, context):
         context['success'] = True
@@ -94,15 +95,27 @@ class StockCreate(AjaxFormResponseMixin, CreateView):
             return super().form_valid(form)
 
 
-class StockUpdate(UpdateView):
+class StockUpdate(AjaxFormResponseMixin, UpdateView):
     model = Stock
     fields = ('shares', 'purchase', 'buy_target', 'sell_target')
-    success_url = reverse_lazy('portfolio')
-    template_name = 'stock_form.html'
-    success_message = "Stock have been updated."
+
+    def get(self, request, *args, **kwargs):
+        """Handle GET requests: instantiate a blank version of the form."""
+        return render_to_json_response(self.get_context_data())
+
+    def get_context_data(self, *kwargs):
+        context = {}
+        obj = self.get_object()
+        obj.update_stock()
+        return serializers.serialize('json', [obj, ])
 
 
 class StockDelete(DeleteView):
     model = Stock
     success_url = reverse_lazy('portfolio')
     template_name = 'stock_confirm_delete.html'
+
+
+def get_fundamentals(request, ticker):
+    obj = si.get_quote_table(ticker)
+    return JsonResponse(obj)
