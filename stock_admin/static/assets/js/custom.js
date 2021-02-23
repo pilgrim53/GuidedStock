@@ -4,6 +4,7 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 
+
 $('#subscribe').submit(function (e) {
   e.preventDefault();
   var email_id = $("#email_id").val();
@@ -56,6 +57,7 @@ $('#subscribe').submit(function (e) {
   }
 });
 
+
 function getCookie(name) {
   var cookieValue = null;
   if (document.cookie && document.cookie !== '') {
@@ -84,11 +86,32 @@ $.ajaxSetup({
 })
 
 // -----password---
-$(document).on('click', '.fa-eye', function () {
+
+$(document).on('click', '.fa-eye', function (){
   $(this).toggleClass("fa-eye-slash");
   let input = $(this).prev();
   (input.attr("type") == "password") ? input.attr("type", "text") : input.attr("type", "password");
 });
+
+// $(".toggle-password").on('click', function () {
+//   $(this).toggleClass("fas fa-eye-slash fas fa-eye");
+//   var input = $("#passInput");
+//   if (input.attr("type") == "password") {
+//     input.attr("type", "text");
+//   } else {
+//     input.attr("type", "password");
+//   }
+// });
+
+// $(".toggle-password-confirm").on('click', function () {
+//   $(this).toggleClass("fas fa-eye-slash fas fa-eye");
+//   var input = $("#passInput-confirm");
+//   if (input.attr("type") == "password") {
+//     input.attr("type", "text");
+//   } else {
+//     input.attr("type", "password");
+//   }
+// });
 
 // ----caps lock on validation---
 $('input[type="password"]').each(function () {
@@ -103,73 +126,82 @@ $('input[type="password"]').each(function () {
 })
 
 // -----Mobile menu---
-$(document).on("click", ".three-bar i", function () {
+$(document).on("click", ".three-bar i", function(){
   $(".sidebar").toggleClass("show-sidebar");
-  $(".sidebar").removeClass("hide-sidebar");
-  $(".add-ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
+  $(".ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
+  $("body").addClass("open-sidebar");
 });
 
 $(document).on("click", ".close-btn i", function () {
-  $(".sidebar").toggleClass("hide-sidebar");
   $(".sidebar").removeClass("show-sidebar");
   $(".ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+  $("body").removeClass("open-sidebar");
 });
 
+
 //-----Side Add Ticker Script---
-$(".plus-square").click(function () {
+$(document).on('click', ".plus-square",function(){
   $(".real-ticker-filed").toggleClass("show-ticker-sidebar");
-  $(".real-ticker-filed").removeClass("hide-ticker-sidebar");
-  $(".add-ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
+  $("body").addClass("open-sidebar");
+  $(".ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
-$(".close-ticker-sidebar i").click(function () {
-  $(".real-ticker-filed").toggleClass("hide-ticker-sidebar");
+$(document).on("click", ".close-ticker-sidebar i", function(){
   $(".real-ticker-filed").removeClass("show-ticker-sidebar");
-  $(".add-ticker-sidebar .ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+  $(".ticker-sidebar .ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+  $("body").removeClass("open-sidebar");
 });
 
 //-----Edit Ticker Script---
-$(document).on('click', ".edit-ticker-sidebar", function () {
+$(document).on('click', ".edit-ticker-sidebar",function(){
   $(".edit-real-ticker-filed").toggleClass("edit-show-ticker-sidebar");
-  $(".edit-real-ticker-filed").removeClass("edit-hide-ticker-sidebar");
-  $(".add-ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
+  $("body").addClass("open-sidebar");
+  $(".ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
-$(".close-ticker-sidebar i").click(function () {
-  $(".edit-real-ticker-filed").toggleClass("edit-hide-ticker-sidebar");
+$(document).on('click', ".close-ticker-sidebar i",function(){
   $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
-  $(".ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+  $(".ticker-sidebar .ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+  $("body").removeClass("open-sidebar");
 });
 
-$(document).on('click', '.edit-ticker-overlay', function () {
-  $(".edit-real-ticker-filed").addClass("edit-show-ticker-sidebar");
-});
 
 //-----delete Ticker Script---
-$(document).on('click', ".delete-ticker-sidebar", function () {
-  $(".delete-sidebar").toggleClass("edit-show-ticker-sidebar");
-  $(".edit-real-ticker-filed").removeClass("edit-hide-ticker-sidebar");
-  $(".add-ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
-});
-$(".close-ticker-sidebar i").click(function () {
-  $(".edit-real-ticker-filed").toggleClass("edit-hide-ticker-sidebar");
-  $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
-  $(".ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
+$(document).on('click', ".delete-ticker-sidebar",function(){
+  $(".delete-sidebar").toggleClass("delete-show-ticker-sidebar");
+  $("body").addClass("open-sidebar");
+  $(".delete-ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
 
+$(document).on('click', ".close-ticker-sidebar i",function(){
+  $(".delete-sidebar").removeClass("delete-show-ticker-sidebar");
+  $("body").removeClass("open-sidebar");
+  $("body").removeClass("open-sidebar-second");
+});
+
+$(document).on('click', ".delete-ticker-sidebar",function(){
+  $("body").addClass("open-sidebar");
+  $("body").addClass("open-sidebar-second");
+});
+$(document).on('click', ".confirm-delete-cancel-btn",function(){
+  $("body").removeClass("open-sidebar");
+  $("body").removeClass("open-sidebar-second");
+  $(".delete-sidebar").removeClass("delete-show-ticker-sidebar");
+});
 
 var removeClass = true;
-
-$("html").click(function () {
-  if (removeClass) {
-    $(".ticker-overlay").removeClass('show-overlay');
-    $(".real-ticker-filed").removeClass("show-ticker-sidebar");
-    $(".real-ticker-filed").addClass("hide-ticker-sidebar");
-    $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
-    $(".edit-real-ticker-filed").addClass("edit-hide-ticker-sidebar");
-    $(".sidebar").removeClass("show-sidebar");
-  }
-  removeClass = true;
+       
+$(document).on('click', "html",function(){
+    if(removeClass) {
+      $(".real-ticker-filed").removeClass("show-ticker-sidebar");
+      $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
+      $(".sidebar").removeClass("show-sidebar");
+      $(".delete-sidebar").removeClass("delete-show-ticker-sidebar");
+      $("body").removeClass("open-sidebar");
+      $("body").removeClass("open-sidebar-second");
+    }
+    removeClass = true;
 });
 
-$(".plus-square,.real-ticker-filed,.edit-ticker-sidebar,.edit-real-ticker-filed,.sidebar").click(function () {
-  removeClass = false;
+$(document).on('click', ".plus-square,.real-ticker-filed,.edit-ticker-sidebar,.edit-real-ticker-filed,.sidebar,.three-bar i,.delete-ticker-sidebar,.delete-sidebar",function(){
+    removeClass = false;
 });
+

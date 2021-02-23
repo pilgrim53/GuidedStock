@@ -100,12 +100,15 @@
               <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
               <td> {{ stock.stock_name }}</td>
               <td>
-                <a href="#" class="p-btn edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}" data-fundamentals-url="{% url 'stock-fundamentals' stock.ticker %}"><i
-                    class="fas fa-pencil-alt" aria-hidden="true"></i>
-                </a><a href="{% url 'delete-stock' stock.pk %}" class="p-btn"><i class="fas fa-trash"
+                <a href="#" class="p-btn edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}"
+                  data-fundamentals-url="{% url 'stock-fundamentals' stock.ticker %}"><i class="fas fa-pencil-alt"
                     aria-hidden="true"></i>
+                </a><a href="#" data-url="{% url 'delete-stock' stock.pk %}" class="p-btn delete-ticker-sidebar"><i
+                    class="fas fa-trash" aria-hidden="true"></i>
                 </a></td>
             </tr>
+
+
             {% endfor %}
           </tbody>
         </table>
@@ -113,7 +116,7 @@
     </div>
   </div>
 </div>
-<div class="add-ticker-sidebar">
+<div class="ticker-sidebar">
   <div class="ticker-overlay"></div>
   <div class="real-ticker-filed">
     <div class="close-ticker-sidebar">
@@ -148,7 +151,7 @@
   </div>
 </div>
 
-<div class="add-ticker-sidebar">
+<div class="ticker-sidebar">
   <div class="ticker-overlay"></div>
   <div class="edit-real-ticker-filed">
     <div class="close-ticker-sidebar">
@@ -191,6 +194,7 @@
       <span>Stock Name</span>
       <h2 id="stock-name">Overstock.com, Inc.</h2>
     </div>
+
     <div>
       <form class="stock-edit-form" id="stock-edit-form" action="" method="POST">
         <div class="edit-portfolio-all-field">
@@ -250,11 +254,27 @@
     </div>
   </div>
 </div>
-{% endblock %}
 
-{% block footer %}
+<div class="ticker-sidebar">
+  <div class="delete-sidebar">
+    <div class="close-ticker-sidebar">
+      <i class="far fa-window-close"></i>
+    </div>
+    <div class="confirm-delete-content">
+      <h2>Delete Apple Inc. (AAPL)</h2>
+      <p>Are you sure you want to delete Apple Inc. (AAPL)? </p>
+      <form id="stock-delete-form" action="" method="POST">
+        <div class="delete-cancel-btn">
+          <button type="submit" class="custom-add-btn confirm-delete-btn"><i class="fa fa-spinner fa-spin"></i>
+            Confirm Delete</button>
+          <a href="javascript:void(0)" class="confirm-delete-cancel-btn">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 {% endblock %}
-
-{% block js %}
-<script type="text/javascript" src="{% static 'assets/js/portfolio.js' %}"></script>
+{% block footer %} {% endblock %} {% block js %} <script type="text/javascript"
+  src="{% static 'assets/js/portfolio.js' %}">
+</script>
 {% endblock %}

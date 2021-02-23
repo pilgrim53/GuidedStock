@@ -895,13 +895,28 @@ body {
     overflow-x: auto;
 }
 
+/* .portfolio-table tbody {
+    display:block;
+    height:450px;
+    overflow:auto;
+	overflow-x: auto;
+}
+.portfolio-table thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.portfolio-table thead {
+    width: calc( 100% - 1em )
+} */
+
 
 .portfolio-table table tr th{
 	white-space: nowrap;
 	background-color: #EDEDED;
 	text-transform: uppercase;
 	font-weight:500;
-	padding: 6px 15px;
+	padding: 6px 10px;
     line-height: 12px;
 	font-size: 12px;
 	position: relative;
@@ -910,12 +925,19 @@ body {
 .portfolio-table table tr td{
 	white-space: nowrap;
 	font-weight: 500;
-	padding: 15px;
+	padding: 15px 10px;
 }
 
-.portfolio-table table tr td:first-child{
+/* .portfolio-table table tr th:first-child{
+	width: 200px;
+} */
+
+/* .portfolio-table table tr td:first-child{
 	text-transform: uppercase;
-}
+	width: 200px;
+} */
+
+
 
 .portfolio-table table tr{
 	border-top:2px solid #dddddd;
@@ -1129,10 +1151,11 @@ body {
   overflow: auto;
 }	
 
-.ticker-overlay, .edit-ticker-overlay, .delete-overlay{
+.open-sidebar::before,
+.open-sidebar-second::before {
+	content: "";
 	width: 100vw;
 	height: 100vh;
-	display: none;
 	position: fixed;
 	z-index: 3;
 	top: 0;
@@ -1140,10 +1163,9 @@ body {
 	background: rgba(76,76,76,0.5);
 }
 
-
-  .show-ticker-sidebar{
+.show-ticker-sidebar{
 	  right: 0;
-  }
+}
 
   .edit-show-ticker-sidebar{
 	right: 0;
@@ -1237,7 +1259,7 @@ body {
   }	
 
   .edit-stock-header a{
-	margin-left: 10px;
+	margin-left: 5px;
 	color: #868686;
   }
 
@@ -1297,7 +1319,7 @@ body {
 	margin-bottom: 20px;       
 }
 
-.stock-edit-header-name h2{
+.stock-edit-header-name h2 , .confirm-delete-content h2{
 	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
 	color: #000;
@@ -1924,6 +1946,9 @@ body {
 
 	.stock-edit-table table tr td span{
 		width: 100%;
+	}
+	.delete-sidebar{
+		padding: 90px 25px;
 	}
 }
 

@@ -35,7 +35,7 @@ function ajaxFormCall(form, element) {
                 form.find(`[name="${key}"]`).parent().append(
                     `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
             }
-        }
+        },
     });
 }
 
@@ -49,13 +49,22 @@ $(document).ready(function () {
         ajaxFormCall($('#stock-edit-form'), $(this));
         return false;
     });
+    $('#stock-delete-form').submit(function () { // catch the form's submit event
+        ajaxFormCall($('#stock-delete-form'), $(this));
+        return false;
+    });
 
     function resetEditStock() {
         let fields = ['purchase', 'proximity', 'potential', 'profit', 'stock-name', 'ticker', 'open', 'pe', 'avg-vol', 'high', 'mkt-cap', 'yield', 'high-52', 'low-52', 'beta', 'vol', 'low', 'eps']
         for (let field of fields) {
+            $(document).on('click', '.delete-ticker-sidebar', function () {
             $(`#${field}`).html('-');
         }
     }
+        let deleteUrl = $(this).data().url;
+        let form = $('#stock-delete-form');
+        form.attr('action', deleteUrl); 
+    });
     $(document).on('click', '.edit-ticker-sidebar', function () {
         resetEditStock();
         let updateUrl = $(this).data().url;
