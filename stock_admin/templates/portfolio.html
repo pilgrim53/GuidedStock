@@ -11,7 +11,7 @@
   <div class="left-col custom-col-portfolio responsive-menu">
     <div class="sidebar">
       <div class="close-btn"><i class="fas fa-times"></i></div>
-      <a href="{% url 'portfolio' %}"> <img src="{% static 'assets/images/gs.png' %}" alt="logo" /></a>
+      <a href="{% url 'portfolio' %}"> <img src="{% static 'assets/logos/gslogo.svg' %}" alt="logo" /></a>
       <ul class="menu-link">
         {% url 'portfolio' as url %}
         <li><a {% if url == request.path %}class="active" {% endif %} href="{{ url }}">DASHBOARD</a></li>
