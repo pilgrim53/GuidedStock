@@ -895,13 +895,28 @@ body {
     overflow-x: auto;
 }
 
+/* .portfolio-table tbody {
+    display:block;
+    height:450px;
+    overflow:auto;
+	overflow-x: auto;
+}
+.portfolio-table thead, tbody tr {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+.portfolio-table thead {
+    width: calc( 100% - 1em )
+} */
+
 
 .portfolio-table table tr th{
 	white-space: nowrap;
 	background-color: #EDEDED;
 	text-transform: uppercase;
 	font-weight:500;
-	padding: 6px 15px;
+	padding: 6px 10px;
     line-height: 12px;
 	font-size: 12px;
 	position: relative;
@@ -910,12 +925,19 @@ body {
 .portfolio-table table tr td{
 	white-space: nowrap;
 	font-weight: 500;
-	padding: 15px;
+	padding: 15px 10px;
 }
 
-.portfolio-table table tr td:first-child{
+/* .portfolio-table table tr th:first-child{
+	width: 200px;
+} */
+
+/* .portfolio-table table tr td:first-child{
 	text-transform: uppercase;
-}
+	width: 200px;
+} */
+
+
 
 .portfolio-table table tr{
 	border-top:2px solid #dddddd;
@@ -928,6 +950,7 @@ body {
 
 .portfolio-table table tbody tr:hover{
 	background-color: #E6E6E6;
+	cursor: pointer;
 }
 
 .portfolio-table table tr:nth-child(even){
@@ -1111,6 +1134,14 @@ body {
 	width: 88%;
 }
 
+.p-0{
+	padding: 0;
+}
+
+.change-password-right-column{
+	padding: 0;
+}
+
 /* ---Add ticker sidebar--- */
 .real-ticker-filed, .edit-real-ticker-filed, .delete-sidebar{
   position: fixed;
@@ -1129,10 +1160,15 @@ body {
   overflow: auto;
 }	
 
-.ticker-overlay, .edit-ticker-overlay, .delete-overlay{
+.open-sidebar{
+	overflow: hidden;
+}
+
+.open-sidebar::before,
+.open-sidebar-second::before {
+	content: "";
 	width: 100vw;
 	height: 100vh;
-	display: none;
 	position: fixed;
 	z-index: 3;
 	top: 0;
@@ -1140,10 +1176,9 @@ body {
 	background: rgba(76,76,76,0.5);
 }
 
-
-  .show-ticker-sidebar{
+.show-ticker-sidebar{
 	  right: 0;
-  }
+}
 
   .edit-show-ticker-sidebar{
 	right: 0;
@@ -1237,7 +1272,7 @@ body {
   }	
 
   .edit-stock-header a{
-	margin-left: 10px;
+	margin-left: 5px;
 	color: #868686;
   }
 
@@ -1297,7 +1332,7 @@ body {
 	margin-bottom: 20px;       
 }
 
-.stock-edit-header-name h2{
+.stock-edit-header-name h2 , .confirm-delete-content h2{
 	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
 	color: #000;
@@ -1349,8 +1384,12 @@ body {
 /* ----Confirm Delete Ticker--- */
 .delete-sidebar{
 	max-width: 530px;
-	padding: 90px 63px;
+	padding: 200px 100px;
   }
+
+.confirm-delete-content{
+	text-align: center;
+}
 
 .confirm-delete-content img{
 	width: 100%;
@@ -1360,8 +1399,27 @@ body {
 
 .confirm-delete-content p{
 	color: #8E8E8E;
-    margin-bottom: 15px;
-	font-size: 14px;
+    margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.confirm-delete-content h2{
+	margin-bottom: 4px;
+	text-transform: uppercase;
+	font-size:30px;
+	color: #707070;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.confirm-delete-content span{
+	margin-bottom: 30px;
+	display: block;
+	font-size:20px;
+	color: #707070;
+	font-weight: bold;
 }
 
 .delete-cancel-btn{
@@ -1370,7 +1428,7 @@ body {
 }
 
 .delete-cancel-btn a{
-	color: #347BB7;
+	color: #8F8F8F;
 	font-weight: 500;
 }
 
@@ -1383,10 +1441,10 @@ body {
 }
 
 .confirm-delete-btn{
-	background-color: #ec0000;
-	border: none;
-	color: #fff !important;
-	margin-right: 15px;
+	background-color: #F0D6D7;
+	border: 2px solid #C9ACAB;
+	color: #6D6D6E !important;
+	margin-left: 15px;
 	padding: 10px 15px;
 	user-select: none;
 }
@@ -1708,6 +1766,14 @@ body {
 	.hide-sidebar{
 		left: -250px;
 	}
+
+	.change-password-w-auto{
+		width: auto;
+	}
+
+	.change-password-right-column{
+		padding: 25px;
+	}
 	
 }
 
@@ -1918,6 +1984,10 @@ body {
 		width: 100%;
 	}
 
+	.change-password-w-auto{
+		width: auto;
+	}
+
 	.responsive-loss-profit{
 		width: 100%;
 	}
@@ -1925,6 +1995,22 @@ body {
 	.stock-edit-table table tr td span{
 		width: 100%;
 	}
+	.delete-sidebar{
+		padding: 90px 25px;
+	}
+
+	.change-password-right-column .custom-col{
+		padding: 0;
+	}
+
+	.change-password-right-column .outside-wrapper{
+		height: 85vh;
+	}
+
+	.change-password-right-column .login-form h2{
+		font-size: 24px;
+	}
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {

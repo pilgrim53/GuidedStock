@@ -35,7 +35,7 @@ function ajaxFormCall(form, element) {
                 form.find(`[name="${key}"]`).parent().append(
                     `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
             }
-        }
+        },
     });
 }
 
@@ -49,16 +49,27 @@ $(document).ready(function () {
         ajaxFormCall($('#stock-edit-form'), $(this));
         return false;
     });
+    $('#stock-delete-form').submit(function () { // catch the form's submit event
+        ajaxFormCall($('#stock-delete-form'), $(this));
+        return false;
+    });
 
     function resetEditStock() {
-        let fields = ['purchase', 'proximity', 'potential', 'profit', 'stock-name', 'ticker', 'open', 'pe', 'avg-vol', 'high', 'mkt-cap', 'yield', 'high-52', 'low-52', 'beta', 'vol', 'low', 'eps']
+        let fields = ['purchase', 'delete-ticker', 'delete-stock-name', 'proximity', 'potential', 'profit', 'stock-name', 'ticker', 'open', 'pe', 'avg-vol', 'high', 'mkt-cap', 'yield', 'high-52', 'low-52', 'beta', 'vol', 'low', 'eps']
         for (let field of fields) {
             $(`#${field}`).html('-');
         }
     }
+    $(document).on('click', '.delete-ticker-sidebar', function () {
+        let deleteUrl = $(this).data().url;
+        let form = $('#stock-delete-form');
+        form.attr('action', deleteUrl);
+    });
     $(document).on('click', '.edit-ticker-sidebar', function () {
         resetEditStock();
         let updateUrl = $(this).data().url;
+        let deleteUrl = $(this).data().deleteUrl;
+        $('.delete-ticker-sidebar').data('url', deleteUrl);
         let fundamentalsUrl = $(this).data().fundamentalsUrl;
         let form = $('#stock-edit-form');
         form.attr('action', updateUrl);
@@ -73,6 +84,8 @@ $(document).ready(function () {
                 $('#profit').html(fields['profit'] ? '$' + fields['profit'] : '-');
                 $('#stock-name').html(fields['stock_name']);
                 $('#ticker').html(fields['ticker']);
+                $('#delete-ticker').html(fields['ticker']);
+                $('#delete-stock-name').html(fields['stock_name']);
                 form.find('[name="purchase"]').attr('value', fields['purchase']);
                 form.find('[name="shares"]').attr('value', fields['shares']);
                 form.find('[name="buy_target"]').attr('value', fields['buy_target']);
