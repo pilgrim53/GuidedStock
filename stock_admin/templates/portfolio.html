@@ -8,7 +8,7 @@
 
 {% block content %}
 <div class="portfolio-row">
-  <div class="left-col custom-col-portfolio responsive-menu">
+  <div class="left-col custom-col-portfolio responsive-menu {% block portfolio_menu_class %}{% endblock %}">
     <div class="sidebar">
       <div class="close-btn"><i class="fas fa-times"></i></div>
       <a href="{% url 'portfolio' %}"> <img src="{% static 'assets/logos/gslogo.svg' %}" alt="logo" /></a>
@@ -22,6 +22,7 @@
       </ul>
     </div>
   </div>
+  {% block portfolio %}
   <div class="right-col">
     <div class="right-side-section">
       <div class="port-header">
@@ -107,8 +108,9 @@
       </div>
     </div>
   </div>
+  {% endblock %}
 </div>
-
+{% block right_sidebar %}
 <div class="ticker-sidebar">
   <div class="ticker-overlay"></div>
   <div class="  real-ticker-filed">
@@ -143,7 +145,6 @@
     </form>
   </div>
 </div>
-
 <div class="ticker-sidebar">
   <div class="ticker-overlay"></div>
   <div class="edit-real-ticker-filed">
@@ -247,7 +248,6 @@
     </div>
   </div>
 </div>
-
 <div class="ticker-sidebar">
   <div class="delete-sidebar">
     <div class="close-ticker-sidebar close-delete-ticker-sidebar">
@@ -269,6 +269,8 @@
   </div>
 </div>
 {% endblock %}
+{% endblock %}
+
 
 {% block footer %} {% endblock %} {% block js %} <script type="text/javascript"
   src="{% static 'assets/js/portfolio.js' %}">

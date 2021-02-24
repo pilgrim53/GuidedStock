@@ -47,9 +47,11 @@ class ChangePasswordFormView(FormView):
         if form.is_valid():
             user = form.save()
             update_session_auth_hash(request, user)  # Important!
-            return redirect('change-password-done')
+            return render(request, self.template_name, {
+                'form': form, 'success_message': 'Password successfully changed.'
+            })
         return render(request, self.template_name, {
-            'form': form
+            'form': form,
         })
 
 

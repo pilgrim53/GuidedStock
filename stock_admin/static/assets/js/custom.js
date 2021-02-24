@@ -1,8 +1,9 @@
 /* ----- Custom Scripts for Destiny template ----- */
-
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
+
 });
+
 
 $('#subscribe').submit(function (e) {
   e.preventDefault();
@@ -56,6 +57,7 @@ $('#subscribe').submit(function (e) {
   }
 });
 
+
 function getCookie(name) {
   var cookieValue = null;
   if (document.cookie && document.cookie !== '') {
@@ -83,16 +85,22 @@ $.ajaxSetup({
   }
 })
 
+
+
+
 // -----password---
+
 $(document).on('click', '.fa-eye', function () {
   $(this).toggleClass("fa-eye-slash");
   let input = $(this).prev();
   (input.attr("type") == "password") ? input.attr("type", "text"): input.attr("type", "password");
 });
 
+
 // ----caps lock on validation---
 $('input[type="password"]').each(function () {
   $(this).get(0).addEventListener("keyup", function (event) {
+    console.log('pass')
     if (event.getModifierState("CapsLock")) {
       $(this).parents('.form-group').find('.text-warning').show();
     } else {
@@ -121,7 +129,7 @@ $(document).on('click', ".plus-square", function () {
   $("body").addClass("open-sidebar");
   $(".ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
-$(document).on("click", ".close-add-ticker-sidebar i", function () {
+$(document).on("click", ".close-ticker-sidebar i", function () {
   $(".real-ticker-filed").removeClass("show-ticker-sidebar");
   $(".ticker-sidebar .ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
   $("body").removeClass("open-sidebar");
@@ -133,7 +141,7 @@ $(document).on('click', ".edit-ticker-sidebar", function () {
   $("body").addClass("open-sidebar");
   $(".ticker-sidebar .ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
-$(document).on('click', ".close-edit-ticker-sidebar i", function () {
+$(document).on('click', ".close-ticker-sidebar i", function () {
   $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
   $(".ticker-sidebar .ticker-overlay").toggleClass("hide-overlay").removeClass("show-overlay");
   $("body").removeClass("open-sidebar");
@@ -144,18 +152,26 @@ $(document).on('click', ".close-edit-ticker-sidebar i", function () {
 $(document).on('click', ".delete-ticker-sidebar", function () {
   $(".delete-sidebar").toggleClass("delete-show-ticker-sidebar");
   $("body").addClass("open-sidebar");
-  $("body").addClass("open-sidebar-second");
-  $(".delete-ticker-overlay").toggleClass("show-overlay");
+  $(".delete-ticker-overlay").toggleClass("show-overlay").removeClass("hide-overlay");
 });
-
-$(document).on('click', ".close-delete-ticker-sidebar i, .confirm-delete-cancel-btn", function () {
+$(document).on('click', ".close-ticker-sidebar i", function () {
   $(".delete-sidebar").removeClass("delete-show-ticker-sidebar");
+  $("body").removeClass("open-sidebar");
   $("body").removeClass("open-sidebar-second");
 });
+$(document).on('click', ".delete-ticker-sidebar", function () {
+  $("body").addClass("open-sidebar");
+  $("body").addClass("open-sidebar-second");
+});
+$(document).on('click', ".confirm-delete-cancel-btn", function () {
+  $("body").removeClass("open-sidebar-second");
+  $(".delete-sidebar").removeClass("delete-show-ticker-sidebar");
+});
 
-$(document).on('click', '.open-sidebar', function (event) {
-  var element = $(event.target);
-  if (!(element.closest(".edit-real-ticker-filed").length || element.closest(".real-ticker-filed").length || element.closest(".delete-sidebar").length)) {
+var removeClass = true;
+
+$(document).on('click', "html", function () {
+  if (removeClass) {
     $(".real-ticker-filed").removeClass("show-ticker-sidebar");
     $(".edit-real-ticker-filed").removeClass("edit-show-ticker-sidebar");
     $(".sidebar").removeClass("show-sidebar");
@@ -163,4 +179,9 @@ $(document).on('click', '.open-sidebar', function (event) {
     $("body").removeClass("open-sidebar");
     $("body").removeClass("open-sidebar-second");
   }
+  removeClass = true;
+});
+
+$(document).on('click', ".plus-square,.real-ticker-filed,.edit-ticker-sidebar,.edit-real-ticker-filed,.sidebar,.three-bar i,.delete-ticker-sidebar,.delete-sidebar", function () {
+  removeClass = false;
 });
