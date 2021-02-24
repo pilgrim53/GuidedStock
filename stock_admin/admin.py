@@ -28,7 +28,17 @@ admin.site.register(Stock, StockAdmin)
 class DefaultPortfolioAdmin(admin.ModelAdmin):
     list_display = ('ticker', 'potential', 'current', 'buy_target', 'sell_target',
                     'proximity', 'profit', 'shares', 'purchase', 'stock_name')
-    fields = ['ticker', 'potential', 'shares', 'sell_target', 'buy_target']
+    fields = ['ticker', 'purchase', 'shares', 'sell_target', 'buy_target']
+
+    def save_model(self, request, instance, form, change):
+        user = request.user
+        instance = form.save(commit=False)
+        if not change or not instance.user:
+            instance.user = user
+            instance.is_default = True
+        instance.save()
+        form.save_m2m()
+        return instance
 
     def get_queryset(self, request):
         return super(DefaultPortfolioAdmin, self).get_queryset(request).filter(is_default=True, user__is_superuser=True)
