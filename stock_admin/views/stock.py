@@ -104,16 +104,30 @@ class StockUpdate(AjaxFormResponseMixin, UpdateView):
         return render_to_json_response(self.get_context_data())
 
     def get_context_data(self, *kwargs):
-        context = {}
         obj = self.get_object()
         obj.update_stock()
         return serializers.serialize('json', [obj, ])
 
 
-class StockDelete(DeleteView):
+class StockDelete(AjaxFormResponseMixin, DeleteView):
     model = Stock
-    success_url = reverse_lazy('portfolio')
-    template_name = 'stock_confirm_delete.html'
+
+    def get(self, request, *args, **kwargs):
+        """Handle GET requests: instantiate a blank version of the form."""
+        return render_to_json_response(self.get_context_data())
+
+    def delete(self, request, *args, **kwargs):
+        """
+        Call the delete() method on the fetched object and then return json response.
+        """
+        self.object = self.get_object()
+        self.object.delete()
+        return render_to_json_response({'success': 'true'})
+
+    def get_context_data(self, *kwargs):
+        obj = self.get_object()
+        obj.update_stock()
+        return serializers.serialize('json', [obj, ])
 
 
 def get_fundamentals(request, ticker):

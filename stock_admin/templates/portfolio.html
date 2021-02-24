@@ -78,12 +78,13 @@
               <th style="text-align:center">SHARES OWNED</th>
               <th style="text-align:center">PURCHASE PRICE</th>
               <th>COMPANY NAME</th>
-              <th>ACTIONS</th>
             </tr>
           </thead>
           <tbody id="table-body">
             {% for stock in object_list %}
-            <tr>
+            <tr class="edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}"
+              data-delete-url="{% url 'delete-stock' stock.pk %}"
+              data-fundamentals-url="{% url 'stock-fundamentals' stock.ticker %}">
               <td> {{ stock.ticker }}</td>
               <td style="text-align:center"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}</td>
               <td style="text-align:center"> {{ stock.current }}</td>
@@ -99,16 +100,7 @@
               <td style="text-align:center"> {% firstof stock.shares '-' %}</td>
               <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
               <td> {{ stock.stock_name }}</td>
-              <td>
-                <a href="#" class="p-btn edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}"
-                  data-fundamentals-url="{% url 'stock-fundamentals' stock.ticker %}"><i class="fas fa-pencil-alt"
-                    aria-hidden="true"></i>
-                </a><a href="#" data-url="{% url 'delete-stock' stock.pk %}" class="p-btn delete-ticker-sidebar"><i
-                    class="fas fa-trash" aria-hidden="true"></i>
-                </a></td>
             </tr>
-
-
             {% endfor %}
           </tbody>
         </table>
@@ -116,10 +108,11 @@
     </div>
   </div>
 </div>
+
 <div class="ticker-sidebar">
   <div class="ticker-overlay"></div>
-  <div class="real-ticker-filed">
-    <div class="close-ticker-sidebar">
+  <div class="  real-ticker-filed">
+    <div class="close-ticker-sidebar close-add-ticker-sidebar">
       <i class="far fa-window-close"></i>
     </div>
     <form class="ticker-form" id="add-stock-form" action="{% url 'create-stock' %}" method="POST">
@@ -154,13 +147,13 @@
 <div class="ticker-sidebar">
   <div class="ticker-overlay"></div>
   <div class="edit-real-ticker-filed">
-    <div class="close-ticker-sidebar">
+    <div class="close-ticker-sidebar close-edit-ticker-sidebar">
       <i class="far fa-window-close"></i>
     </div>
     <div class="edit-stock-header">
+
       <h2 id="ticker">ostk</h2>
-      {% comment %} <a href="javascript:void(0);"><i class="far fa-edit"></i></a> {% endcomment %}
-      <a href="javascript:void(0);"><i class="far fa-trash-alt"></i></a>
+      <a class="delete-ticker-sidebar"><i class="far fa-trash-alt"></i></a>
     </div>
 
     <div class="stock-edit-table">
@@ -257,23 +250,26 @@
 
 <div class="ticker-sidebar">
   <div class="delete-sidebar">
-    <div class="close-ticker-sidebar">
+    <div class="close-ticker-sidebar close-delete-ticker-sidebar">
       <i class="far fa-window-close"></i>
     </div>
     <div class="confirm-delete-content">
-      <h2>Delete Apple Inc. (AAPL)</h2>
-      <p>Are you sure you want to delete Apple Inc. (AAPL)? </p>
+      <p>You are about to delete</p>
+      <h2 id="delete-ticker">-</h2>
+      <span id="delete-stock-name">-</span>
+      <p>Are you sure you want to remove <br /> this stock from your dashBoard?</p>
       <form id="stock-delete-form" action="" method="POST">
         <div class="delete-cancel-btn">
-          <button type="submit" class="custom-add-btn confirm-delete-btn"><i class="fa fa-spinner fa-spin"></i>
-            Confirm Delete</button>
-          <a href="javascript:void(0)" class="confirm-delete-cancel-btn">Cancel</a>
+          <a href="#" class="confirm-delete-cancel-btn">Never mind</a>
+          <button type="submit" class="custom-add-btn confirm-delete-btn"><i class="fa fa-spinner fa-spin"></i> Yes
+            delete it!</a>
         </div>
       </form>
     </div>
   </div>
 </div>
 {% endblock %}
+
 {% block footer %} {% endblock %} {% block js %} <script type="text/javascript"
   src="{% static 'assets/js/portfolio.js' %}">
 </script>

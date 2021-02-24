@@ -950,6 +950,7 @@ body {
 
 .portfolio-table table tbody tr:hover{
 	background-color: #E6E6E6;
+	cursor: pointer;
 }
 
 .portfolio-table table tr:nth-child(even){
@@ -1133,6 +1134,14 @@ body {
 	width: 88%;
 }
 
+.p-0{
+	padding: 0;
+}
+
+.change-password-right-column{
+	padding: 0;
+}
+
 /* ---Add ticker sidebar--- */
 .real-ticker-filed, .edit-real-ticker-filed, .delete-sidebar{
   position: fixed;
@@ -1150,6 +1159,10 @@ body {
   padding: 150px;
   overflow: auto;
 }	
+
+.open-sidebar{
+	overflow: hidden;
+}
 
 .open-sidebar::before,
 .open-sidebar-second::before {
@@ -1371,8 +1384,12 @@ body {
 /* ----Confirm Delete Ticker--- */
 .delete-sidebar{
 	max-width: 530px;
-	padding: 90px 63px;
+	padding: 200px 100px;
   }
+
+.confirm-delete-content{
+	text-align: center;
+}
 
 .confirm-delete-content img{
 	width: 100%;
@@ -1382,8 +1399,27 @@ body {
 
 .confirm-delete-content p{
 	color: #8E8E8E;
-    margin-bottom: 15px;
-	font-size: 14px;
+    margin-bottom: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.confirm-delete-content h2{
+	margin-bottom: 4px;
+	text-transform: uppercase;
+	font-size:30px;
+	color: #707070;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.confirm-delete-content span{
+	margin-bottom: 30px;
+	display: block;
+	font-size:20px;
+	color: #707070;
+	font-weight: bold;
 }
 
 .delete-cancel-btn{
@@ -1392,7 +1428,7 @@ body {
 }
 
 .delete-cancel-btn a{
-	color: #347BB7;
+	color: #8F8F8F;
 	font-weight: 500;
 }
 
@@ -1405,10 +1441,10 @@ body {
 }
 
 .confirm-delete-btn{
-	background-color: #ec0000;
-	border: none;
-	color: #fff !important;
-	margin-right: 15px;
+	background-color: #F0D6D7;
+	border: 2px solid #C9ACAB;
+	color: #6D6D6E !important;
+	margin-left: 15px;
 	padding: 10px 15px;
 	user-select: none;
 }
@@ -1730,6 +1766,14 @@ body {
 	.hide-sidebar{
 		left: -250px;
 	}
+
+	.change-password-w-auto{
+		width: auto;
+	}
+
+	.change-password-right-column{
+		padding: 25px;
+	}
 	
 }
 
@@ -1940,6 +1984,10 @@ body {
 		width: 100%;
 	}
 
+	.change-password-w-auto{
+		width: auto;
+	}
+
 	.responsive-loss-profit{
 		width: 100%;
 	}
@@ -1950,6 +1998,19 @@ body {
 	.delete-sidebar{
 		padding: 90px 25px;
 	}
+
+	.change-password-right-column .custom-col{
+		padding: 0;
+	}
+
+	.change-password-right-column .outside-wrapper{
+		height: 85vh;
+	}
+
+	.change-password-right-column .login-form h2{
+		font-size: 24px;
+	}
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px) {
