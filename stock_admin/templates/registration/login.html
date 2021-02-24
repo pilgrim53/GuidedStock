@@ -31,7 +31,7 @@
             {% endif %}
 
             {% elif user.is_authenticated %}
-            <p class="validation-msg text-warning">{% blocktrans with user=request.user %}Currently, You are login with
+            <p class="validation-msg text-warning">{% blocktrans with user=request.user %}You are currently logged in with 
                 <b>{{ user }}</b>.{% endblocktrans %}
             </p>
             {% endif %}
