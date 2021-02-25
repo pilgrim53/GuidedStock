@@ -100,7 +100,6 @@ $(document).on('click', '.fa-eye', function () {
 // ----caps lock on validation---
 $('input[type="password"]').each(function () {
   $(this).get(0).addEventListener("keyup", function (event) {
-    console.log('pass')
     if (event.getModifierState("CapsLock")) {
       $(this).parents('.form-group').find('.text-warning').show();
     } else {
