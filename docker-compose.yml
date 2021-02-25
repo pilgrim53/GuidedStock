@@ -32,7 +32,7 @@ services:
   nginx:
     build: ./nginx
     volumes:
-      - ./certs:/etc/nginx/certs
+      - ~/certs:/etc/nginx/certs
       - static:/static
       - media:/media
     ports:
