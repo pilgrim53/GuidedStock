@@ -105,7 +105,7 @@ $(document).ready(function () {
                 $('#yield').html(response['Forward Dividend & Yield'] ? response['Forward Dividend & Yield'] : '-');
                 $('#high-52').html(response['52 Week Range'] ? response['52 Week Range'].split(' - ')[1] : '-');
                 $('#low-52').html(response['52 Week Range'] ? response['52 Week Range'].split(' - ')[0] : '-');
-                $('#beta').html(response['Beta (5Y Monthly)'] ? response['Beta (5Y Monthly)'] : '-');
+                $('#target-est').html(response['1y Target Est'] ? response['1y Target Est'] : '-');
                 $('#vol').html(response['Volume'] ? response['Volume'] : '-');
                 $('#low').html(response["Day's Range"] ? response["Day's Range"].split(' - ')[0] : '-');
                 $('#eps').html(response['EPS (TTM)'] ? response['EPS (TTM)'] : '-');
