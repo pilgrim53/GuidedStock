@@ -1,9 +1,8 @@
 /* ----- Custom Scripts for Destiny template ----- */
+
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
-
 });
-
 
 $('#subscribe').submit(function (e) {
   e.preventDefault();
@@ -85,17 +84,12 @@ $.ajaxSetup({
   }
 })
 
-
-
-
 // -----password---
-
 $(document).on('click', '.fa-eye', function () {
   $(this).toggleClass("fa-eye-slash");
   let input = $(this).prev();
   (input.attr("type") == "password") ? input.attr("type", "text"): input.attr("type", "password");
 });
-
 
 // ----caps lock on validation---
 $('input[type="password"]').each(function () {
@@ -168,7 +162,6 @@ $(document).on('click', ".confirm-delete-cancel-btn", function () {
 });
 
 var removeClass = true;
-
 $(document).on('click', "html", function () {
   if (removeClass) {
     $(".real-ticker-filed").removeClass("show-ticker-sidebar");
@@ -180,7 +173,41 @@ $(document).on('click', "html", function () {
   }
   removeClass = true;
 });
-
 $(document).on('click', ".plus-square,.real-ticker-filed,.edit-ticker-sidebar,.edit-real-ticker-filed,.sidebar,.three-bar i,.delete-ticker-sidebar,.delete-sidebar", function () {
   removeClass = false;
+});
+// ------Cookie Script---
+$(document).on('click', ".cookie-accept-btn button", function () {
+  $(".cookie-bg-color").fadeOut();;
+});
+
+// Reads cookie and return value
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+// ------Cookie Script---
+$(document).ready(function () {
+  $(".cookie-bg-color").hide();
+  var cookie_ack = getCookie('cookie_acknowledgement');
+  if (!cookie_ack) {
+    $(".cookie-bg-color").show()
+  }
+});
+
+$(document).on('click', ".cookie-accept-btn button", function () {
+  document.cookie = "cookie_acknowledgement=done";
+  $(".cookie-bg-color").show();
 });
