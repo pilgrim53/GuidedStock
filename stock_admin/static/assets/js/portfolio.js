@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
 
     function resetEditStock() {
-        let fields = ['purchase', 'delete-ticker', 'delete-stock-name', 'proximity', 'potential', 'profit', 'stock-name', 'ticker', 'open', 'pe', 'avg-vol', 'high', 'mkt-cap', 'yield', 'high-52', 'low-52', 'beta', 'vol', 'low', 'eps']
+        let fields = ['purchase', 'delete-ticker', 'delete-stock-name', 'proximity', 'potential', 'profit', 'stock-name', 'ticker', 'open', 'pe', 'avg-vol', 'high', 'mkt-cap', 'yield', 'high-52', 'low-52', 'target-est', 'vol', 'low', 'eps']
         for (let field of fields) {
             $(`#${field}`).html('-');
         }

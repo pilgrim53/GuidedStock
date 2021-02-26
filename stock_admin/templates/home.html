@@ -15,7 +15,7 @@
     <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
 </head>
 
-<body>
+<body class="body-position">
     <!-- Main Section -->
     <div class="main" id="main">
         <div class="jarallax">
@@ -68,6 +68,26 @@
                     <p>
                         &copy;2021 GuidedStock. All Rights Reserved.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --Add Cookies Section --- -->
+    <div class="cookie-bg-color" style="display: none;">
+        <div class="container">
+            <div class="cookie-content">
+                <div class="media">
+                    <img src="{% static 'assets/images/cookie.svg' %}" alt="cookie" />
+                    <div class="media-body">
+                        <p>We use to cookies to improve your online experience. By continuing to use this site you agree
+                            to our use of cookies
+                            in accordance with our privacy policy.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="text-center cookie-accept-btn">
+                    <button type="button">Accept</button>
                 </div>
             </div>
         </div>
