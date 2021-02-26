@@ -72,6 +72,12 @@ class Stock(models.Model):
         if self.purchase and not self.shares:
             raise ValidationError({
                 'shares': "If you have purchase price of %s then you should provide the shares." % self.ticker})
+
+        if self.sell_target and self.buy_target:
+            if self.sell_target < self.buy_target:
+                raise ValidationError({
+                    'sell_target': "Sell target must be higher than the buy target."})
+
         try:
             self.current = round(
                 Decimal(stock_info.get_live_price(self.ticker)), 2)
