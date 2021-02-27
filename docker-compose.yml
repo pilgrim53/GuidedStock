@@ -32,15 +32,21 @@ services:
   nginx:
     build: ./nginx
     volumes:
-      - ~/certs:/etc/nginx/certs
       - static:/static
       - media:/media
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
     ports:
       - "80:80"
       - "443:443"
     depends_on:
       - web
       - redis
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
 volumes:
   static:
   media:
