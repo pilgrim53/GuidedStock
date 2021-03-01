@@ -37,6 +37,9 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Certbot SSL Directory
+data/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
