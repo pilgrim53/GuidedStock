@@ -58,6 +58,9 @@ class Stock(models.Model):
             if goal:
                 self.proximity = (
                     round((self.current - self.buy_target) / goal, 2)) * 100
+        elif self.sell_target and self.purchase:
+            self.proximity = round(
+                (self.current - self.purchase)/(self.sell_target - self.purchase), 2)*100
 
     def full_clean(self, exclude=None, validate_unique=True):
         """Validate the ticker before save.
