@@ -10,7 +10,7 @@ class StockListView(ListView):
 
     def get_queryset(self):
         queryset = Stock.objects.filter(
-            user=self.request.user).order_by('potential', 'stock_name', '-proximity')
+            user=self.request.user).order_by('-proximity', 'stock_name')
         for stock in queryset:
             stock.update_stock()
             stock.save()
