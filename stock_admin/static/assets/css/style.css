@@ -1845,7 +1845,7 @@ body {
 }
 
 .form-field-error {
-	border: 2px solid #FF3333;
+	border: 2px solid #FF3333 !important;
 }
 
 

@@ -15,6 +15,7 @@ function ajaxFormCall(form, element) {
     $('.fa-spin').show();
     form.find('button[type="submit"]').prop('disabled', true);
     form.find('.validation-msg').remove();
+    form.find('input').removeClass('form-field-error');
     $.ajax({ // create an AJAX call...
         data: element.serialize(), // get the form data
         type: element.attr('method'), // GET or POST
@@ -32,8 +33,10 @@ function ajaxFormCall(form, element) {
             respnseObj = JSON.parse(response.responseText);
             for (var key in respnseObj) {
                 error_messages = respnseObj[key];
-                form.find(`[name="${key}"]`).parent().append(
+                let inputElement = form.find(`[name="${key}"]`);
+                inputElement.parent().append(
                     `<p class="text-warning validation-msg">${error_messages[0]}</p>`);
+                inputElement.addClass('form-field-error');
             }
         },
     });
