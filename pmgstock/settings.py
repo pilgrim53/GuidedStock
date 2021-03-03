@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'crispy_forms',
     'django_celery_beat',
+    'mathfilters',
     'users',
+    'django_settings_export',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django_settings_export.settings_export',
             ],
         },
     },
@@ -175,3 +178,10 @@ MAILCHIMP_API_KEY = 'b3551d541b453c5ecde197d5f9bbbb06-us7'
 
 # enter your MailChimp List ID
 MAILCHIMP_SUBSCRIBE_LIST_ID = '50e0462141'
+
+SELL_THRESHOLD = BUY_THRESHOLD = 15
+
+SETTINGS_EXPORT = [
+    'SELL_THRESHOLD',
+    'BUY_THRESHOLD'
+]
