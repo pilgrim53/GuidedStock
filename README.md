@@ -52,3 +52,9 @@ Create a super user with following command; So you can login into the admin site
 ```sh
 docker-compose exec web python manage.py createsuperuser
 ```
+
+### Setup Cronjob for updating the stock data
+
+```sh
+docker-compose exec web python manage.py cronjob
+```
