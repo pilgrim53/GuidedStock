@@ -110,9 +110,7 @@
               <td style="text-align:center"> {% if stock.sell_target %}{{ stock.sell_target }}{% else %}-{% endif %}
               </td>
               <td style="text-align:center">
-                {% if stock.profit %}{{ stock.profit }}{% else  %}-{% endif %}&nbsp;{% if stock.profit < 0 %}<i
-                  class="fa fa-arrow-down"></i>
-                {% elif stock.profit > 0 %}<i class="fa fa-arrow-up"></i> {% endif %}</td>
+                {% if stock.profit %}{{ stock.profit }}{% else  %}-{% endif %}</td>
               <td style="text-align:center"> {% firstof stock.shares '-' %}</td>
               <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
               <td> {{ stock.stock_name }}</td>
