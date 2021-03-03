@@ -1053,6 +1053,7 @@ body {
 	z-index: 1;
 	background-color: #fff;
 }
+
 .portfolio-table table tr {
 	border-top: 2px solid #dddddd;
 }
@@ -1821,6 +1822,30 @@ body {
 
 .last-italic li i {
 	font-style: italic;
+}
+
+.ticker-indicator {
+	border-radius: 10px;
+	color: #fff;
+	padding: 6.5px;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+.ticker-sell {
+	background-color: #FF3333;
+}
+
+.ticker-buy {
+	background-color: #11A837;
+}
+
+.ticker-hold {
+	background-color: #ffc107;
+}
+
+.form-field-error {
+	border: 2px solid #FF3333;
 }
 
 
