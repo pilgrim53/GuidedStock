@@ -18,8 +18,6 @@ urlpatterns = [
     path('signup', views.SignUp.as_view(), name='signup'),
     path('password', login_required(
         views.ChangePasswordFormView.as_view()), name='change_password'),
-    path('change-password-done', login_required(TemplateView.as_view(template_name="registration/password_change_done.html")),
-         name='change-password-done'),
     path('terms-of-service', TemplateView.as_view(template_name="terms_of_service.html"),
          name='terms-of-service'),
     path('privacy-policy', TemplateView.as_view(template_name="privacy_policy.html"),
