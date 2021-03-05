@@ -563,7 +563,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 84vh;
 }
 
 .login-footer {
@@ -603,7 +603,7 @@ body {
 
 .footer-link span a:hover {
 	text-decoration: none;
-	color: #11A837;
+	color: #5924EC;
 }
 
 .footer-link span:first-child {
@@ -663,13 +663,13 @@ body {
 }
 
 .forgot-password a {
-	color: #11A837;
+	color: #5924EC;
 	font-weight: 600;
 	font-size: 16px;
 }
 
 .custom-btn {
-	background-color: #11A837;
+	background-color: #5924EC;
 	color: #fff;
 	border: none;
 	width: 100%;
@@ -696,7 +696,7 @@ body {
 }
 
 .new-join a {
-	color: #11A837;
+	color: #5924EC;
 	font-weight: 600;
 }
 
@@ -766,7 +766,7 @@ body {
 }
 
 .terms-department a {
-	color: #11A837;
+	color: #5924EC;
 	font-weight: 500;
 }
 
@@ -800,8 +800,8 @@ body {
 }
 
 .styled-checkbox:checked+label:before {
-	background: #11a837;
-	border: 2px solid #11a837;
+	background: #5924EC;
+	border: 2px solid #5924EC;
 }
 
 .styled-checkbox:disabled+label {
@@ -916,13 +916,13 @@ body {
 }
 
 .user-agreement a {
-	color: #11A837;
+	color: #5924EC;
 	font-weight: 600;
 }
 
 .user-agreement a:hover,
 .user-agreement a:focus {
-	color: #11A837;
+	color: #5924EC;
 	text-decoration: none;
 }
 
@@ -1703,7 +1703,7 @@ body {
 }
 
 .custom-set-menubar ul li.active a {
-	color: #11A837 !important;
+	color: #5924EC !important;
 	font-size: 14px;
 	font-weight: 600;
 	background-color: transparent !important;
@@ -1711,7 +1711,7 @@ body {
 }
 
 .custom-set-menubar ul li.active a span {
-	border-bottom: 2px solid #11A837 !important;
+	border-bottom: 2px solid #5924EC !important;
 	padding-bottom: 5px;
 }
 
@@ -1758,6 +1758,24 @@ body {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 22px;
+}
+
+.security-top-section {
+	margin: 300px 0 250px 0;
+	text-align: center;
+}
+
+.security-top-section h1 {
+	line-height: 1.2;
+	letter-spacing: -1px;
+	margin-bottom: 15px;
+	font-size: 45px;
+	color: #000;
+	font-weight: 600;
+}
+
+.security-top-section span {
+	font-size: 14px;
 }
 
 .privacy-info {
@@ -1928,6 +1946,10 @@ body {
 
 .body-position {
 	overflow: hidden;
+}
+
+.custom-set-menubar .btn {
+	margin: 5px 0 0 8px;
 }
 
 

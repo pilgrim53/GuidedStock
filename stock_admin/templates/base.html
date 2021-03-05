@@ -1,4 +1,5 @@
 {% load static %}
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,10 +10,22 @@
     <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
     <meta name="keywords" content="stocks, trading, management, portfolio, management">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- Social Tags -->
+    <meta property="og:title" content="GuidedStock | There's safety in numbers">
+    <meta property="og:description"
+        content="Personal stock portfolio management tools to keep you focused on your plan while avoiding common pitfalls, noise and emotional reactions.">
+    <meta property="og:image" content="{% static 'assets/images/socialshare.jpg' %}">
+    <meta property="og:url" content="{% url 'home' %}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="GuidedStock">
+    <meta name="twitter:image:alt" content="GuidedStock personal stock portfolio management tools">
+
     <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/animsition.min.css' %}"> <!-- Resource style -->
+    <link href="{% static 'assets/css/base.css' %}" rel="stylesheet" type="text/css" media="all" />
     <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
 </head>
 
@@ -20,43 +33,47 @@
 
     {% block header %}
     <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid inner-navbar-content">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand custom-logo" href="{% url 'home' %}">
-                        <img src="{% static 'assets/logos/gs_logo.png' %}" alt="gs_logo" />
-                    </a>
-                </div>
+        <div class="wrapper animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="1000"
+            data-animsition-out-class="fade-out" data-animsition-out-duration="1000">
+            <div class="container">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header page-scroll">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand page-scroll" href="{% url 'home' %}"><img
+                                    src="{% static 'assets/logos/gslogo.svg' %}" height="35" width="35" alt="Mu" /></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-right custom-set-menubar"
+                            id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                {% url 'home' as url %}
+                                <li {% if url == request.path %}class="active" {% endif %}><a
+                                        href="{{ url }}"><span>Home</span></a></li>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse custom-set-menubar" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        {% url 'home' as url %}
-                        <li {% if url == request.path %}class="active" {% endif %}><a
-                                href="{{ url }}"><span>Home</span></a></li>
+                                {% url 'privacy-policy' as url %}
+                                <li {% if url == request.path %}class="active" {% endif %}><a
+                                        href="{{ url }}"><span>Privacy
+                                            Policy</span></a></li>
 
-                        {% url 'privacy-policy' as url %}
-                        <li {% if url == request.path %}class="active" {% endif %}><a href="{{ url }}"><span>Privacy
-                                    Policy</span></a></li>
-
-                        {% url 'terms-of-service' as url %}
-                        <li {% if url == request.path %}class="active" {% endif %}><a href="{{ url }}"><span>Terms of
-                                    Service</span></a></li>
-                        <li class="vertical-line"><span>|</span></li>
-                        <li><a href="{% url 'login' %}"><span>Log in</span></a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
+                                {% url 'terms-of-service' as url %}
+                                <li {% if url == request.path %}class="active" {% endif %}><a
+                                        href="{{ url }}"><span>Terms of Service</span></a></li>
+                                <li class="vertical-line"><span>|</span></li>
+                                <li><a href="{% url 'login' %}"><span>Log in</span></a></li>
+                                <a class="btn btn-primary btn-action btn-fill" href="{% url 'signup' %}">Sign up</a>
+                            </ul>
+                        </div>
+                    </div>
+                </nav><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
     </header>
     {% endblock %}
 
@@ -65,11 +82,15 @@
 
     {% block footer %}
     <!-- Footer Section -->
-    <div class="footer no-color">
+    <div class="footer">
         <div class="container">
             <div class="col-md-12 text-center">
-                <img class="img-circle" src="{% static 'assets/logos/logo.png' %}" width="40" height="40"
-                    alt="GuidedStock abbreviated logo">
+                <img class="img-circle" src="{% static 'assets/logos/gslogo.svg' %}" width="40" height="40" alt="" />
+                <ul class="footer-menu">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
+                    <li><a href="{% url 'terms-of-service' %}">Terms of Service</a></li>
+                </ul>
                 <div class="footer-text">
                     <p>
                         &copy;2021 GuidedStock. All Rights Reserved.
@@ -82,6 +103,7 @@
 
     <script type="text/javascript" src="{% static 'assets/js/jquery.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/plugins.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
     {% block js %}
     <!-- Global site tag (gtag.js) - Google Analytics -->

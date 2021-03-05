@@ -1,117 +1,235 @@
+{% extends 'base.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="uft-8">
-    <title>GuidedStock | Personal Stock Portfolio Management Tools</title>
-    <link rel="icon" href="{% static 'assets/logos/favicon.png' %}" type="image/png" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="GuidedStock Personal Stock Portfolio Management Tools">
-    <meta name="keywords" content="stocks, trading, management, portfolio, management">
-    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,700,600" rel="stylesheet" type="text/css">
-    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
-</head>
-
-<body class="body-position">
-    <!-- Main Section -->
-    <div class="main" id="main">
-        <div class="jarallax">
-            <div class="text-center">
-                <div class="container">
-                    <div class="hero-content">
-                        <div class="col-md-8 col-md-offset-2 nopadding">
-                            <img src="{% static 'assets/logos/gs_logo.png' %}" alt="GuidedStock Logo" width="150"
-                                height="80" style="padding-bottom: 50px">
-                            <h1>There's safety in numbers.</h1>
-                            <p style="padding-top: 20px">
-                                Personal stock portfolio management tools to keep you focused on your plan while
-                                avoiding common pitfalls, noise and emotional reactions.
-                            </p>
-                            <p style="padding-bottom: 20px">
-                                Join our mailing list to stay in the loop about our launch and the evolution of
-                                GuidedStock.
-                            </p>
-
-                            <!-- Subscribe Form -->
-
-                            <div class="form wow fadeInUp subscribe_form" data-wow-delay="0.3s">
-                                <form class="subscribe-form wow zoomIn" id="subscribe" form method='POST'
-                                    autocomplete="off" novalidate>
-                                    {% csrf_token %}
-                                    <input class="mail" id="email_id" type="email" name="email_id"
-                                        placeholder="Your Email" autocomplete="off"><input class="submit-button"
-                                        type="submit" value="Subscribe">
-                                </form>
-
-                                <div class="success-message"></div>
-                                <div class="error-message"></div>
-                            </div>
-                            <h2 style="padding-top: 50px">Coming March 2021</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% block content %}
+<div class="main" id="main">
+  <!-- Main Section-->
+  <div class="hero-section jarallax">
+    <div class="container">
+      <div class="hero-content app-hero-content text-center">
+        <div class="col-md-10 col-md-offset-1 nopadding">
+          <img src="{% static 'assets/logos/gs_logo.png' %}" alt="GuidedStock Logo" width="225"
+            style="padding-bottom: 50px">
+          <h1 class="wow fadeInUp" data-wow-delay="0s">There's safety in numbers.</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.2s">
+            Personal stock portfolio management tools to keep you focused on your plan while avoiding common pitfalls,
+            noise and emotional reactions.
+          </p>
+          <a class="btn btn-primary btn-action btn-fill" href="{% url 'signup' %}">Sign up</a>
         </div>
-    </div>
+        <div class="col-md-12">
+          <div class="hero-image">
 
-    <!-- Footer Section -->
-
-    <div class="footer no-color">
-        <div class="container">
-            <div class="col-md-12 text-center">
-                <img class="img-circle" src="{% static 'assets/logos/logo.png' %}" width="40" height="40"
-                    alt="GuidedStock abbreviated logo">
-                <div class="footer-text">
-                    <p>
-                        &copy;2021 GuidedStock. All Rights Reserved.
-                    </p>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- --Add Cookies Section --- -->
-    <div class="cookie-bg-color" style="display: none;">
-        <div class="container">
-            <div class="cookie-content">
-                <div class="media">
-                    <img src="{% static 'assets/images/cookie.svg' %}" alt="cookie" />
-                    <div class="media-body">
-                        <p>We use to cookies to improve your online experience. By continuing to use this site you agree
-                            to our use of cookies
-                            in accordance with our privacy policy.</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="text-center cookie-accept-btn">
-                    <button type="button">Accept</button>
-                </div>
-            </div>
+  <div class="services-section text-center" id="services">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 nopadding">
+        <div class="services-content">
+          <h1 class="wow fadeInUp" data-wow-delay="0s">Understanding when to buy and sell has never been so easy.</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.2s">
+            Using your own buy and sell targets (or those from a service such as StockShark), easily track your stocks
+            according to their potential profit and their proximity to your target.
+          </p>
         </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <div class="services">
+          <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="services-icon">
+              <img src="{% static 'assets/svg/addticker.svg' %}" height="60" width="60" alt="Add Ticker" />
+            </div>
+            <div class="services-description">
+              <h1>Easily Add a Ticker</h1>
+              <p>
+                Just click the + button on the dashboard to add a ticker to your watchlist.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="services-icon">
+              <img class="icon-2" src="{% static 'assets/svg/smartsorting.svg' %}" height="60" width="60"
+                alt="Smart Sorting" />
+            </div>
+            <div class="services-description">
+              <h1>Smart Sorting</h1>
+              <p>
+                As stocks in your portfolio rise in value and get closer to their sell targets, they'll rise up through
+                the ranks to the top of your watchlist.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="services-icon">
+              <img class="icon-3" src="{% static 'assets/svg/selling.svg' %}" height="60" width="60"
+                alt="Bang for your buck" />
+            </div>
+            <div class="services-description">
+              <h1>More bang for your buck</h1>
+              <p>
+                With simple signals you'll be able to identify which stocks to buy and which ones to sell, keeping you
+                focused on taking action when it's the right time for you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Jquery and Js Plugins -->
+  <div class="flex-features" id="features">
+    <div class="container nopadding">
+      <div class="flex-split">
+        <!-- Feature section with flex layout -->
+        <div class="f-left wow fadeInUp" data-wow-delay="0s">
+          <div class="left-content">
+            <img class="img-responsive" src="{% static 'assets/images/feature_1.png' %}" alt="" />
+          </div>
+        </div>
+        <div class="f-right wow fadeInUp" data-wow-delay="0.2s">
+          <div class="right-content">
+            <h2>Designed for simplicity</h2>
+            <p>
+              GuidedStock's simplified dashboard lets you quickly identify stocks to buy, sell, or hold--according to
+              your goals.
+            </p>
+            <ul>
+              <li><i class="ion-android-checkbox-outline"></i>Simple signals with green (buy), yellow (hold), and red
+                (sell) indicators right on the ticker.</li>
+              <li><i class="ion-android-checkbox-outline"></i>Sorted by proximity to your buy/sell targets, so stocks
+                ready to sell are at the top, and those within your purchase price at the bottom.</li>
+              <li><i class="ion-android-checkbox-outline"></i>Your total investment and current profit are shown
+                prominently so you don't lose track.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <script type="text/javascript" src="{% static 'assets/js/jquery.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VDMVBFY54"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+      <div class="flex-split">
+        <!-- Feature section with flex layout -->
+        <div class="f-right">
+          <div class="right-content wow fadeInUp" data-wow-delay="0.2s">
+            <h2>Fast and easy editing</h2>
+            <p>
+              Clicking on any of the stocks in your watchlist will open the drawer with more information about the
+              stock. From here you're able to make updates quickly and easily.
+            </p>
+            <ul>
+              <li><i class="ion-android-checkbox-outline"></i>Update your buy/sell targets.</li>
+              <li><i class="ion-android-checkbox-outline"></i>Enter purchased stock and price.</li>
+              <li><i class="ion-android-checkbox-outline"></i>Delete stocks you're no longer following.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="f-left">
+          <div class="left-content wow fadeInUp" data-wow-delay="0.3s">
+            <img class="img-responsive" src="{% static 'assets/images/feature_2.png' %}" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+  <div class="testimonial-section" id="reviews">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <div class="testimonials owl-carousel owl-theme">
+            <div class="testimonial-single"><img class="img-circle" src="{% static 'assets/images/testimonial2.jpg' %}"
+                alt="Client Testimonoal" />
+              <div class="testimonial-text wow fadeInUp" data-wow-delay="0.2s">
+                <p>Simple and effective. This app has a permanent window open in my browser. <br class="hidden-xs"> This
+                  is a very useful tool.</p>
+                <h3>- Jay</h3>
+                <h3>President, Stock Sharks Research</h3>
+                <i class="ion ion-star"></i>
+                <i class="ion ion-star"></i>
+                <i class="ion ion-star"></i>
+                <i class="ion ion-star"></i>
+                <i class="ion ion-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        gtag('config', 'G-6VDMVBFY54');
-    </script>
-</body>
+  <!-- Feature Image Big -->
+  <div class="feature_huge text-center">
+    <div class="container nopadding">
+      <div class="col-md-12">
+        <img class="img-responsive wow fadeInUp" data-wow-delay="0.1s"
+          src="{% static 'assets/images/big_feature.png' %}" alt="" style="max-width:100%" />
+      </div>
+      <div class="feature_list">
+        <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+          <img src="{% static 'assets/logos/feature_icon_3.png' %}" alt="Feature" />
+          <h1>Unlimited access</h1>
+          <p>
+            Add whichever stocks you'd like, there are no restrictions or limits.
+          </p>
+        </div>
+        <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
+          <img src="{% static 'assets/logos/feature_icon.png' %}" alt="Feature" />
+          <h1>Fast refresh</h1>
+          <p>
+            GuidedStock pulls up-to-date information from Yahoo! Finance every three seconds.
+          </p>
+        </div>
+        <div class="col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+          <img src="{% static 'assets/logos/feature_icon_2.png' %}" alt="Feature" />
+          <h1>Peace of mind</h1>
+          <p>
+            No need to keep a constant eye on the market... set up your goals and let GuidedStock show you when it's
+            time to make a move.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</html>
+  <!-- CTA Section -->
+  <div class="services-section text-center" id="services">
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2 nopadding">
+        <div class="services-content">
+          <h1 class="wow fadeInUp" data-wow-delay="0s">Ready to jump in?</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.2s">
+            GuidedStock is free to use, and signing up requires only an email address and password. If you're ready to
+            simplify your personal stock portfolio management, start now!
+          </p>
+          <a class="btn btn-primary btn-action btn-fill" href="{% url 'signup' %}">Let's go!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CTA Section Ends -->
+
+  <!-- Cookies Section -->
+  <div class="cookie-bg-color" style="display: none;">
+    <div class="container">
+      <div class="cookie-content">
+        <div class="media">
+          <img src="{% static 'assets/images/cookie.svg' %}" alt="cookie">
+          <div class="media-body">
+            <p>
+              "We use cookies to improve your online experience. By continuing to use this site you agree to our use of
+              cookies in accordance with our <a href="{% url 'privacy-policy' %}">privacy policy</a>."
+            </p>
+          </div>
+        </div>
+        <div class="text-center cookie-accept-btn">
+          <button type="button">Accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- Main Section -->
+</div><!-- Wrapper-->
+{% endblock %}
