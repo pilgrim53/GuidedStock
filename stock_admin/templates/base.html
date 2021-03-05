@@ -47,7 +47,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand page-scroll" href="{% url 'home' %}"><img
+                        {% url 'home' as home_url %}
+                        <a class="navbar-brand page-scroll" href="{% if request.path != home_url %}{% url 'home' %}{% else %}#{% endif %}"><img
                                 src="{% static 'assets/logos/gslogo.svg' %}" height="35" width="35" alt="Mu" /></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
