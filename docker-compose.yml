@@ -2,7 +2,7 @@ services:
   redis:
     image: 'docker.io/bitnami/redis:6.0-debian-10'
     environment:
-      - ALLOW_EMPTY_PASSWORD=yes
+      - ALLOW_EMPTY_PASSWORD=no
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
     ports:
       - '6379:6379'
@@ -10,6 +10,8 @@ services:
       - 'redis_data:/bitnami/redis/data'
   db:
     image: postgres
+    volumes: 
+      - pgdata:/var/lib/postgresql/data
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
@@ -48,8 +50,8 @@ services:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
 volumes:
+  pgdata:
   static:
   media:
   redis_data:
     driver: local
-  
