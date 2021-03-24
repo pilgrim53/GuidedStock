@@ -31,7 +31,7 @@
           <div class="col-xs-6 custom-col-portfolio">
             <div class="table-header">
               <h2>Watchlist</h2>
-              <p id="updated-time">Updated: {% now "F j, Y H:i:s" %}</p>
+              <p id="updated-time">Market Time: {% now "F j, Y H:i:s" %}</p>
             </div>
           </div>
         </div>
@@ -88,17 +88,16 @@
             <tr class="edit-ticker-sidebar" data-url="{% url 'update-stock' stock.pk %}"
               data-delete-url="{% url 'delete-stock' stock.pk %}"
               data-fundamentals-url="{% url 'stock-fundamentals' stock.ticker %}">
-              <td><span class="{% if stock.potential or stock.proximity %}{% with settings.SELL_THRESHOLD|div:100 as den  %}
-                {% with stock.potential|floatformat:2|sub:den as condition1 %}
-                {% if condition1 < 1 or stock.proximity|add:settings.SELL_THRESHOLD > 100 %}
-                ticker-indicator ticker-sell
-                {% elif stock.proximity|sub:settings.BUY_THRESHOLD < 0 %}
-                ticker-indicator ticker-buy
-                {% else %}
-                ticker-indicator ticker-hold
-                {% endif %}
-                {% endwith %}
-                {% endwith %} {% endif %}">{{ stock.ticker }}</span>
+              <td><span class="
+                   {% if stock.potential or stock.proximity %}
+                     {% if stock.proximity|add:settings.SELL_THRESHOLD > 100 %}
+                        ticker-indicator ticker-sell
+                      {% elif stock.proximity|sub:settings.BUY_THRESHOLD < 0 %}
+                        ticker-indicator ticker-buy
+                      {% else %}
+                        ticker-indicator ticker-hold
+                      {% endif %}
+                {% endif %}">{{ stock.ticker }}</span>
               </td>
               <td style="text-align:center"> {% if stock.proximity %}{{ stock.proximity}} %{% else %}-{% endif %}
               </td>
