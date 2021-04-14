@@ -1,4 +1,4 @@
-# Pmgstock
+# Guided Stock
 
 ## Setup Project using Docker
 
