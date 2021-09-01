@@ -7,7 +7,7 @@ Just make sure you have installed `docker` in your machine.
 1. Clone the project from git repository and move into the project directory.
 
 ```sh
-git clone https://github.com/pilgrim53/pmgstock.git
+
 cd pmgstock/
 ```
 
