@@ -2,7 +2,7 @@ from django.urls import reverse
 from django.contrib import admin
 from django.contrib.auth import get_user_model
 
-from .models import DefaultPortfolio, Stock
+from .models import DefaultPortfolio, Stock, Subscribe
 from django.utils.safestring import mark_safe
 
 User = get_user_model()
@@ -46,7 +46,7 @@ class DefaultPortfolioAdmin(admin.ModelAdmin):
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    list_display = ('email', 'date_joined', 'last_login',
+    list_display = ('first_name','last_name','email', 'date_joined', 'last_login',
                     'total_stocks_in_portfolio')
     search_fields = ['email']
 
@@ -54,3 +54,6 @@ class UserAdmin(admin.ModelAdmin):
         link = reverse("admin:stock_admin_stock_changelist") + \
             '?q=%s' % obj.email  # model name has to be lowercase
         return mark_safe('<a href="%s">%s</a>' % (link, Stock.objects.filter(user=obj).count()))
+
+
+admin.site.register(Subscribe)

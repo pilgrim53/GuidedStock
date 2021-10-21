@@ -1,6 +1,6 @@
 from decimal import Decimal
-from urllib.request import urlopen
 
+import requests
 from bs4 import BeautifulSoup
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
@@ -41,6 +41,8 @@ class Stock(models.Model):
         return '%s (%s)' % (self.stock_name, self.ticker)
 
     def update_stock(self):
+        self.current = round(
+            Decimal(stock_info.get_live_price(self.ticker)), 2)
         if not self.purchase:
             self.purchase = 0
         if not self.shares:
@@ -51,7 +53,7 @@ class Stock(models.Model):
             self.sell_target = 0
         self.potential = round(
             self.sell_target/self.current, 2) if self.sell_target else 0
-        self.profit = round((self.current - self.purchase) * self.shares)
+        self.profit = round((self.current - self.purchase) * self.shares, 2)
         self.proximity = 0
         if self.sell_target and self.buy_target:
             goal = Decimal(self.sell_target - self.buy_target)
@@ -79,8 +81,6 @@ class Stock(models.Model):
                     'sell_target': "Sell target must be higher than the buy target."})
 
         try:
-            self.current = round(
-                Decimal(stock_info.get_live_price(self.ticker)), 2)
             # Initialize the company name if it hasn't been already
             if not self.stock_name:
                 self.stock_name = self.get_ticker_title()
@@ -89,9 +89,10 @@ class Stock(models.Model):
                 {'ticker': "Ticker not found!! Please enter valid ticker."})
 
     def get_ticker_title(self):
-        html = urlopen('https://finance.yahoo.com/quote/%s/' % self.ticker)
-        bsh = BeautifulSoup(html.read(), 'html.parser')
-        return bsh.h1.string.replace('(%s)' % self.ticker, '')
+        result = requests.get(
+            f'https://finance.yahoo.com/quote/{self.ticker}/')
+        soup = BeautifulSoup(result.content, "html.parser")
+        return soup.h1.string.replace('(%s)' % self.ticker, '')
 
 
 class DefaultPortfolio(Stock):

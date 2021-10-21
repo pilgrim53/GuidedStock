@@ -99,7 +99,7 @@
                       {% endif %}
                 {% endif %}">{{ stock.ticker }}</span>
               </td>
-              <td style="text-align:center"> {% if stock.proximity %}{{ stock.proximity}} %{% else %}-{% endif %}
+              <td style="text-align:center"> {% if stock.proximity %}{{ stock.proximity|floatformat:2 }} %{% else %}-{% endif %}
               </td>
               <td style="text-align:center"> {% if stock.potential %}{{ stock.potential }}{% else %}-{% endif %}
               </td>
@@ -109,7 +109,7 @@
               <td style="text-align:center"> {% if stock.sell_target %}{{ stock.sell_target }}{% else %}-{% endif %}
               </td>
               <td style="text-align:center">
-                {% if stock.profit %}{{ stock.profit }}{% else  %}-{% endif %}</td>
+                {% if stock.profit %}{{ stock.profit|floatformat:2 }}{% else  %}-{% endif %}</td>
               <td style="text-align:center"> {% firstof stock.shares '-' %}</td>
               <td style="text-align:center"> {% if stock.purchase %}{{ stock.purchase }}{% else %}-{% endif %}</td>
               <td> {{ stock.stock_name }}</td>
