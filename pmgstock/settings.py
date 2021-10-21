@@ -14,8 +14,11 @@ from pathlib import Path
 
 from django.contrib.messages import constants as messages
 
+from dotenv import load_dotenv
+
 from celery.schedules import crontab
 
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -168,8 +171,13 @@ MESSAGE_TAGS = {
     messages.ERROR: 'alert-danger',
 }
 
-BROKER_URL = 'redis://redis:6379'
+# CELERY SETTINGS.
+CELERY_BROKER_URL = 'redis://redis:6379'
 CELERY_RESULT_BACKEND = 'redis://redis:6379'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_REDIRECT_STDOUTS_LEVEL = 'INFO'
 
 AUTH_USER_MODEL = 'users.User'
 
