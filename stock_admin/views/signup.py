@@ -27,6 +27,7 @@ class SignUp(generic.CreateView):
         login(self.request, user)
         if form.cleaned_data.get('default_portfolio'):
             StockManager().create_default_portfolio(user)
+        SendSubscribeMail(user.email,user.first_name, user.last_name)
         return response
 
 
