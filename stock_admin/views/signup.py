@@ -1,18 +1,15 @@
-from django.contrib import messages
 from django.contrib.auth import authenticate, login, update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm, UserCreationForm
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
 from django.http import HttpResponse, JsonResponse
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 from django.views.generic.edit import FormView
 from stock_admin.forms import UserCreationForm
 from stock_admin.models import StockManager, Subscribe
 from stock_admin.utils import SendSubscribeMail
-
-from ..models import Stock
 
 
 class SignUp(generic.CreateView):
@@ -30,6 +27,7 @@ class SignUp(generic.CreateView):
         login(self.request, user)
         if form.cleaned_data.get('default_portfolio'):
             StockManager().create_default_portfolio(user)
+        SendSubscribeMail(user.email,user.first_name, user.last_name)
         return response
 
 

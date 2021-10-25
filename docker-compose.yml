@@ -1,13 +1,7 @@
 services:
   redis:
-    image: 'docker.io/bitnami/redis:6.0-debian-10'
-    environment:
-      - ALLOW_EMPTY_PASSWORD=yes
-      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
-    ports:
-      - '6379:6379'
-    volumes:
-      - 'redis_data:/bitnami/redis/data'
+    image: 'redis:alpine'
+    
   db:
     image: postgres
     volumes: 
@@ -27,8 +21,6 @@ services:
       - media:/media
     env_file:
       - .env
-    ports:
-      - "8000:8000"
     depends_on:
       - db
   nginx:
@@ -52,9 +44,8 @@ services:
     volumes:
       - ./data/certbot/conf:/etc/letsencrypt
       - ./data/certbot/www:/var/www/certbot
+      
 volumes:
   pgdata:
   static:
   media:
-  redis_data:
-    driver: local
