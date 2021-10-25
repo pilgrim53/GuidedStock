@@ -80,17 +80,16 @@ class Stock(models.Model):
                 raise ValidationError({
                     'sell_target': "Sell target must be higher than the buy target."})
 
-        try:
-            # Initialize the company name if it hasn't been already
-            if not self.stock_name:
-                self.stock_name = self.get_ticker_title()
-        except:
-            raise ValidationError(
-                {'ticker': "Ticker not found!! Please enter valid ticker."})
+        # Initialize the company name if it hasn't been already
+        if not self.stock_name:
+            self.stock_name = self.get_ticker_title()
 
     def get_ticker_title(self):
         result = requests.get(
             f'https://finance.yahoo.com/quote/{self.ticker}/')
+        if 200 != result.status_code:
+            raise ValidationError(
+                {'ticker': "Ticker not found!! Please enter valid ticker."})
         soup = BeautifulSoup(result.content, "html.parser")
         return soup.h1.string.replace('(%s)' % self.ticker, '')
 
