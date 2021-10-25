@@ -9,7 +9,7 @@ https://docs.docker.com/docker-for-windows/install/
 
 ```sh
 
-cd pmgstock/
+cd GuidedStock/
 ```
 
 2. Create a `.env` file in the project folder.
