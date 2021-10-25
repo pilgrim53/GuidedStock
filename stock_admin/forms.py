@@ -18,9 +18,9 @@ class UserCreationForm(BaseUserCreationForm):
         'password_mismatch': "Your passwords must match",
     }
     first_name = forms.CharField(
-        error_messages={'required': 'Your First Name is required.'})
+        error_messages={'required': 'Your first name is required.'})
     last_name = forms.CharField(
-        error_messages={'required': 'Your Last Name is required.'})
+        error_messages={'required': 'Your last name is required.'})
     password1 = forms.CharField(error_messages={
                                 'required': 'A password is required.'}, widget=forms.PasswordInput)
     password2 = forms.CharField(error_messages={

@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Python app to Azure Web App - pmg-stock
+name: Build and deploy Python app to Azure Web App - guided-stock
 
 on:
   push:
@@ -29,6 +29,6 @@ jobs:
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'pmg-stock'
+        app-name: 'guided-stock'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_dffbe9cddc6c4086863cd0c2d4bcb3af }}

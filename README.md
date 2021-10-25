@@ -8,8 +8,8 @@ https://docs.docker.com/docker-for-windows/install/
 1. Clone the project from git repository and move into the project directory.
 
 ```sh
-
-cd pmgstock/
+git clone https://github.com/pilgrim53/GuidedStock
+cd GuidedStock/
 ```
 
 2. Create a `.env` file in the project folder.
