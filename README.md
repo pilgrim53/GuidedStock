@@ -1,8 +1,9 @@
-# Pmgstock
+# Guided Stock
 
 ## Setup Project using Docker
 
-Just make sure you have installed `docker` in your machine.
+First make sure you have installed `docker` and `docker-compose` on your machine.
+https://docs.docker.com/docker-for-windows/install/
 
 1. Clone the project from git repository and move into the project directory.
 
