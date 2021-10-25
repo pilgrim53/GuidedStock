@@ -7,9 +7,5 @@ RUN pip install -r requirements.txt
 COPY . /code/
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-RUN groupadd -g 999 celery && \
-    useradd -r -u 999 -g celery celery
-USER celery
-
 EXPOSE 8000
 ENTRYPOINT [ "/entrypoint.sh" ]
