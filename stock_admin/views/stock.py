@@ -1,12 +1,10 @@
 import json
 
 import yahoo_fin.stock_info as si
-from django.contrib import messages
 from django.core import serializers
-from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import _get_queryset
-from django.urls import reverse_lazy
-from django.views.generic import CreateView, DeleteView, FormView, UpdateView
+from django.views.generic import CreateView, DeleteView, UpdateView
 from stock_admin.models import Stock
 
 
