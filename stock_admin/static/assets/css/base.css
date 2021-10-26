@@ -1887,12 +1887,6 @@ label {
 	text-decoration: none;
 }
 
-.custom-col {
-	width: 100%;
-	max-width: 480px;
-	padding: 0 15px;
-}
-
 .form-group {
 	margin-top: 25px;
 }

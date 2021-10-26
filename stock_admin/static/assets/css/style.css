@@ -713,7 +713,7 @@ body {
 .custom-col {
 	width: 100%;
 	max-width: 480px;
-	padding: 0 15px;
+	padding: 50px 15px;
 }
 
 .form-group {
