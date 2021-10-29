@@ -85,8 +85,10 @@ class Stock(models.Model):
             self.stock_name = self.get_ticker_title()
 
     def get_ticker_title(self):
-        result = requests.get(
-            f'https://finance.yahoo.com/quote/{self.ticker}/')
+        result = requests.get(f'https://finance.yahoo.com/quote/{self.ticker}/')
+        if result.status_code == 404:
+            result = requests.get(f'https://ca.finance.yahoo.com/quote/{self.ticker}/')
+            
         if 200 != result.status_code:
             raise ValidationError(
                 {'ticker': "Ticker not found!! Please enter valid ticker."})
