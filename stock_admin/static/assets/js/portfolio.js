@@ -8,7 +8,7 @@ function refresh() {
         }
     });
 }
-let seconds = 2;
+let seconds = 5;
 setInterval(refresh, seconds * 1000);
 
 function ajaxFormCall(form, element) {
