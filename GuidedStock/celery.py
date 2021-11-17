@@ -9,7 +9,7 @@ from celery.schedules import crontab
 
 # set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'GuidedStock.settings')
-app = Celery('GuidedStock')
+app = Celery('GuidedStock', broker='redis://redis:6379')
 app.conf.update(
     C_FORCE_ROOT=True
 )
