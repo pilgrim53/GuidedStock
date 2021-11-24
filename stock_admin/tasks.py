@@ -22,7 +22,6 @@ def update_stock_prices():
     list_of_ticker = list(Stock.objects.order_by(
     ).values_list('ticker', flat=True).distinct())
 
-    # Run 5 thread at a time.
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(list_of_ticker)) as excutor:
         results = excutor.map(ticker_live_price_, list_of_ticker)
         obj = [result for result in results]
