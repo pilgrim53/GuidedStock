@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.db.models.signals import post_save, pre_save
+from django.db.models.signals import pre_save
 from django.dispatch import receiver
 from django.utils import timezone
 from yahoo_fin import stock_info
@@ -85,10 +85,11 @@ class Stock(models.Model):
             self.stock_name = self.get_ticker_title()
 
     def get_ticker_title(self):
-        result = requests.get(f'https://finance.yahoo.com/quote/{self.ticker}/')
+        result = requests.get(
+            f'https://finance.yahoo.com/quote/{self.ticker}/')
         if result.status_code == 404:
-            result = requests.get(f'https://ca.finance.yahoo.com/quote/{self.ticker}/')
-            
+            result = requests.get(
+                f'https://ca.finance.yahoo.com/quote/{self.ticker}/')
         if 200 != result.status_code:
             raise ValidationError(
                 {'ticker': "Ticker not found!! Please enter valid ticker."})

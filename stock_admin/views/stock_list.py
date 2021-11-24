@@ -1,7 +1,7 @@
+from django.db import models
 from django.db.models import F, Sum
 from django.views.generic import ListView
 from stock_admin.models import Stock
-from django.db import models
 
 
 class StockListView(ListView):
