@@ -1,7 +1,6 @@
 from decimal import Decimal
 
-import requests
-from bs4 import BeautifulSoup
+import yfinance as yf
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
 from django.db import models
@@ -85,16 +84,12 @@ class Stock(models.Model):
             self.stock_name = self.get_ticker_title()
 
     def get_ticker_title(self):
-        result = requests.get(
-            f'https://finance.yahoo.com/quote/{self.ticker}/')
-        if result.status_code == 404:
-            result = requests.get(
-                f'https://ca.finance.yahoo.com/quote/{self.ticker}/')
-        if 200 != result.status_code:
-            raise ValidationError(
-                {'ticker': "Ticker not found!! Please enter valid ticker."})
-        soup = BeautifulSoup(result.content, "html.parser")
-        return soup.h1.string.replace('(%s)' % self.ticker, '')
+        result = yf.Ticker(self.ticker)
+        print(result.info)
+        if 'longName' in result.info:
+            return result.info['longName']
+        else:
+            return ""
 
 
 class DefaultPortfolio(Stock):
