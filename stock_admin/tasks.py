@@ -12,7 +12,7 @@ def ticker_live_price_(ticker):
     return {'ticker_name': ticker, 'ticker_price': si.get_live_price(ticker)}
 
 
-@shared_task
+# @shared_task
 def update_stock_prices():
     # for ticker in Stock.objects.order_by().values_list('ticker', flat=True).distinct():
     #     live_price = round(Decimal(stock_info.get_live_price(ticker)), 2)
