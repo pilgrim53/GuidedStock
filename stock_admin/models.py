@@ -85,11 +85,11 @@ class Stock(models.Model):
 
     def get_ticker_title(self):
         result = yf.Ticker(self.ticker)
-        print(result.info)
         if 'longName' in result.info:
             return result.info['longName']
         else:
-            return ""
+            raise ValidationError(
+                {'ticker': "Ticker not found!! Please enter valid ticker."})
 
 
 class DefaultPortfolio(Stock):
