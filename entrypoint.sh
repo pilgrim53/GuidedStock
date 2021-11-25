@@ -1,6 +1,8 @@
 #!/bin/sh
 python manage.py collectstatic -c --no-input
 
+python manage.py migrate
+
 cmd="celery -A GuidedStock worker -B -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler"
 $cmd &
 
