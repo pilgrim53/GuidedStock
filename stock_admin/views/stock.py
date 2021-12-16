@@ -103,7 +103,6 @@ class StockUpdate(AjaxFormResponseMixin, UpdateView):
 
     def get_context_data(self, *kwargs):
         obj = self.get_object()
-        obj.update_stock()
         return serializers.serialize('json', [obj, ])
 
 
