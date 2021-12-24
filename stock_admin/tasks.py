@@ -20,27 +20,35 @@ def update_stock_prices():
 
 @shared_task
 def update_active_user_ticker():
-    """For the only active users, Update the current, proximity, potential, profit based on the current live price."""
-    stocks = Stock.objects.filter(user__in=get_current_users())
-    tickers = set(list(stocks.values_list("ticker", flat=True)))
+    try:
+        """For the only active users, Update the current, proximity, potential, profit based on the current live price."""
+        stocks = Stock.objects.filter(user__in=get_current_users())
+        tickers = set(list(stocks.values_list("ticker", flat=True)))
 
-    # Get current price for unique tickers.
-    tickers_price = {
-        ticker: round(Decimal(stock_info.get_live_price(ticker)), 2)
-        for ticker in tickers
-    }
+        # Get current price for unique tickers.
+        tickers_price = {
+            ticker: round(Decimal(stock_info.get_live_price(ticker)), 2)
+            for ticker in tickers
+        }
 
-    objs = []
+        objs = []
 
-    for stock in stocks:
-        if stock.ticker in tickers_price:
-            live_price = tickers_price[stock.ticker]
-            stock.profit, stock.potential, stock.proximity = stock.update_stock(
-                live_price
-            )
-            stock.current = live_price
-            objs.append(stock)
+        for stock in stocks:
+            if stock.ticker in tickers_price:
+                live_price = tickers_price[stock.ticker]
+                stock.profit, stock.potential, stock.proximity = stock.update_stock(
+                    live_price
+                )
+                stock.current = live_price
+                objs.append(stock)
 
-    Stock.objects.bulk_update(
-        objs, ["current", "proximity", "potential", "profit"], batch_size=20000
-    )  # Updates all columns by 100 sized chunks.
+        Stock.objects.bulk_update(
+            objs, ["current", "proximity", "potential", "profit"], batch_size=20000
+        )  # Updates all columns by 100 sized chunks.
+        return True
+
+    except Exception as e:
+        print("-" * 10)
+        print(f"Error on update active user ticker function: {str(e)}")
+        print("-" * 10)
+        return False
