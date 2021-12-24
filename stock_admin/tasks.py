@@ -1,14 +1,13 @@
 from decimal import Decimal
 
-from django.contrib.auth.models import User
 
 from celery import shared_task
 from yahoo_fin import stock_info
 
 from .models import Stock
-from decimal import *
 
 from .utils import get_current_users
+from decimal import Decimal
 
 
 @shared_task
@@ -32,6 +31,7 @@ def update_active_user_ticker():
     }
 
     objs = []
+
     for stock in stocks:
         if stock.ticker in tickers_price:
             live_price = tickers_price[stock.ticker]
