@@ -42,5 +42,5 @@ def update_active_user_ticker():
             objs.append(stock)
 
     Stock.objects.bulk_update(
-        objs, ["current", "proximity", "potential", "profit"], batch_size=100
+        objs, ["current", "proximity", "potential", "profit"], batch_size=20000
     )  # Updates all columns by 100 sized chunks.
