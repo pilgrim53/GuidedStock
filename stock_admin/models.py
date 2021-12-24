@@ -15,34 +15,41 @@ class Stock(models.Model):
     stock_name = models.CharField(blank=False, null=False, max_length=100)
     ticker = models.CharField(blank=False, null=False, max_length=40)
     purchase = models.DecimalField(
-        default=0,
-        blank=True, max_digits=10, decimal_places=2)
+        default=0, blank=True, max_digits=10, decimal_places=2
+    )
     sell_target = models.DecimalField(
-        blank=True, max_digits=10, decimal_places=2, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0
+    )
     buy_target = models.DecimalField(
-        blank=True, max_digits=10, decimal_places=2, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0
+    )
     shares = models.IntegerField(blank=True, default=0)
     current = models.DecimalField(
-        blank=True, max_digits=10, decimal_places=2, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0
+    )
     proximity = models.DecimalField(
-        blank=True, max_digits=10, decimal_places=2, default=0)
-    profit = models.DecimalField(
-        blank=True, max_digits=10, decimal_places=2, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0
+    )
+    profit = models.DecimalField(blank=True, max_digits=10, decimal_places=2, default=0)
     is_default = models.BooleanField(default=False)
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     potential = models.DecimalField(
-        blank=True, max_digits=10, decimal_places=2, default=0)
+        blank=True, max_digits=10, decimal_places=2, default=0
+    )
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
-        db_table = 'Stock'
+        db_table = "Stock"
 
     def __str__(self):
-        return '%s (%s)' % (self.stock_name, self.ticker)
+        return "%s (%s)" % (self.stock_name, self.ticker)
 
-    def update_stock(self):
-        self.current = round(
-            Decimal(stock_info.get_live_price(self.ticker)), 2)
+    def update_stock(self, live_price=None):
+        if not live_price:
+            self.current = round(Decimal(stock_info.get_live_price(self.ticker)), 2)
+        else:
+            self.current = live_price
+
         if not self.purchase:
             self.purchase = 0
         if not self.shares:
@@ -51,66 +58,93 @@ class Stock(models.Model):
             self.buy_target = 0
         if not self.sell_target:
             self.sell_target = 0
-        self.potential = round(
-            self.sell_target/self.current, 2) if self.sell_target else 0
+        self.potential = (
+            round(self.sell_target / self.current, 2) if self.sell_target else 0
+        )
         self.profit = round((self.current - self.purchase) * self.shares, 2)
         self.proximity = 0
         if self.sell_target and self.buy_target:
             goal = Decimal(self.sell_target - self.buy_target)
             if goal:
                 self.proximity = (
-                    round((self.current - self.buy_target) / goal, 2)) * 100
+                    round((self.current - self.buy_target) / goal, 2)
+                ) * 100
         elif self.sell_target and self.purchase:
-            self.proximity = round(
-                (self.current - self.purchase)/(self.sell_target - self.purchase), 2)*100
+            self.proximity = (
+                round(
+                    (self.current - self.purchase) / (self.sell_target - self.purchase),
+                    2,
+                )
+                * 100
+            )
+
+        if live_price:
+            data = [self.profit, self.potential, self.proximity]
+            return data
 
     def full_clean(self, exclude=None, validate_unique=True):
-        """Validate the ticker before save.
-        """
+        """Validate the ticker before save."""
         self.ticker = str(self.ticker).upper()
         if self.shares and not self.purchase:
-            raise ValidationError({
-                'purchase': "If you own shares of %s then you should provide the purchase price." % self.ticker})
+            raise ValidationError(
+                {
+                    "purchase": "If you own shares of %s then you should provide the purchase price."
+                    % self.ticker
+                }
+            )
         if self.purchase and not self.shares:
-            raise ValidationError({
-                'shares': "If you have purchase price of %s then you should provide the shares." % self.ticker})
+            raise ValidationError(
+                {
+                    "shares": "If you have purchase price of %s then you should provide the shares."
+                    % self.ticker
+                }
+            )
 
         if self.sell_target and self.buy_target:
             if self.sell_target < self.buy_target:
-                raise ValidationError({
-                    'sell_target': "Sell target must be higher than the buy target."})
+                raise ValidationError(
+                    {"sell_target": "Sell target must be higher than the buy target."}
+                )
 
         # Initialize the company name if it hasn't been already
         if not self.stock_name:
             self.stock_name = self.get_ticker_title()
 
     def get_ticker_title(self):
-        result = requests.get(f'https://finance.yahoo.com/quote/{self.ticker}/')
+        result = requests.get(f"https://finance.yahoo.com/quote/{self.ticker}/")
         if result.status_code == 404:
-            result = requests.get(f'https://ca.finance.yahoo.com/quote/{self.ticker}/')
-            
+            result = requests.get(f"https://ca.finance.yahoo.com/quote/{self.ticker}/")
+
         if 200 != result.status_code:
             raise ValidationError(
-                {'ticker': "Ticker not found!! Please enter valid ticker."})
+                {"ticker": "Ticker not found!! Please enter valid ticker."}
+            )
         soup = BeautifulSoup(result.content, "html.parser")
-        return soup.h1.string.replace('(%s)' % self.ticker, '')
+        return soup.h1.string.replace("(%s)" % self.ticker, "")
 
 
 class DefaultPortfolio(Stock):
-
     class Meta:
         proxy = True
-        verbose_name = 'Stock'
-        verbose_name_plural = 'Default Portfolio'
+        verbose_name = "Stock"
+        verbose_name_plural = "Default Portfolio"
 
 
-class StockManager():
+class StockManager:
     def create_default_portfolio(self, user):
         stocks = Stock.objects.filter(
-            is_default=True, user__in=get_user_model().objects.filter(is_superuser=True))
+            is_default=True, user__in=get_user_model().objects.filter(is_superuser=True)
+        )
         for stock in stocks:
-            Stock(is_default=False, stock_name=stock.stock_name, buy_target=stock.buy_target, sell_target=stock.sell_target,
-                  current=stock.current, user=user, ticker=stock.ticker).save()
+            Stock(
+                is_default=False,
+                stock_name=stock.stock_name,
+                buy_target=stock.buy_target,
+                sell_target=stock.sell_target,
+                current=stock.current,
+                user=user,
+                ticker=stock.ticker,
+            ).save()
 
 
 @receiver(pre_save, sender=Stock, dispatch_uid="update_stock")

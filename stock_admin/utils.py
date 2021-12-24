@@ -2,9 +2,9 @@ import threading
 
 import mailchimp
 from django.conf import settings
-from django.contrib.auth.models import User
 from django.contrib.sessions.models import Session
 from django.utils import timezone
+from users.models import User
 
 
 class SendSubscribeMail(object):
@@ -31,6 +31,7 @@ class SendSubscribeMail(object):
 
 
 def get_current_users():
+    """Return list of all active users."""
     active_sessions = Session.objects.filter(expire_date__gte=timezone.now())
     user_id_list = []
     for session in active_sessions:
