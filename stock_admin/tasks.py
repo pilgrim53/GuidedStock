@@ -23,13 +23,14 @@ def update_active_user_ticker():
     try:
         """For the only active users, Update the current price, proximity, potential, profit based on the current live price."""
         stocks = Stock.objects.filter(user__in=get_current_users())
-        tickers = set(stocks.values_list("ticker", flat=True))
+        tickers = stocks.values_list("ticker", flat=True).distinct()
 
         # Get current price for unique tickers.
         tickers_price = {
             ticker: round(Decimal(stock_info.get_live_price(ticker)), 2)
             for ticker in tickers
         }
+
         objs = []
         for stock in stocks:
             if stock.ticker in tickers_price:
