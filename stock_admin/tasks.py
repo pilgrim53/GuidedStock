@@ -11,10 +11,6 @@ from .utils import get_current_users
 from decimal import Decimal
 
 
-def ticker_live_price_(ticker):
-    return {"ticker_name": ticker, "ticker_price": si.get_live_price(ticker)}
-
-
 # @shared_task
 def update_stock_prices():
     for ticker in Stock.objects.order_by().values_list("ticker", flat=True).distinct():
