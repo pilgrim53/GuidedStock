@@ -37,7 +37,7 @@ parse==1.19.0
 prompt-toolkit==3.0.14
 psycopg2-binary==2.8.6
 pyee==8.1.0
-pyppeteer==0.2.5
+pyppeteer==0.2.6
 pyquery==1.4.3
 python-crontab==2.5.1
 python-dateutil==2.8.1
