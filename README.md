@@ -8,7 +8,7 @@ https://docs.docker.com/docker-for-windows/install/
 1. Clone the project from git repository and move into the project directory.
 
 ```sh
-
+git clone git@github.com:pilgrim53/GuidedStock.git
 cd GuidedStock/
 ```
 
